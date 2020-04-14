@@ -1,8 +1,10 @@
-import React, { useState, useEffect, Component } from 'react';
-import ReactMapGL, { NavigationControl, Marker, Popup, GeolocateControl } from 'react-map-gl';
+// import React, { useState, useEffect, Component } from 'react';
 import axios from 'axios'
 import Icon from '@ant-design/icons';
+import React, { useState,useEffect  } from 'react';
+import ReactMapGL, { NavigationControl, Marker, Popup } from 'react-map-gl';
 import Item from 'antd/lib/list/Item';
+
 var mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
 
 
@@ -110,7 +112,7 @@ const Map = () => {
                     )}
                 </Marker>
                 {popupInfo && (
-                    <Popup tipSize={20}
+                    <Popup tipSize={5}
                         anchor="bottom"
                         longitude={+popupPM.location.longitude}
                         latitude={+popupPM.location.latitude}
@@ -178,9 +180,6 @@ const Map = () => {
                 mapboxApiAccessToken="pk.eyJ1IjoiaGFtYTg5NyIsImEiOiJjazR6ZG5yY20wOWgzM21tcWVlbnFtOXB4In0.KjTfvistF0bqFqTk0OVsTA">
                 {getPMLocation(pm25InfoOne)}
                 {getStatusPerson(personlist, trackPerson)}
-                <div>
-                    <GeolocateControl />
-                </div>
             </ReactMapGL>
         );
     }
