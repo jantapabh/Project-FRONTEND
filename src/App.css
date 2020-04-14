@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+.environment{
+  color: #1890ff;
+}
+
+.parent {
+}
+.main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}

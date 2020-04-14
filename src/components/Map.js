@@ -4,6 +4,7 @@ import Icon from '@ant-design/icons';
 import React, { useState,useEffect  } from 'react';
 import ReactMapGL, { NavigationControl, Marker, Popup } from 'react-map-gl';
 import Item from 'antd/lib/list/Item';
+import '../App.css'
 
 var mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
 
