@@ -6,6 +6,7 @@ import ReactMapGL, { NavigationControl, Marker, Popup } from 'react-map-gl';
 import Item from 'antd/lib/list/Item';
 import '../App.css'
 var mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 
@@ -26,7 +27,7 @@ const MapShow = () => {
         return (
 
             <ReactMapGL
-            
+
                 {...viewport}
                 onViewportChange={setViewport}
                 mapStyle="mapbox://styles/mapbox/outdoors-v11"
