@@ -3,7 +3,7 @@ import MapGL, {GeolocateControl } from 'react-map-gl'
 import config from '../config'
 import 'mapbox-gl/dist/mapbox-gl.css'
 
-const TOKEN=config.REACT_APP_TOKEN
+const TOKEN = config.pk.eyJ1IjoiaGFtYTg5NyIsImEiOiJjazR6ZG5yY20wOWgzM21tcWVlbnFtOXB4In0.KjTfvistF0bqFqTk0OVsTA
 
 const geolocateStyle = {
   float: 'left',
