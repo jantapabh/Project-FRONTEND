@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Map from './components/Map'
+import Map from './components/MapShow'
 
 const App = () => {
 
