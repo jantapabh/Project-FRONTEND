@@ -37,7 +37,7 @@ export default function Pricing() {
                     </Grid>
                 </React.Fragment>
                 <div>
-               <CardHome />
+             <CardHome />
                </div>
             </Container>
         </div>
