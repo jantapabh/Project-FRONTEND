@@ -36,9 +36,10 @@ export default function Pricing() {
                         </Typography>
                     </Grid>
                 </React.Fragment>
+                <div>
                <CardHome />
+               </div>
             </Container>
-            
         </div>
     );
 }

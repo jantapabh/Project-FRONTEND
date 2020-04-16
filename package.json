@@ -15,6 +15,7 @@
     "bootstrap": "^4.4.1",
     "firebase": "^7.14.0",
     "immutable": "^4.0.0-rc.12",
+    "mdbreact": "^4.25.6",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.0",
