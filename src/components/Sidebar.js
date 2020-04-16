@@ -8,13 +8,13 @@ function Sidebar(props) {
     return (
 
         <Navbar bg="white" expand="lg">
-            <Navbar.Brand href="#home">
+            <Navbar.Brand>
                 <h2>AI ELDERY</h2></Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
                 </Nav>
-                    <Button variant="success">
+                    <Button variant="success" href="/login">
                     <h4 style={{ fontFamily: 'serif'}}>เข้าสู่ระบบเพื่อใช้งาน</h4></Button>
             </Navbar.Collapse>  
         </Navbar>
