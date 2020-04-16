@@ -7,6 +7,7 @@ import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import logo from '../static/images/logo.png'
 import content from '../static/images/content.png'
 import Sidebar from '../components/Sidebar'
+import CardHome from '../components/CardHoem'
 
 // Show หน้านี้ทุกครั้งเมื่อผู้ฝช้เข้ามาและสามารถดูข้อมูลได้คราวๆ เกี่ยวกบผู้สูงอายุ
 
@@ -35,7 +36,7 @@ export default function Pricing() {
                         </Typography>
                     </Grid>
                 </React.Fragment>
-                <p className="text-center mt-4 mb-4">Or right-aligned</p>
+               <CardHome />
             </Container>
             
         </div>
