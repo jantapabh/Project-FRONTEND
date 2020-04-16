@@ -37,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   appBar: {
-    borderBottom: `1px solid ${theme.palette.divider}`,
+    borderBottom: `0.3px solid ${theme.palette.divider}`,
   },
   toolbar: {
     flexWrap: 'wrap',
@@ -133,10 +133,7 @@ export default function Pricing() {
     <React.Fragment>
       <CssBaseline />
       <AppBar position="static" color="white" elevation={0} className={classes.appBar}>
-        <Toolbar className={classes.toolbar}>
-          <Typography variant="h6" color="inherit" noWrap className={classes.toolbarTitle}>
-            Company name
-          </Typography>
+        <Toolbar>
           <nav>
             <Link variant="button" color="textPrimary" href="#" className={classes.link}>
               Features
@@ -148,9 +145,6 @@ export default function Pricing() {
               Support
             </Link>
           </nav>
-          <Button href="#" color="primary" variant="outlined" className={classes.link}>
-            Login
-          </Button>
         </Toolbar>
       </AppBar>
       {/* Hero unit */}
