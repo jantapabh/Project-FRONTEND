@@ -19,12 +19,14 @@ class App extends Component {
     return (
       <div>
         <div className="Topbar">
-          <Topbar />
+          <Sidebar />
         </div>
         <BrowserRouter>
           <Route exact path="/" component={Pricing}/>
           <Route path="/dashboad" component={Dashboard} />
           <Route path="/map" component={MapShow} />
+          <Route path="/login" component={Login} />
+          <Route path="/main" component={MainPage} />
         </BrowserRouter>
       </div>
     )

@@ -16,18 +16,7 @@ import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import logo from '../static/images/logo.png'
 import content from '../static/images/content.png'
 
-function Copyright() {
-    return (
-        <Typography variant="body2" color="textSecondary" align="center">
-            {'Copyright © '}
-            <Link color="inherit" href="https://material-ui.com/">
-                Your Website
-        </Link>{' '}
-            {new Date().getFullYear()}
-            {'.'}
-        </Typography>
-    );
-}
+// Show หน้านี้ทุกครั้งเมื่อผู้ฝช้เข้ามาและสามารถดูข้อมูลได้คราวๆ เกี่ยวกบผู้สูงอายุ
 
 const useStyles = makeStyles((theme) => ({
     root: {
