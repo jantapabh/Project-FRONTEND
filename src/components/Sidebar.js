@@ -39,6 +39,7 @@ export default function Sidebar(props) {
     return (
         <React.Fragment>
             <Toolbar className={classes.toolbar}>
+               
                 <Typography
                     component="h2"
                     variant="h4"
@@ -49,7 +50,7 @@ export default function Sidebar(props) {
                 >
         </Typography>
                 <Button variant="outlined" size="lagre" style={{ width: 150, height: 50,  margin: 5, padding: 5}}>
-                    LOG IN
+                   <h4> LOG IN </h4>
         </Button>
             </Toolbar>
         </React.Fragment>

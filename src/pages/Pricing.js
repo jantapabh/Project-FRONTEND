@@ -13,8 +13,8 @@ import Paper from '@material-ui/core/Paper';
 import Box from '@material-ui/core/Box';
 import Grid from '@material-ui/core/Grid';
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
-import Pic from '../static/images/Pic.png'
-import pic2 from '../static/images/pic2.png'
+import logo from '../static/images/logo.png'
+import content from '../static/images/content.png'
 
 function Copyright() {
     return (
@@ -42,12 +42,12 @@ export default function Pricing() {
 
     return (
         <React.Fragment >
-            <Grid container component="main" className={classes.root}>
+            <Grid container component="main" className={classes.root} align="center">
                 <Typography component="h1" variant="h4" maxWidth="lg" align="center" color="textPrimary" gutterBottom>
-                    <img src={Pic} style={{ width: 700 }} />
+                    <img src={logo} style={{ margin: 50 }} />
                 </Typography>
                 <Typography component="h1" variant="h4" maxWidth="lg" align="center" color="textPrimary" gutterBottom>
-                    <img src={pi2} style={{ width: 700 }} />
+                   <img src={content} style={{ margin: 50 }}/>
                 </Typography>
             </Grid>
         </React.Fragment>
