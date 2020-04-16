@@ -35,7 +35,9 @@ export default function Pricing() {
                         </Typography>
                     </Grid>
                 </React.Fragment>
+                <p className="text-center mt-4 mb-4">Or right-aligned</p>
             </Container>
+            
         </div>
     );
 }

@@ -1,23 +1,33 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button, Container, Nav, NavDropdown, Navbar, Dropdown, ButtonGroup } from 'react-bootstrap';
+import { Button, Container, Nav, Navbar, NavDropdown, FormControl, Form } from 'react-bootstrap';
 
 
 
 function Sidebar(props) {
     return (
+        <div>
+            <Navbar bg="white" expand="lg">
+                <Navbar.Brand href="#home">
+                    <Button variant="outline-primary" style={{width: 230, height: 60, borderRadius: 60,margin: 5, padding: 5}}>
+                        <h2>AI ELDERY</h2>
+                    </Button></Navbar.Brand>
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Collapse id="basic-navbar-nav">
+                    <Nav className="mr-auto">
+                    </Nav>
+                    <Form inline>
+                        <Button variant="outline-info" href="/login" style={{width: 150, height: 50, borderRadius: 50, margin: 5}}>
+                            <h4>ติดต่อเรา</h4>
+                            </Button>
+                            <Button variant="info" href="/login" style={{width: 150, height: 50, borderRadius: 50,margin: 5}}>
+                            <h4>เข้าสู่ระบบ</h4>
+                            </Button>
+                    </Form>
+                </Navbar.Collapse>
+            </Navbar>
 
-        <Navbar bg="white" expand="lg">
-            <Navbar.Brand>
-                <h2>AI ELDERY</h2></Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="mr-auto">
-                </Nav>
-                    <Button variant="success" href="/login">
-                    <h4 style={{ fontFamily: 'serif'}}>เข้าสู่ระบบเพื่อใช้งาน</h4></Button>
-            </Navbar.Collapse>  
-        </Navbar>
+        </div>
 
     );
 }
