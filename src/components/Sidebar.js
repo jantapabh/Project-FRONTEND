@@ -39,9 +39,6 @@ export default function Sidebar(props) {
     return (
         <React.Fragment>
             <Toolbar className={classes.toolbar}>
-                <h1 style={{ margin: 5, padding: 5}}>
-            AI ELDERY
-            </h1>
                 <Typography
                     component="h2"
                     variant="h4"
