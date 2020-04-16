@@ -10,14 +10,12 @@ import {
 
 // React bootstrap
 import { Container, Row, Col, Button, Card } from 'react-bootstrap'
-import Tapbar from './Tapbar'
 
 const CardHome = props => {
 
     return (
-        
+        <div>
             <Container>
-                <Tapbar>
                 <Row>
                     <Col><Card style={{ width: '18rem' }}>
                         <Card.Img variant="top" src="holder.js/100px180" />
@@ -58,6 +56,7 @@ const CardHome = props => {
                         </Card></Col>
                 </Row>
             </Container>
+            </div>
 
     )
 }

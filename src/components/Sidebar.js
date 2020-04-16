@@ -7,7 +7,7 @@ import { Button, Container, Nav, Navbar, NavDropdown, FormControl, Form } from '
 function Sidebar(props) {
     return (
         <div>
-            <Navbar bg="white" expand="lg">
+            <Navbar bg="dark" expand="lg">
                 <Navbar.Brand href="#home">
                     <Button variant="outline-primary" style={{width: 230, height: 60, borderRadius: 60,margin: 5, padding: 5}}>
                         <h2>AI ELDERY</h2>
@@ -26,7 +26,6 @@ function Sidebar(props) {
                     </Form>
                 </Navbar.Collapse>
             </Navbar>
-
         </div>
 
     );
