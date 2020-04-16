@@ -8,6 +8,7 @@ import IconButton from '@material-ui/core/IconButton';
 import SearchIcon from '@material-ui/icons/Search';
 import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
+import logo from './static/images/logo'
 
 const useStyles = makeStyles((theme) => ({
     toolbar: {
@@ -33,7 +34,7 @@ export default function Sidebar(props) {
     return (
         <React.Fragment>
             <Toolbar className={classes.toolbar}>
-                <Button size="small">Subscribe</Button>
+               <img src={logo} />
                 <Typography
                     component="h2"
                     variant="h5"
