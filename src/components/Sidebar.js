@@ -8,7 +8,7 @@ import IconButton from '@material-ui/core/IconButton';
 import SearchIcon from '@material-ui/icons/Search';
 import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
-import logo from './static/images/logo'
+import logo from '../static/images/logo.png'
 
 const useStyles = makeStyles((theme) => ({
     toolbar: {
@@ -34,7 +34,7 @@ export default function Sidebar(props) {
     return (
         <React.Fragment>
             <Toolbar className={classes.toolbar}>
-               <img src={logo} />
+               <img src={logo} style={{ width: 100, height: 100, margin: 5, padding: 5}}/>
                 <Typography
                     component="h2"
                     variant="h5"
@@ -48,10 +48,10 @@ export default function Sidebar(props) {
                 <IconButton>
                     <SearchIcon />
                 </IconButton>
-                <Button variant="outlined" size="small">
+                <Button variant="outlined" size="large">
                     Log in
         </Button>
-                <Button variant="outlined" size="small" style={{ margin: 5 }}>
+                <Button variant="outlined" size="large" style={{ margin: 5 }}>
                     Sign up
         </Button>
             </Toolbar>
