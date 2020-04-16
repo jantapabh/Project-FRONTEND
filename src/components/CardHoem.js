@@ -1,6 +1,6 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import CardShow from './CardShow'
 //Import Reshart
 import {
     ResponsiveContainer, XAxis, YAxis, CartesianGrid,
@@ -15,6 +15,7 @@ const CardHome = props => {
 
     return (
         <div>
+            <CardShow />
             <Container>
                 <Row>
                     <Col><Card style={{ width: '18rem' }}>
