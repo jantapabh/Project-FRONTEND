@@ -41,6 +41,7 @@ export default function Pricing() {
     const classes = useStyles();
 
     return (
+        <Container>
         <React.Fragment >
             <Grid container component="main" className={classes.root} align="center">
                 <Typography component="h1" variant="h4" maxWidth="lg" align="center" color="textPrimary" gutterBottom>
@@ -51,5 +52,6 @@ export default function Pricing() {
                 </Typography>
             </Grid>
         </React.Fragment>
+        </Container>
     );
 }
