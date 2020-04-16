@@ -4,13 +4,9 @@ import './App.css';
 import Map from './pages/MapShow'
 import Chart from './components/Chart'
 import Dashboard from './components/Dashboard'
-const App = () => {
 
-  return(
-    <div>
-      {/* <Map /> */}
-      <Dashboard />
-      </div>
-  )
+
+class App extends Component{
+
+  
 }
-export default App;
