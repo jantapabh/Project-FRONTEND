@@ -6,7 +6,7 @@ const MainPage = () => {
     return (
         <div>
             <div className='wrapper'>
-             Hello
+
             </div>
         </div>
     )
