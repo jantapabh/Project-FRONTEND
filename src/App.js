@@ -5,7 +5,7 @@ import Map from './pages/MapShow'
 import Chart from './components/Chart'
 import Dashboard from './components/Dashboard'
 import MainPage from './pages/MainPage';
-
+import Login from './pages/Login';
 
 class App extends Component{
 
@@ -14,6 +14,7 @@ class App extends Component{
     return(
       <div>
      <MainPage />
+     <Login />
       </div>
     )
   }
