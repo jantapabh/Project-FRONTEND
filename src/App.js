@@ -11,6 +11,9 @@ import Login from './pages/Login';
 import Sidebar from './components/Sidebar'
 import Pricing from './pages/Pricing';
 import MapShow from './pages/MapShow';
+import Contact from './pages/Contact';
+
+
 
 class App extends Component {
 
@@ -23,6 +26,7 @@ class App extends Component {
           <Route path="/map" component={MapShow} />
           <Route path="/login" component={Login} />
           <Route path="/main" component={MainPage} />
+          <Route path="/contact" component={Contact} />
         </BrowserRouter>
       </div>
     )

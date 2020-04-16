@@ -17,7 +17,7 @@ function Sidebar(props) {
                     <Nav className="mr-auto">
                     </Nav>
                     <Form inline>
-                        <Button variant="outline-info" href="/login" style={{width: 150, height: 50, borderRadius: 50, margin: 5}}>
+                        <Button variant="outline-info" href="/contact" style={{width: 150, height: 50, borderRadius: 50, margin: 5}}>
                             <h4>ติดต่อเรา</h4>
                             </Button>
                             <Button variant="info" href="/login" style={{width: 150, height: 50, borderRadius: 50,margin: 5}}>
