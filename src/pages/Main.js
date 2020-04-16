@@ -1,23 +1,12 @@
 import React, { Component } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Carousel, Card } from 'react-bootstrap';
-import { MDBRow, MDBCol, MDBIcon, MDBBtn, MDBListGroupItem, MDBCard, MDBCardBody, MDBView, MDBMask } from "mdbreact";
-import AppBar from '@material-ui/core/AppBar';
-import Button from '@material-ui/core/Button';
-import CameraIcon from '@material-ui/icons/PhotoCamera';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import Grid from '@material-ui/core/Grid';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import { makeStyles } from '@material-ui/core/styles';
-import Container from '@material-ui/core/Container';
+import { MDBRow, MDBCol, MDBIcon, MDBCardBody } from "mdbreact";
 
 
-
-
+//ส่วนหน้าหลักในการแสดงข้อมูลของผู็สูงอายุสำหรับผู้ใช้ทั่วไป
+//ข้อมูลที่ควรมี
+//
 
 const Main = () => {
 
@@ -27,12 +16,12 @@ const Main = () => {
                 <MDBRow>
                     <MDBCol lg="6">
                         <a href="#!" className="green-text">
-                            <h6 className="font-weight-bold mb-3">
-                                <MDBIcon icon="dog" className="pr-2" size="3x" /> Animal</h6>
+                            <h4 className="font-weight-bold mb-3">
+                            <MDBIcon fab icon="accessible-icon"  className="pr-2" size="3x" />สาเหตุหลักการเสียชีวิตของผู้สูงอายุ</h4>
                         </a>
-                        <h5 className="font-family-normal mb-3 p-0">
-                            <strong style={{ margin: 5 }}>กราฟวงกลมแสดงจำนวนสุนัข (ปี 2562 รอบที่ 1)</strong>
-                        </h5>
+                        <h7 className="font-family-normal mb-3 p-0">
+                            <strong style={{ margin: 5 }}>อ้างอิงข้อมูลจาก</strong>
+                        </h7>
                         <Card border="primary" style={{ width: '42rem', height: '23rem', padding: 30, margin: 10 }} center>
 
                         </Card>

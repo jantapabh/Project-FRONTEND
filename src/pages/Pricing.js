@@ -9,7 +9,8 @@ import content from '../static/images/content.png'
 import Sidebar from '../components/Sidebar'
 import Main from './Main'
 
-// Show หน้านี้ทุกครั้งเมื่อผู้ฝช้เข้ามาและสามารถดูข้อมูลได้คราวๆ เกี่ยวกบผู้สูงอายุ
+// Show หน้านี้ทุกครั้งเมื่อผู้ฝช้เข้ามาและสามารถดูข้อมูลได้คราวๆ เกี่ยวกับผู้สูงอายุ
+//หน้านี้มี SIdebar + รูปและก็ Main โดยหน้านี้จะแสเงสำหรับผู้ใช้ทั่วไป
 
 const useStyles = makeStyles((theme) => ({
     root: {
