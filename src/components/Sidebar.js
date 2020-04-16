@@ -12,7 +12,7 @@ import logo from '../static/images/logo.png'
 
 const useStyles = makeStyles((theme) => ({
     toolbar: {
-        borderBottom: `1px solid ${theme.palette.divider}`,
+        borderBottom: `0px solid ${theme.palette.divider}`,
     },
     toolbarTitle: {
         flex: 1,
@@ -28,31 +28,28 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function Sidebar(props) {
-    const classes = useStyles();
-    const { title } = props;
 
+    const classes = useStyles();
+    
     return (
         <React.Fragment>
             <Toolbar className={classes.toolbar}>
                <img src={logo} style={{ width: 100, height: 100, margin: 5, padding: 5}}/>
                 <Typography
-                    component="h2"
-                    variant="h5"
+                    component="h1"
+                    variant="h4"
                     color="inherit"
                     align="center"
                     noWrap
                     className={classes.toolbarTitle}
                 >
-                    {title}
+                    ELDERY AI
                 </Typography>
-                <IconButton>
-                    <SearchIcon />
-                </IconButton>
-                <Button variant="outlined" size="large">
-                    Log in
+                <Button variant="outlined" size="large" style={{ margin: 5 }}>
+                    LOG IN
         </Button>
                 <Button variant="outlined" size="large" style={{ margin: 5 }}>
-                    Sign up
+                    REGISTER
         </Button>
             </Toolbar>
             <Toolbar component="nav" variant="dense" className={classes.toolbarSecondary}>
