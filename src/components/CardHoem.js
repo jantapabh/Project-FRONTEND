@@ -8,28 +8,16 @@ import {
     Pie, Cell,
 } from 'recharts';
 
-//Import material-ui
-import AppBar from '@material-ui/core/AppBar';
-import CameraIcon from '@material-ui/icons/PhotoCamera';
-import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import Grid from '@material-ui/core/Grid';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import { makeStyles } from '@material-ui/core/styles';
-
-//React bootstrap
-import { Container, Row, Col, Button } from 'react-bootstrap'
-
+// React bootstrap
+import { Container, Row, Col, Button, Card } from 'react-bootstrap'
+import Tapbar from './Tapbar'
 
 const CardHome = props => {
 
     return (
         
             <Container>
+                <Tapbar>
                 <Row>
                     <Col><Card style={{ width: '18rem' }}>
                         <Card.Img variant="top" src="holder.js/100px180" />
