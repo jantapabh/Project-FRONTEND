@@ -15,7 +15,6 @@ import MapShow from './pages/MapShow';
 class App extends Component {
 
   render() {
-
     return (
       <div>
         <BrowserRouter>
