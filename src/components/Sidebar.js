@@ -4,7 +4,7 @@ import { Button, Container, Nav, NavDropdown, Navbar, Dropdown, ButtonGroup } fr
 
 
 
-export default function Sidebar(props) {
+function Sidebar(props) {
     return (
 
         <Navbar bg="white" expand="lg">
@@ -15,12 +15,16 @@ export default function Sidebar(props) {
                 <Nav className="mr-auto">
                 </Nav>
                     <Button variant="success">
-                    <h4 style={{ fontFamily: 'serif'}}>LOG IN</h4></Button>
+                    <h4 style={{ fontFamily: 'serif'}}>เข้าสู่ระบบเพื่อใช้งาน</h4></Button>
             </Navbar.Collapse>  
         </Navbar>
 
     );
 }
+
+
+
+export default Sidebar;
 
 {/* <Navbar bg="light" expand="lg">
 <Navbar.Brand href="#home">

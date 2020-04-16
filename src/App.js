@@ -18,9 +18,6 @@ class App extends Component {
 
     return (
       <div>
-        <div className="Topbar">
-          <Sidebar />
-        </div>
         <BrowserRouter>
           <Route exact path="/" component={Pricing}/>
           <Route path="/dashboad" component={Dashboard} />
