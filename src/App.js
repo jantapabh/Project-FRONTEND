@@ -7,6 +7,7 @@ import Dashboard from './components/Dashboard'
 import MainPage from './pages/MainPage';
 import Login from './pages/Login';
 import Sidebar from './components/Sidebar'
+import Pricing from './pages/Pricing';
 
 class App extends Component {
 
@@ -15,7 +16,7 @@ class App extends Component {
     return (
       <div>
         <Sidebar />
-        <MainPage />
+        <Pricing />
       </div>
     )
   }

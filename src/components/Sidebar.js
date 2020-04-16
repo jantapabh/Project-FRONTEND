@@ -9,10 +9,12 @@ import SearchIcon from '@material-ui/icons/Search';
 import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
 import logo from '../static/images/logo.png'
+import CssBaseline from '@material-ui/core/CssBaseline';
+import AppBar from '@material-ui/core/AppBar';
 
 const useStyles = makeStyles((theme) => ({
     toolbar: {
-        borderBottom: `0px solid ${theme.palette.divider}`,
+        borderBottom: `1px solid ${theme.palette.divider}`,
     },
     toolbarTitle: {
         flex: 1,
@@ -25,43 +27,58 @@ const useStyles = makeStyles((theme) => ({
         padding: theme.spacing(1),
         flexShrink: 0,
     },
+    appBar: {
+        borderBottom: `1px solid ${theme.palette.divider}`,
+      },
+      toolbar: {
+        flexWrap: 'wrap',
+      },
+      toolbarTitle: {
+        flexGrow: 1,
+      },
+      link: {
+        margin: theme.spacing(1, 1.5),
+      },
+      heroContent: {
+        padding: theme.spacing(8, 0, 6),
+      },
+      cardHeader: {
+        backgroundColor:
+          theme.palette.type === 'light' ? theme.palette.grey[200] : theme.palette.grey[700],
+      }
+      
+     
 }));
 
 export default function Sidebar(props) {
-
     const classes = useStyles();
-    
+    const { title } = props;
+
     return (
         <React.Fragment>
-            <Toolbar className={classes.toolbar}>
-               <img src={logo} style={{ width: 100, height: 100, margin: 5, padding: 5}}/>
-                <Typography
-                    component="h1"
-                    variant="h4"
-                    color="inherit"
-                    align="center"
-                    noWrap
-                    className={classes.toolbarTitle}
-                >
-                    ELDERY AI
-                </Typography>
-                <Button variant="outlined" size="large" style={{ margin: 5 }}>
-                    LOG IN
-        </Button>
-                <Button variant="outlined" size="large" style={{ margin: 5 }}>
-                    REGISTER
-        </Button>
-            </Toolbar>
-            <Toolbar component="nav" variant="dense" className={classes.toolbarSecondary}>
-                <Link
-                    color="inherit"
-                    noWrap
-                    variant="body2"
-                    className={classes.toolbarLink}
-                >
-                </Link>
-            </Toolbar>
-        </React.Fragment>
+        <CssBaseline />
+        <AppBar position="static" color="white" elevation={0} className={classes.appBar}>
+          <Toolbar className={classes.toolbar}>
+            <Typography variant="h6" color="inherit" noWrap className={classes.toolbarTitle}>
+              Company name
+            </Typography>
+            <nav>
+              <Link variant="button" color="textPrimary" href="#" className={classes.link}>
+                Features
+              </Link>
+              <Link variant="button" color="textPrimary" href="#" className={classes.link}>
+                Enterprise
+              </Link>
+              <Link variant="button" color="textPrimary" href="#" className={classes.link}>
+                Support
+              </Link>
+            </nav>
+            <Button href="#" color="primary" variant="outlined" className={classes.link}>
+              Login
+            </Button>
+          </Toolbar>
+        </AppBar>
+      </React.Fragment>
     );
 }
 
