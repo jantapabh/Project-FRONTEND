@@ -6,7 +6,10 @@ import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import SearchIcon from '@material-ui/icons/Search';
 import Typography from '@material-ui/core/Typography';
-import logo from '../static/images/logo.png'
+
+
+
+
 
 const useStyles = makeStyles((theme) => ({
     toolbar: {
@@ -36,7 +39,9 @@ export default function Sidebar(props) {
     return (
         <React.Fragment>
             <Toolbar className={classes.toolbar}>
-                <img src={logo} style={{ width: 100, height: 100, margin: 5, padding: 5 }} />
+                <h2>
+            AI ELDERY
+            </h2>
                 <Typography
                     component="h2"
                     variant="h4"
@@ -45,7 +50,6 @@ export default function Sidebar(props) {
                     noWrap
                     className={classes.toolbarTitle}
                 >
-                    ELDERY ALERT SYSTEM
         </Typography>
                 <Button variant="outlined" size="lagre" style={{ width: 120, height: 50, margin: 2}}>
                     LOG IN

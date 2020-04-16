@@ -14,6 +14,9 @@ import Link from '@material-ui/core/Link';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Box from '@material-ui/core/Box';
+import logo from '../static/images/logo.png'
+import Pic from '../static/images/Pic.png'
+
 
 function Copyright() {
   return (
@@ -39,16 +42,17 @@ const useStyles = makeStyles((theme) => ({
   },
   appBar: {
 
-    borderBottom: `0px solid ${theme.palette.divider}`,
+    borderBottom: `1px solid ${theme.palette.divider}`,
   
   },
   toolbar: {
+
     flexWrap: 'wrap',
-    backgroundColor: 'white'
+   
   },
   toolbarTitle: {
     flexGrow: 1,
-    backgroundColor: 'white'
+  
   },
   link: {
     margin: theme.spacing(1, 1.5),
@@ -153,14 +157,9 @@ export default function Pricing() {
 
   return (
     <React.Fragment >
-      <AppBar position="static" color="white" elevation={0} className={classes.appBar}>
-        <Toolbar component="nav"  className={classes.toolbarSecondary}>
-        {/* เมนู */}
-        </Toolbar>
-      </AppBar>
       <Container maxWidth="sm" color="white" component="main" className={classes.heroContent}>
-        <Typography component="h1" variant="h4" align="center" color="textPrimary" gutterBottom>
-         ระบบแจ้งเตือนอุบัติเหตุผู้สูงอายุ
+        <Typography component="h1" variant="h4" maxWidth="lg" align="center" color="textPrimary" gutterBottom>
+        <img src={Pic} style={{ width: 500}} />
         </Typography>
         <Typography variant="h5" align="center" color="textSecondary" component="p">
           Quickly build an effective pricing table for your potential customers with this layout.
