@@ -34,32 +34,42 @@ const useStyles = makeStyles((theme) => ({
       margin: 0,
       padding: 0,
       listStyle: 'none',
+      backgroundColor: 'white'
     },
   },
   appBar: {
-    borderBottom: `0.3px solid ${theme.palette.divider}`,
+
+    borderBottom: `0px solid ${theme.palette.divider}`,
+  
   },
   toolbar: {
     flexWrap: 'wrap',
+    backgroundColor: 'white'
   },
   toolbarTitle: {
     flexGrow: 1,
+    backgroundColor: 'white'
   },
   link: {
     margin: theme.spacing(1, 1.5),
+    backgroundColor: 'white'
   },
   heroContent: {
     padding: theme.spacing(8, 0, 6),
+    backgroundColor: 'white'
+
   },
   cardHeader: {
     backgroundColor:
       theme.palette.type === 'light' ? theme.palette.grey[200] : theme.palette.grey[700],
+      backgroundColor: 'white' //ช่อง 3 ช่อง
   },
   cardPricing: {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'baseline',
     marginBottom: theme.spacing(2),
+    backgroundColor: 'white'
   },
   footer: {
     borderTop: `1px solid ${theme.palette.divider}`,
@@ -69,7 +79,14 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up('sm')]: {
       paddingTop: theme.spacing(6),
       paddingBottom: theme.spacing(6),
+      backgroundColor: 'white'
     },
+    toolbarSecondary: {
+        justifyContent: 'space-around',
+        overflowX: 'auto',
+        display: 'flex',
+        backgroundColor: 'white'
+      },
   },
 }));
 
@@ -80,6 +97,7 @@ const tiers = [
     description: ['10 users included', '2 GB of storage', 'Help center access', 'Email support'],
     buttonText: 'Sign up for free',
     buttonVariant: 'outlined',
+    backgroundColor: 'white'
   },
   {
     title: 'Pro',
@@ -93,6 +111,7 @@ const tiers = [
     ],
     buttonText: 'Get started',
     buttonVariant: 'contained',
+    backgroundColor: 'white'
   },
   {
     title: 'Enterprise',
@@ -105,8 +124,11 @@ const tiers = [
     ],
     buttonText: 'Contact us',
     buttonVariant: 'outlined',
+    backgroundColor: 'white'
   },
 ];
+
+
 const footers = [
   {
     title: 'Company',
@@ -130,38 +152,24 @@ export default function Pricing() {
   const classes = useStyles();
 
   return (
-    <React.Fragment>
-      <CssBaseline />
+    <React.Fragment >
       <AppBar position="static" color="white" elevation={0} className={classes.appBar}>
-        <Toolbar>
-          <nav>
-            <Link variant="button" color="textPrimary" href="#" className={classes.link}>
-              Features
-            </Link>
-            <Link variant="button" color="textPrimary" href="#" className={classes.link}>
-              Enterprise
-            </Link>
-            <Link variant="button" color="textPrimary" href="#" className={classes.link}>
-              Support
-            </Link>
-          </nav>
+        <Toolbar component="nav"  className={classes.toolbarSecondary}>
+        {/* เมนู */}
         </Toolbar>
       </AppBar>
-      {/* Hero unit */}
-      <Container maxWidth="sm" component="main" className={classes.heroContent}>
-        <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
-          Pricing
+      <Container maxWidth="sm" color="white" component="main" className={classes.heroContent}>
+        <Typography component="h1" variant="h4" align="center" color="textPrimary" gutterBottom>
+         ระบบแจ้งเตือนอุบัติเหตุผู้สูงอายุ
         </Typography>
         <Typography variant="h5" align="center" color="textSecondary" component="p">
           Quickly build an effective pricing table for your potential customers with this layout.
           It&apos;s built with default Material-UI components with little customization.
         </Typography>
       </Container>
-      {/* End hero unit */}
       <Container maxWidth="md" component="main">
         <Grid container spacing={5} alignItems="flex-end">
           {tiers.map((tier) => (
-            // Enterprise card is full width at sm breakpoint
             <Grid item key={tier.title} xs={12} sm={tier.title === 'Enterprise' ? 12 : 6} md={4}>
               <Card>
                 <CardHeader
@@ -219,9 +227,7 @@ export default function Pricing() {
             </Grid>
           ))}
         </Grid>
-        <Box mt={5}>
-          <Copyright />
-        </Box>
+      
       </Container>
       {/* End footer */}
     </React.Fragment>

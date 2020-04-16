@@ -16,6 +16,7 @@ const useStyles = makeStyles((theme) => ({
     },
     toolbarTitle: {
         flex: 1,
+      
     },
     toolbarSecondary: {
         justifyContent: 'space-between',
@@ -44,10 +45,13 @@ export default function Sidebar(props) {
                     noWrap
                     className={classes.toolbarTitle}
                 >
-                    ELDERY ALERT
+                    ELDERY ALERT SYSTEM
         </Typography>
-                <Button variant="outlined" size="lagre" style={{ width: 120, height: 50}}>
+                <Button variant="outlined" size="lagre" style={{ width: 120, height: 50, margin: 2}}>
                     LOG IN
+        </Button>
+        <Button variant="outlined" size="lagre" style={{ width: 120, height: 50, margin: 2}}>
+                    REGISTER
         </Button>
             </Toolbar>
         </React.Fragment>
