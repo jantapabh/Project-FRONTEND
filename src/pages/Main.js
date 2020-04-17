@@ -17,11 +17,25 @@ const Main = () => {
             <MDBCardBody>
                 <MDBRow>
                     <MDBCol lg="6">
+                    <a href="#!" className="green-text">
+                            <h4 className="font-weight-bold mb-3">
+                                <MDBIcon fab icon="accessible-icon" className="pr-2" size="3x" />ร้อยละของผู้สูงอายุจำแนกตามกลุ่มวัย</h4>
+                        </a>
+                        <h5 className="font-weight-normal mb-3 p-3">
+                            <strong>อ้างอิงข้อมูลจาก : สำนักงานสถิติแห่งชาติ  </strong>
+                        </h5>
                         <Card border="white" style={{ width: '42rem', height: '23rem', padding: 30, margin: 10, borderRadius: 200 }} center>
                             <ChartOne />
                         </Card>
                     </MDBCol>
                     <MDBCol lg="6">
+                    <a href="#!" className="green-text">
+                            <h4 className="font-weight-bold mb-3">
+                                <MDBIcon fab icon="accessible-icon" className="pr-2" size="3x" />อุบัติเหตุการหกล้มในผู้สูงอายุและการป้องกัน</h4>
+                        </a>
+                        <h5 className="font-weight-bold mb-3 p-3">
+                            <strong></strong>
+                        </h5>
                         <Card border="white" style={{ width: '42rem', height: '23rem', }} center>
                             <img src={show} style={{ width: 670, height: 370, borderRadius: 200 }} />
                         </Card>

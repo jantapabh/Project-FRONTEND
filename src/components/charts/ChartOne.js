@@ -43,9 +43,7 @@ class ChartOne extends React.Component {
         };
     }
 
-
     render() {
-
         return (
             <div id="chart">
                 <ReactApexChart options={this.state.options} series={this.state.series}  type="pie" width={500} />
