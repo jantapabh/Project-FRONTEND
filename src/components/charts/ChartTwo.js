@@ -10,25 +10,46 @@ const colors = scaleOrdinal(schemeCategory10).range();
 
 const data = [
   {
-    name: 'Page A', uv: 4000, female: 2400, male: 2400,
+    name: 'เขตสุขภาพที่ 1', uv: 4000, female: 20.1, male: 2400,
   },
   {
-    name: 'Page B', uv: 3000, female: 1398, male: 2210,
+    name: 'เขตสุขภาพที่ 2', uv: 3000, female: 17.5, male: 2210,
   },
   {
-    name: 'Page C', uv: 2000, female: 9800, male: 2290,
+    name: 'เขตสุขภาพที่ 3', uv: 2000, female: 11.9, male: 2290,
   },
   {
-    name: 'Page D', uv: 2780, female: 3908, male: 2000,
+    name: 'เขตสุขภาพที่ 4', uv: 2780, female: 8.8, male: 2000,
   },
   {
-    name: 'Page E', uv: 1890, female: 4800, male: 2181,
+    name: 'เขตสุขภาพที่ 5', uv: 1890, female: 13.1, male: 2181,
   },
   {
-    name: 'Page F', uv: 2390, female: 3800, male: 2500,
+    name: 'เขตสุขภาพที่ 6', uv: 2390, female: 10.9, male: 2500,
   },
   {
-    name: 'Page G', uv: 3490, female: 4300, male: 2100,
+    name: 'เขตสุขภาพที่ 7', uv: 3000, female: 8.5, male: 2100,
+  },
+  {
+    name: 'เขตสุขภาพที่ 8', uv: 3490, female: 9.2, male: 2100,
+  },
+  {
+    name: 'เขตสุขภาพที่ 9', uv: 3490, female: 11.4, male: 2100,
+  },
+  {
+    name: 'เขตสุขภาพที่ 10', uv: 3490, female: 11.6, male: 2100,
+  },
+  {
+    name: 'เขตสุขภาพที่ 11', uv: 3490, female: 14.4, male: 2100,
+  },
+  {
+    name: 'เขตสุขภาพที่ 12', uv: 3490, female: 13.4, male: 2100,
+  },
+  {
+    name: 'เขตสุขภาพที่ กทม', uv: 3490, female: 3.6, male: 2181,
+  },
+  {
+    name: 'รวมทั้งประเทศ', uv: 3490, female: 11.7, male: 2100,
   },
 ];
 
