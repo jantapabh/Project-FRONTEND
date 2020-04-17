@@ -12,6 +12,8 @@ import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Nav, Navbar, NavDropdown, FormControl, Form } from 'react-bootstrap';
 
 //Use Firebase Login
 
@@ -38,18 +40,8 @@ const Login = () => {
 
 
 
-    const Copyright = () => {
-        return (
-            <Typography variant="body2" color="textSecondary" align="center">
-                {'Copyright © '}
-                <Link color="inherit" href="https://material-ui.com/">
-                    Your Website
-            </Link>{' '}
-                {new Date().getFullYear()}
-                {'.'}
-            </Typography>
-        );
-    }
+
+    
 
     const useStyles = makeStyles((theme) => ({
         paper: {
@@ -77,7 +69,6 @@ const Login = () => {
 
         <div>
             <Container component="main" maxWidth="xs">
-                <CssBaseline />
                 <div className={classes.paper}>
                     <Avatar className={classes.avatar}>
                         <LockOutlinedIcon />
@@ -127,9 +118,6 @@ const Login = () => {
           </Button>
                     </form>
                 </div>
-                <Box mt={8}>
-                    <Copyright />
-                </Box>
             </Container>
 
         </div>
