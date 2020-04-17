@@ -16,7 +16,7 @@ const Footer = () => {
                         <img src={footer2} style={{ width: 400, height: 150 }} />
                     </MDBCol>
                     <MDBCol md="1" center>
-                                <MDBIcon fab icon="facebook" size="5x" /> 
+                                <MDBIcon fab icon="facebook" size="5x"><a href="https://www.facebook.com/Joajannnnnn" ></a></MDBIcon>
                     </MDBCol>
                     <MDBCol md="1" center>
                                 <MDBIcon fab icon="github" size="5x" /> 
