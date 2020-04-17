@@ -7,10 +7,14 @@ import show from '../static/images/show.gif'
 import ChartOne from '../components/charts/ChartOne'
 import CardHome from '../components/charts/CardHome'
 import howtouse from '../static/images/howtouse.png'
+import how1 from '../static/images/how1.png'
+import how2 from '../static/images/how2.png'
+import how3 from '../static/images/how3.png'
 
 //ส่วนหน้าหลักในการแสดงข้อมูลของผู็สูงอายุสำหรับผู้ใช้ทั่วไป
 //ข้อมูลที่ควรมี
-//
+
+
 
 const Main = () => {
 
@@ -57,17 +61,17 @@ const Main = () => {
                 <MDBRow>
                     <MDBCol lg="4">
                         <Card border="primary" style={{ width: '20rem', height: '20rem', marginLeft: 90,borderRadius: 100 }}>
-                       {/* 1) ติดต่อผู้ให้บริการเพื่อลงทะเบียนและรับอุปกรณ์ */}
+                      <img src={how1} style={{ width: 300, height: 300, borderRadius: 100, }} />
                         </Card>
                     </MDBCol>
                     <MDBCol lg="4">
                         <Card border="primary" style={{ width: '20rem', height: '20rem',marginLeft: 90, borderRadius: 100 }}>
-                        {/* 2) รอดำเนินการจากระบบในการเพิ่มข้อมูลไปยังฐานข้อฒูล */}
+                        <img src={how2} style={{ width: 300, height: 300, borderRadius: 100, }} />
                         </Card>
                     </MDBCol>
                     <MDBCol lg="4">
                         <Card border="primary" style={{ width: '20rem', height: '20rem', marginLeft: 90, borderRadius: 100 }}>
-                        {/* 3) เมื่อดำเนินการเสร็จสิ้นแล้วรับรหัสผ่านและสามารภถดูการแจ้งเตือนต่าง ๆ ได้ */}
+                        <img src={how3} style={{ width: 300, height: 300, borderRadius: 200, }} />
                         </Card>
                     </MDBCol>
                 </MDBRow>
