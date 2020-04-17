@@ -10,6 +10,7 @@ import how1 from '../static/images/how1.png'
 import how2 from '../static/images/how2.png'
 import how3 from '../static/images/how3.png'
 import ChartTwo from '../components/charts/ChartTwo'
+import Footer from '../components/Footer'
 
 //ส่วนหน้าหลักในการแสดงข้อมูลของผู็สูงอายุสำหรับผู้ใช้ทั่วไป
 //ข้อมูลที่ควรมี
@@ -97,6 +98,7 @@ const Main = () => {
                 </MDBRow>
             </MDBCardBody>
             <div>
+                <Footer />
             </div>
         </div>
     )
