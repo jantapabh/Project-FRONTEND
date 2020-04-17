@@ -5,11 +5,11 @@ import { MDBRow, MDBCol, MDBIcon, MDBCardBody } from "mdbreact";
 import { Player } from 'video-react';
 import show from '../static/images/show.gif'
 import ChartOne from '../components/charts/ChartOne'
-import CardHome from '../components/charts/CardHome'
 import howtouse from '../static/images/howtouse.png'
 import how1 from '../static/images/how1.png'
 import how2 from '../static/images/how2.png'
 import how3 from '../static/images/how3.png'
+import ChartTwo from '../components/charts/ChartTwo'
 
 //ส่วนหน้าหลักในการแสดงข้อมูลของผู็สูงอายุสำหรับผู้ใช้ทั่วไป
 //ข้อมูลที่ควรมี
@@ -50,7 +50,7 @@ const Main = () => {
             </MDBCardBody>
             <MDBCardBody>
                     <MDBRow>
-                        <MDBCol lg="7">
+                        <MDBCol lg="9">
                         <a href="#!" className="green-text">
                             <h4 className="font-weight-light mb-3">
                                 <MDBIcon fab icon="accessible-icon" className="pr-2" size="3x" />อุบัติเหตุการหกล้มในผู้สูงอายุและการป้องกัน</h4>
@@ -58,8 +58,8 @@ const Main = () => {
                         <h5 className="font-weight-light mb-3 p-3">
                             <strong>อ้างอิงข้อมูลจาก: กรมควบคุมโรค </strong>
                         </h5>
-                            <Card border="primary" style={{ width: '91rem', height: '30rem', padding: 10, margin: 10, borderRadius: 100 }}>
-                               {/* add chart */}
+                            <Card border="white" class="text-center" style={{ width: '91rem', height: '30rem', padding: 10, margin: 10, }} center>
+                              <ChartTwo  />
                             </Card>
                         </MDBCol>
                     </MDBRow>
