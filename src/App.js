@@ -16,9 +16,12 @@ import Contact from './pages/Contact';
 import Chat from './pages/Chat'
 import Main from './pages/Main'
 
+//หน้าแอปส่วนหลักในการทำการ Route และdesof render หน้า
 
-class App extends Component {
-  render() {
+
+
+const App = () => {
+
     return (
       <div>
         <BrowserRouter>
@@ -34,7 +37,5 @@ class App extends Component {
     )
   }
 
-
-}
 
 export default App
