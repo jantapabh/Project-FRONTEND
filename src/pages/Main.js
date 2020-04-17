@@ -25,7 +25,7 @@ const Main = () => {
                         <h5 className="font-weight-light mb-3 p-3">
                             <strong>อ้างอิงข้อมูลจาก : สำนักงานสถิติแห่งชาติ  </strong>
                         </h5>
-                        <Card border="white" style={{ width: '42rem', height: '23rem', padding: 30, margin: 10,}} center>
+                        <Card border="info" style={{ width: '42rem', height: '23rem', padding: 30, margin: 10,}} center>
                             <ChartOne />
                         </Card>
                     </MDBCol>
@@ -37,7 +37,7 @@ const Main = () => {
                         <h5 className="font-weight-light mb-3 p-3">
                             <strong>อ้างอิงข้อมูลจาก: กรมควบคุมโรค </strong>
                         </h5>
-                        <Card border="white" style={{ width: '42rem', height: '23rem', }} center>
+                        <Card border="info" style={{ width: '42rem', height: '23rem',borderRadius: 200 }} center>
                             <img src={show} style={{ width: 670, height: 370, borderRadius: 200 }} />
                         </Card>
                     </MDBCol>
@@ -46,7 +46,7 @@ const Main = () => {
             <MDBCardBody>
                 <MDBRow>
                     <MDBCol lg="4">
-                        <Card border="primary" style={{ width: '90rem', height: '10rem', padding: 10, margin: 10, borderRadius: 100 }}>
+                        <Card border="white" style={{ width: '90rem', height: '10rem', padding: 10, margin: 10, borderRadius: 100 }}>
                        วิธีเข้าใช้งานระบบ
                         </Card>
                     </MDBCol>
