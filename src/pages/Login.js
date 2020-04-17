@@ -15,6 +15,8 @@ import Container from '@material-ui/core/Container';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Nav, Navbar, NavDropdown, FormControl, Form } from 'react-bootstrap';
 import SidebarTwo from '../components/SidebarTwo'
+import logo2 from '../static/images/logo2.png'
+
 
 //Use Firebase Login
 
@@ -73,11 +75,8 @@ const Login = () => {
             <div>
                 <Container component="main" maxWidth="xs">
                     <div className={classes.paper}>
-                        <Avatar className={classes.avatar}>
-                            <LockOutlinedIcon />
-                        </Avatar>
                         <Typography component="h1" variant="h5">
-                            Sign in
+                            <img src={logo2} style={{ borderRadius: 3000, height: 200, width: 200 }} />
         </Typography>
                         <form className={classes.form} noValidate>
                             <TextField
