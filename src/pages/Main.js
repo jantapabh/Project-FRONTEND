@@ -25,7 +25,7 @@ const Main = () => {
                         <h5 className="font-weight-light mb-3 p-3">
                             <strong>อ้างอิงข้อมูลจาก : สำนักงานสถิติแห่งชาติ  </strong>
                         </h5>
-                        <Card border="info" style={{ width: '42rem', height: '23rem', padding: 30, margin: 10,}} center>
+                        <Card border="info" style={{ width: '42rem', height: '23rem', padding: 30, margin: 10, borderRadius: 70}} center>
                             <ChartOne />
                         </Card>
                     </MDBCol>
