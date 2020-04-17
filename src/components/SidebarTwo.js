@@ -7,7 +7,7 @@ import { Button, Container, Nav, Navbar, NavDropdown, FormControl, Form } from '
 function SidebarTwo(props) {
     return (
         <div>
-            <Navbar bg="white" expand="lg">
+            <Navbar bg="dark" expand="lg">
                 <Navbar.Brand href="/">
                     <Button variant="outline-info" style={{width: 150, height: 60, borderRadius: 60,margin: 5, padding: 5}}>
                         <h3>ย้อนกลับ</h3>

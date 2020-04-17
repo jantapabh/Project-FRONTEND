@@ -115,6 +115,7 @@ const Login = () => {
                                 color="primary"
                                 className={classes.submit}
                                 onClick={LoginButton}
+                                style={{ height: 60, borderRadius: 90}}
                             >
                                 Sign In
           </Button>
