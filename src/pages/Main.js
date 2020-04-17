@@ -55,6 +55,7 @@ const Main = () => {
                             <strong>แผนภูมิแสดงอัตราการเสียชีวิตจากการหกล้มของผู้สูงอายุ ( 60 ปีขึ้นไป) จำแนกตามเขต ปี พ.ศ. 2561</strong>
                         </h5>
                         <Card border="info" style={{ width: '91rem', height: '30rem', padding: 10, margin: 10, borderRadius: 100 }}>
+                        <accidentChart />
                         </Card>
                     </MDBCol>
                 </MDBRow>

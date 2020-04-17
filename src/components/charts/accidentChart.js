@@ -1,82 +1,95 @@
-import React, { PureComponent } from 'react';
-import PropTypes from 'prop-types';
-import {
-  BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend,
-} from 'recharts';
-import { scaleOrdinal } from 'd3-scale';
-import { schemeCategory10 } from 'd3-scale-chromatic';
+import React, { Component } from 'react'
+import ReactApexChart from 'react-apexcharts'
+import ApexCharts from 'apexcharts'
 
-const colors = scaleOrdinal(schemeCategory10).range();
+class accidentChart extends React.Component {
+  constructor(props) {
+    super(props);
 
-const data = [
-  {
-    name: 'Page A', uv: 4000, female: 2400, male: 2400,
-  },
-  {
-    name: 'Page B', uv: 3000, female: 1398, male: 2210,
-  },
-  {
-    name: 'Page C', uv: 2000, female: 9800, male: 2290,
-  },
-  {
-    name: 'Page D', uv: 2780, female: 3908, male: 2000,
-  },
-  {
-    name: 'Page E', uv: 1890, female: 4800, male: 2181,
-  },
-  {
-    name: 'Page F', uv: 2390, female: 3800, male: 2500,
-  },
-  {
-    name: 'Page G', uv: 3490, female: 4300, male: 2100,
-  },
-];
+    this.state = {
 
-const getPath = (x, y, width, height) => `M${x},${y + height}
-          C${x + width / 3},${y + height} ${x + width / 2},${y + height / 3} ${x + width / 2}, ${y}
-          C${x + width / 2},${y + height / 3} ${x + 2 * width / 3},${y + height} ${x + width}, ${y + height}
-          Z`;
+      series: [{
 
-const TriangleBar = (props) => {
-  const {
-    fill, x, y, width, height,
-  } = props;
+        name: 'จำนวนสุนัขเกิดโรคพิษสุนัขบ้า',
+        type: 'area',
+        data: [3,2,2,1,1,1,1,1,1]
+        
+      }],
+      options: {
+    
+        stroke: {
+          width: [0, 2, 5],
+          curve: 'smooth'
+        },
+        plotOptions: {
+          bar: {
+            columnWidth: '50%'
+          }
+        },
 
-  return <path d={getPath(x, y, width, height)} stroke="none" fill={fill} />;
-};
+        fill: {
+          opacity: [0.85, 0.25, 1],
+          gradient: {
+            inverseColors: false,
+            shade: 'light',
+            type: "vertical",
+            opacityFrom: 0.85,
+            opacityTo: 0.55,
+            stops: [0, 100, 100, 100]
+          }
+        },
+        theme: {
+          mode: 'light', 
+          palette: 'palette7', 
+          monochrome: {
+              enabled: false,
+              color: '#F9CE1D',
+              shadeTo: 'light',
+              shadeIntensity: 0.65
+          },
+      },
+        labels: ['อุบลราชธานี', 'ราชบุรี', 'ระยอง', 'สระแก้ว', 'สุรินทร์', 'อำนาจเจริญ', 'นครศรีธรรมราช',
+          'ชลบุรี', 'พัทลุง' ],
+        markers: {
+          size: 0
+        },
+        xaxis: {
+          type: 'data'
+        },
+        yaxis: {
+          title: {
+            text: 'จำนวนสุนัข',
+          },
+          min: 0
+        },
+        tooltip: {
+          shared: true,
+          intersect: false,
+          y: {
+            formatter: function (y) {
+              if (typeof y !== "undefined") {
+                return y.toFixed(0) + " ตัว";
+              }
+              return y;
 
-TriangleBar.propTypes = {
-  fill: PropTypes.string,
-  x: PropTypes.number,
-  y: PropTypes.number,
-  width: PropTypes.number,
-  height: PropTypes.number,
-};
+            }
+          }
+        }
+      },
 
-export default class accidentChart extends PureComponent {
-  static jsfiddleUrl = 'https://jsfiddle.net/alidingling/rnywhbu8/';
+
+    };
+  }
+
+
 
   render() {
     return (
-      <BarChart
-        width={500}
-        height={300}
-        data={data}
-        margin={{
-          top: 20, right: 30, left: 20, bottom: 5,
-        }}
-      >
-        <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="name" />
-        <YAxis />
-        <Bar dataKey="female" fill="#8884d8" shape={<TriangleBar />} label={{ position: 'top' }}>
-          {
-            data.map((entry, index) => (
-              <Cell key={`cell-${index}`} fill={colors[index % 20]} />
-            ))
-          }
-        </Bar>
-      </BarChart>
+      <div id="chart">
+        <ReactApexChart options={this.state.options} series={this.state.series} type="line" height={350} />
+      </div>
     );
   }
 }
+
+export default accidentChart
