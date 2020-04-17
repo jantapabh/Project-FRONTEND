@@ -46,15 +46,27 @@ const Main = () => {
             </MDBCardBody>
             <MDBCardBody>
                 <MDBRow>
-                    <MDBCol lg="8">
-                        <a href="#!" className="green-text">
-                            <h4 className="font-weight-light mb-3">
-                                <MDBIcon fab icon="accessible-icon" className="pr-2" size="3x" />อัตราการเสียชีวิตจากการหกล้มของผู้สูงอายุ</h4>
-                        </a>
-                        <h5 className="font-weight-light mb-3 p-3">
-                            <strong>แผนภูมิแสดงอัตราการเสียชีวิตจากการหกล้มของผู้สูงอายุ ( 60 ปีขึ้นไป) จำแนกตามเขต ปี พ.ศ. 2561</strong>
-                        </h5>
-                        <Card border="primary" style={{ width: '91rem', height: '30rem', padding: 10, margin: 10, borderRadius: 100 }}>
+                    <MDBCol lg="4">
+                        <Card border="primary" style={{ width: '90rem', height: '20rem', padding: 10, margin: 10, borderRadius: 100 }}>
+                       
+                        </Card>
+                    </MDBCol>
+                </MDBRow>
+            </MDBCardBody>
+            <MDBCardBody>
+                <MDBRow>
+                    <MDBCol lg="4">
+                        <Card border="primary" style={{ width: '20rem', height: '20rem', marginLeft: 90,borderRadius: 100 }}>
+                        <accidentChart />
+                        </Card>
+                    </MDBCol>
+                    <MDBCol lg="4">
+                        <Card border="primary" style={{ width: '20rem', height: '20rem',marginLeft: 90, borderRadius: 100 }}>
+                        <accidentChart />
+                        </Card>
+                    </MDBCol>
+                    <MDBCol lg="4">
+                        <Card border="primary" style={{ width: '20rem', height: '20rem', marginLeft: 90, borderRadius: 100 }}>
                         <accidentChart />
                         </Card>
                     </MDBCol>

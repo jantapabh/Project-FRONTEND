@@ -1,95 +1,46 @@
-import React, { Component } from 'react'
-import ReactApexChart from 'react-apexcharts'
-import ApexCharts from 'apexcharts'
 
-class accidentChart extends React.Component {
+
+import React, { Component } from "react";
+import Chart from "react-apexcharts";
+
+class accidentChart extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-
-      series: [{
-
-        name: 'จำนวนสุนัขเกิดโรคพิษสุนัขบ้า',
-        type: 'area',
-        data: [3,2,2,1,1,1,1,1,1]
-        
-      }],
       options: {
-    
-        stroke: {
-          width: [0, 2, 5],
-          curve: 'smooth'
-        },
-        plotOptions: {
-          bar: {
-            columnWidth: '50%'
-          }
-        },
-
-        fill: {
-          opacity: [0.85, 0.25, 1],
-          gradient: {
-            inverseColors: false,
-            shade: 'light',
-            type: "vertical",
-            opacityFrom: 0.85,
-            opacityTo: 0.55,
-            stops: [0, 100, 100, 100]
-          }
-        },
-        theme: {
-          mode: 'light', 
-          palette: 'palette7', 
-          monochrome: {
-              enabled: false,
-              color: '#F9CE1D',
-              shadeTo: 'light',
-              shadeIntensity: 0.65
-          },
-      },
-        labels: ['อุบลราชธานี', 'ราชบุรี', 'ระยอง', 'สระแก้ว', 'สุรินทร์', 'อำนาจเจริญ', 'นครศรีธรรมราช',
-          'ชลบุรี', 'พัทลุง' ],
-        markers: {
-          size: 0
+        chart: {
+          id: "basic-bar"
         },
         xaxis: {
-          type: 'data'
-        },
-        yaxis: {
-          title: {
-            text: 'จำนวนสุนัข',
-          },
-          min: 0
-        },
-        tooltip: {
-          shared: true,
-          intersect: false,
-          y: {
-            formatter: function (y) {
-              if (typeof y !== "undefined") {
-                return y.toFixed(0) + " ตัว";
-              }
-              return y;
-
-            }
-          }
+          categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998]
         }
       },
-
-
+      series: [
+        {
+          name: "series-1",
+          data: [30, 40, 45, 50, 49, 60, 70, 91]
+        }
+      ]
     };
   }
 
-
-
   render() {
     return (
-      <div id="chart">
-        <ReactApexChart options={this.state.options} series={this.state.series} type="line" height={350} />
+      <div className="app">
+        <div className="row">
+          <div className="mixed-chart">
+            <Chart
+              options={this.state.options}
+              series={this.state.series}
+              type="bar"
+              width="500"
+            />
+          </div>
+        </div>
       </div>
     );
   }
 }
 
-export default accidentChart
+export default accidentChart;
