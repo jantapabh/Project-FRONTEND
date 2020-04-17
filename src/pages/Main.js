@@ -11,6 +11,9 @@ import how2 from '../static/images/how2.png'
 import how3 from '../static/images/how3.png'
 import ChartTwo from '../components/charts/ChartTwo'
 import Footer from '../components/Footer'
+import footer3 from '../static/images/footer3.png'
+
+
 
 //ส่วนหน้าหลักในการแสดงข้อมูลของผู็สูงอายุสำหรับผู้ใช้ทั่วไป
 //ข้อมูลที่ควรมี
@@ -93,6 +96,16 @@ const Main = () => {
                         <Card border="primary" style={{ width: '20rem', height: '20rem', marginLeft: 90, borderRadius: 100 }}>
                         <img src={how3} style={{ width: 300, height: 300, borderRadius: 200, }} />
                         {/* รับอุปกรณ์ */}
+                        </Card>
+                    </MDBCol>
+                </MDBRow>
+            </MDBCardBody>
+            <MDBCardBody>
+                <MDBRow>
+                    <MDBCol lg="9">
+                        <Card border="white" style={{ width: '91rem', height: '20rem', marginLeft: 90, }}>
+                      <img src={footer3} style={{ width: 1200, height: 300}} />
+                        {/* //ส่วนติดต่อ */}
                         </Card>
                     </MDBCol>
                 </MDBRow>

@@ -6,7 +6,7 @@ import footer2 from '../static/images/footer2.png'
 
 const Footer = () => {
     return (
-        <MDBFooter color="white" className="font-small pt-3 mt-4" style={{ height: 300}}>
+        <MDBFooter color="white" className="font-small pt-3 mt-4" style={{ height: 230}}>
             <MDBContainer fluid className="text-center text-md-left">
                 <MDBRow>
                     <MDBCol md="4" center>
