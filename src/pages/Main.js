@@ -6,7 +6,7 @@ import { Player } from 'video-react';
 import show from '../static/images/show.gif'
 import ChartOne from '../components/charts/ChartOne'
 import accidentChart from '../components/charts/accidentChart'
-
+import CardHome from '../components/charts/CardHome'
 
 //ส่วนหน้าหลักในการแสดงข้อมูลของผู็สูงอายุสำหรับผู้ใช้ทั่วไป
 //ข้อมูลที่ควรมี
@@ -54,7 +54,7 @@ const Main = () => {
                         <h5 className="font-weight-light mb-3 p-3">
                             <strong>แผนภูมิแสดงอัตราการเสียชีวิตจากการหกล้มของผู้สูงอายุ ( 60 ปีขึ้นไป) จำแนกตามเขต ปี พ.ศ. 2561</strong>
                         </h5>
-                        <Card border="info" style={{ width: '91rem', height: '30rem', padding: 10, margin: 10, borderRadius: 100 }}>
+                        <Card border="primary" style={{ width: '91rem', height: '30rem', padding: 10, margin: 10, borderRadius: 100 }}>
                         <accidentChart />
                         </Card>
                     </MDBCol>
