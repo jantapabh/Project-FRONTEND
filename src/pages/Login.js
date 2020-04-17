@@ -30,10 +30,7 @@ import fire from '../config/fire'
 
 class Login extends Component {
 
-
     constructor(props) {
-
-
         super(props)
         this.LoginButton = this.LoginButton.bind(this)
         this.RegisterButton = this.RegisterButton.bind(this)
@@ -48,10 +45,13 @@ class Login extends Component {
     }
 
     componentDidMount() {
+
         this.authListener()
+        
     }
 
     authListener() {
+
         fire.auth().onAuthStateChanged((user) => {
             if (user) {
                 this.setState({ user })
@@ -99,7 +99,7 @@ class Login extends Component {
 
         if (this.state.user == null) {
 
-            //  ส่วน Render
+            //  ส่วน Render จะเช็คเงื่อนไขเสมอว่าหากไม่มีการ สนเรื ก็จะไม่สามารถไปยัง Dashboard ได้
 
             return (
                 <div>
@@ -141,10 +141,7 @@ class Login extends Component {
                                         className="submit"
                                         onClick={this.LoginButton}
                                         style={{ height: 60, borderRadius: 90 }}
-                                    >
-                                        Sign In
-          </Button>
-                                   
+                                    > Sign In</Button>
                                 </form>
                             </div>
                         </Container>
@@ -156,6 +153,7 @@ else{
         return (
             <div>
                 <Dashboard />
+                {/* หากผู้ใช้ login จะไปยังส่วน Dashboard */}
             </div>
         )
     }

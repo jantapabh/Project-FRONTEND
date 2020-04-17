@@ -27,6 +27,7 @@ class App extends Component {
           <Route path="/login" component={Login} />
           <Route path="/main" component={MainPage} />
           <Route path="/contact" component={Contact} />
+          <Route path="/chat" component={Chat} />
         </BrowserRouter>
       </div>
     )
