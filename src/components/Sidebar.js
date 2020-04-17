@@ -2,7 +2,8 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button, Container, Nav, Navbar, NavDropdown, FormControl, Form } from 'react-bootstrap';
 
-
+// Sidebar ที่เรียกใช้หน้าแรกที่ผู็ใช้เข้ามา 
+//เรียกใช้หลักนี้ในไฟล์ Pricing
 
 function Sidebar(props) {
     return (

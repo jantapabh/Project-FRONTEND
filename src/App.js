@@ -8,14 +8,13 @@ import { BrowserRouter, Route, Link, Router, Redirect } from 'react-router-dom';
 import Map from './pages/MapShow'
 import Chart from './components/Chart'
 import Dashboard from './components/Dashboard'
-import MainPage from './pages/MainPage';
 import Login from './pages/Login';
 import Sidebar from './components/Sidebar'
 import Pricing from './pages/Pricing';
 import MapShow from './pages/MapShow';
 import Contact from './pages/Contact';
 import Chat from './pages/Chat'
-
+import Main from './pages/Main'
 
 
 class App extends Component {
@@ -27,7 +26,7 @@ class App extends Component {
           <Route path="/dashboad" component={Dashboard} />
           <Route path="/map" component={MapShow} />
           <Route path="/login" component={Login} />
-          <Route path="/main" component={MainPage} />
+          <Route path="/main" component={Main} />
           <Route path="/contact" component={Contact} />
           <Route path="/chat" component={Chat} />
         </BrowserRouter>
