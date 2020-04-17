@@ -2,7 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button, Container, Nav, Navbar, NavDropdown, FormControl, Form } from 'react-bootstrap';
 
-
+//Tapbar สำหรับเอาไว้แสดงหน้าส่วน login 
 
 function SidebarTwo(props) {
     return (
@@ -17,7 +17,7 @@ function SidebarTwo(props) {
                     <Nav className="mr-auto">
                     </Nav>
                     <Form inline>
-                    <Button variant="info" href="/chart" style={{width: 230, height: 60, borderRadius: 60, margin: 5, padding: 5}}>
+                    <Button variant="info" href="/chat" style={{width: 230, height: 60, borderRadius: 60, margin: 5, padding: 5}}>
                             <h3>สอบถามเพิ่มเติม</h3>
                             </Button>
                     </Form>

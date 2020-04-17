@@ -27,6 +27,7 @@ import Dashboard from '../components/Dashboard'
 import fire from '../config/fire'
 
 //Use Material UI
+// User ไม่สามารถเข้าใช้ระบบได้หากไม่ Login หรือเป็นสมาชิกของระบบ
 
 class Login extends Component {
 
@@ -47,7 +48,7 @@ class Login extends Component {
     componentDidMount() {
 
         this.authListener()
-        
+
     }
 
     authListener() {
