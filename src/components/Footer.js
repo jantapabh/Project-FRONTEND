@@ -15,13 +15,13 @@ const Footer = () => {
                     <MDBCol md="4" center>
                         <img src={footer2} style={{ width: 400, height: 150 }} />
                     </MDBCol>
-                    <MDBCol md="1" center>
-                                <MDBIcon fab icon="facebook" size="5x"><a href="https://www.facebook.com/Joajannnnnn" ></a></MDBIcon>
+                    <MDBCol md="0" center>
+                                <MDBIcon fab icon="facebook" size="5x"></MDBIcon>
                     </MDBCol>
-                    <MDBCol md="1" center>
+                    <MDBCol md="0" center>
                                 <MDBIcon fab icon="github" size="5x" /> 
                     </MDBCol>
-                    <MDBCol md="1" center>
+                    <MDBCol md="0" center>
                                 <MDBIcon icon="envelope" size="5x" /> 
                     </MDBCol>
                 </MDBRow>

@@ -103,9 +103,8 @@ const Main = () => {
             <MDBCardBody>
                 <MDBRow>
                     <MDBCol lg="9">
-                        <Card border="white" style={{ width: '91rem', height: '20rem', marginLeft: 90, }}>
-                      <img src={footer3} style={{ width: 1200, height: 300}} />
-                        {/* //ส่วนติดต่อ */}
+                        <Card border="white" style={{ width: '91rem', height: '20rem', }}>
+                      <img src={footer3} style={{ width: 1400, height: 300, borderRadius: 200}} />
                         </Card>
                     </MDBCol>
                 </MDBRow>
