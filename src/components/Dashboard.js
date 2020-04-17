@@ -22,6 +22,8 @@ import { mainListItems, secondaryListItems } from './ListItems';
 import Chart from './Chart';
 import Deposits from './Deposits';
 import Orders from './Orders';
+import fire from '../config/fire';
+import { Button } from 'react-bootstrap'
 
 function Copyright() {
     return (
@@ -128,6 +130,13 @@ export default function Dashboard() {
     };
     const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight);
 
+    const logout = e => {
+
+        e.preventDefault()
+
+        fire.auth().signOut();
+    }
+
     return (
         <div className={classes.root}>
             <CssBaseline />
@@ -147,7 +156,17 @@ export default function Dashboard() {
           </Typography>
                     <IconButton color="inherit">
                         <Badge badgeContent={4} color="secondary">
-                            <NotificationsIcon />
+                            <Button
+                                type="submit"
+                                variant="contained"
+                                color="primary"
+                                className="submit"
+                                onClick={logout}
+                                style={{ height: 60, borderRadius: 90 }}
+                                href="/"
+                            >
+                                LOGOUT
+                        </Button>
                         </Badge>
                     </IconButton>
                 </Toolbar>
