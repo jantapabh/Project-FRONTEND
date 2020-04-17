@@ -37,7 +37,7 @@ const Main = () => {
                         <h5 className="font-weight-bold mb-3 p-0">
                             <strong>แผนภูมิแสดงอัตราการเสียชีวิตจากการหกล้มของผู้สูงอายุ ( 60 ปีขึ้นไป) จำแนกตามเขต ปี พ.ศ. 2561</strong>
                         </h5>
-                        <Card border="primary" style={{ width: '91rem', height: '30rem', padding: 10, margin: 10 }}>
+                        <Card border="danger" style={{ width: '91rem', height: '30rem', padding: 10, margin: 10, borderRadius: 100 }}>
 
                         </Card>
                     </MDBCol>
