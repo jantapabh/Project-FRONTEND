@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Carousel, Card } from 'react-bootstrap';
+import "node_modules/video-react/dist/video-react.css"; // import css
 import { MDBRow, MDBCol, MDBIcon, MDBCardBody } from "mdbreact";
 
 
@@ -17,7 +18,7 @@ const Main = () => {
                     <MDBCol lg="6">
                         <a href="#!" className="green-text">
                             <h4 className="font-weight-bold mb-3">
-                            <MDBIcon fab icon="accessible-icon"  className="pr-2" size="3x" />สาเหตุหลักการเสียชีวิตของผู้สูงอายุ</h4>
+                                <MDBIcon fab icon="accessible-icon" className="pr-2" size="3x" />ข้อมูลผู้สูงอายุในปรเทศไทยปี 2560</h4>
                         </a>
                         <h7 className="font-family-normal mb-3 p-0">
                             <strong style={{ margin: 5 }}>อ้างอิงข้อมูลจาก</strong>
@@ -27,16 +28,11 @@ const Main = () => {
                         </Card>
                     </MDBCol>
                     <MDBCol lg="5">
-                        <a href="#!" className="green-text">
-                            <h6 className="font-weight-bold mb-3">
-                                <MDBIcon icon="dog" className="pr-2" size="3x" /> Animal</h6>
-                        </a>
-                        <h5 className="font-family-normal mb-3 p-0">
-                            <strong style={{ margin: 5 }}>กราฟวงกลมแสดงจำนวนแมว (ปี 2562 รอบที่ 1)</strong>
-                        </h5>
-                        <Card border="primary" style={{ width: '42rem', height: '23rem', padding: 30, margin: 10 }} center>
-
-                        </Card>
+                        <Player
+                            playsInline
+                            poster="/assets/poster.png"
+                            src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
+                        />
                     </MDBCol>
                 </MDBRow>
             </MDBCardBody>
