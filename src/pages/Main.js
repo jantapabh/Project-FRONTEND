@@ -5,6 +5,8 @@ import { MDBRow, MDBCol, MDBIcon, MDBCardBody } from "mdbreact";
 import { Player } from 'video-react';
 import show from '../static/images/show.gif'
 import ChartOne from '../components/charts/ChartOne'
+import accidentChart from '../components/charts/accidentChart'
+
 
 //ส่วนหน้าหลักในการแสดงข้อมูลของผู็สูงอายุสำหรับผู้ใช้ทั่วไป
 //ข้อมูลที่ควรมี

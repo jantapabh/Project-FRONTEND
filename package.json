@@ -14,6 +14,8 @@
     "apexcharts": "^3.18.1",
     "axios": "^0.19.2",
     "bootstrap": "^4.4.1",
+    "d3-scale": "^3.2.1",
+    "d3-scale-chromatic": "^1.5.0",
     "firebase": "^7.14.0",
     "immutable": "^4.0.0-rc.12",
     "mdbreact": "^4.25.6",
