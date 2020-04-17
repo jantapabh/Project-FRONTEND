@@ -49,10 +49,27 @@ const Main = () => {
                 </MDBRow>
             </MDBCardBody>
             <MDBCardBody>
+                    <MDBRow>
+                        <MDBCol lg="7">
+                        <a href="#!" className="green-text">
+                            <h4 className="font-weight-light mb-3">
+                                <MDBIcon fab icon="accessible-icon" className="pr-2" size="3x" />อุบัติเหตุการหกล้มในผู้สูงอายุและการป้องกัน</h4>
+                        </a>
+                        <h5 className="font-weight-light mb-3 p-3">
+                            <strong>อ้างอิงข้อมูลจาก: กรมควบคุมโรค </strong>
+                        </h5>
+                            <Card border="primary" style={{ width: '91rem', height: '30rem', padding: 10, margin: 10, borderRadius: 100 }}>
+                               {/* add chart */}
+                            </Card>
+                        </MDBCol>
+                    </MDBRow>
+                </MDBCardBody>
+            <MDBCardBody>
                 <MDBRow>
                     <MDBCol lg="4">
                         <Card border="white" style={{ width: '90rem', height: '15rem', padding: 10, margin: 10, borderRadius: 100 }}>
                        <img src={howtouse} />
+                       {/* วิธีการเข้าใช้งาน AI ELDERY */}
                         </Card>
                     </MDBCol>
                 </MDBRow>
@@ -62,16 +79,19 @@ const Main = () => {
                     <MDBCol lg="4">
                         <Card border="primary" style={{ width: '20rem', height: '20rem', marginLeft: 90,borderRadius: 100 }}>
                       <img src={how1} style={{ width: 300, height: 300, borderRadius: 100, }} />
+                        {/* //ส่วนติดต่อ */}
                         </Card>
                     </MDBCol>
                     <MDBCol lg="4">
                         <Card border="primary" style={{ width: '20rem', height: '20rem',marginLeft: 90, borderRadius: 100 }}>
                         <img src={how2} style={{ width: 300, height: 300, borderRadius: 100, }} />
+                        {/* //ส่วนรอลงทะเบียน */}
                         </Card>
                     </MDBCol>
                     <MDBCol lg="4">
                         <Card border="primary" style={{ width: '20rem', height: '20rem', marginLeft: 90, borderRadius: 100 }}>
                         <img src={how3} style={{ width: 300, height: 300, borderRadius: 200, }} />
+                        {/* รับอุปกรณ์ */}
                         </Card>
                     </MDBCol>
                 </MDBRow>
