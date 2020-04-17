@@ -108,6 +108,7 @@ class Login extends Component {
                     <div>
                         <Container component="main" maxWidth="xs">
                             <div className="paper">
+                                {/* <h2>LOG IN</h2> */}
                                 <Typography component="h1" variant="h5">
                                     <img src={logo2} style={{ borderRadius: 3000, height: 200, width: 200 , margin: 20, padding: 10}} /></Typography>
                                 <form className="form" noValidate>
