@@ -41,11 +41,6 @@ const Login = () => {
         })
     }
 
-
-
-
-
-
     const useStyles = makeStyles((theme) => ({
         paper: {
             marginTop: theme.spacing(8),
@@ -68,16 +63,16 @@ const Login = () => {
 
     const classes = useStyles();
 
-    return (
+    //  ส่วน Render
 
+    return (
         <div>
             <SidebarTwo />
             <div>
                 <Container component="main" maxWidth="xs">
                     <div className={classes.paper}>
                         <Typography component="h1" variant="h5">
-                            <img src={logo2} style={{ borderRadius: 3000, height: 200, width: 200 }} />
-        </Typography>
+                            <img src={logo2} style={{ borderRadius: 3000, height: 200, width: 200 }} /></Typography>
                         <form className={classes.form} noValidate>
                             <TextField
                                 variant="outlined"
@@ -103,10 +98,6 @@ const Login = () => {
                                 id="password"
                                 autoComplete="current-password"
                                 onChange={(e) => setPassword(e.target.value)}
-                            />
-                            <FormControlLabel
-                                control={<Checkbox value="remember" color="primary" />}
-                                label="Remember me"
                             />
                             <Button
                                 type="submit"
