@@ -47,8 +47,8 @@ const Main = () => {
             <MDBCardBody>
                 <MDBRow>
                     <MDBCol lg="4">
-                        <Card border="primary" style={{ width: '90rem', height: '20rem', padding: 10, margin: 10, borderRadius: 100 }}>
-                       
+                        <Card border="primary" style={{ width: '90rem', height: '10rem', padding: 10, margin: 10, borderRadius: 100 }}>
+                       วิธีเข้าใช้งานระบบ
                         </Card>
                     </MDBCol>
                 </MDBRow>
@@ -57,17 +57,17 @@ const Main = () => {
                 <MDBRow>
                     <MDBCol lg="4">
                         <Card border="primary" style={{ width: '20rem', height: '20rem', marginLeft: 90,borderRadius: 100 }}>
-                        <accidentChart />
+                       {/* 1) ติดต่อผู้ให้บริการเพื่อลงทะเบียนและรับอุปกรณ์ */}
                         </Card>
                     </MDBCol>
                     <MDBCol lg="4">
                         <Card border="primary" style={{ width: '20rem', height: '20rem',marginLeft: 90, borderRadius: 100 }}>
-                        <accidentChart />
+                        {/* 2) รอดำเนินการจากระบบในการเพิ่มข้อมูลไปยังฐานข้อฒูล */}
                         </Card>
                     </MDBCol>
                     <MDBCol lg="4">
                         <Card border="primary" style={{ width: '20rem', height: '20rem', marginLeft: 90, borderRadius: 100 }}>
-                        <accidentChart />
+                        {/* 3) เมื่อดำเนินการเสร็จสิ้นแล้วรับรหัสผ่านและสามารภถดูการแจ้งเตือนต่าง ๆ ได้ */}
                         </Card>
                     </MDBCol>
                 </MDBRow>
