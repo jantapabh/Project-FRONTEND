@@ -2,14 +2,14 @@ import React, {Component} from 'react'
 import ReactApexChart from 'react-apexcharts'
 import ApexCharts from 'apexcharts'
 
-class CardOne extends React.Component {
+class ChartOne extends React.Component {
 
     constructor(props) {
         super(props);
 
         this.state = {
 
-            series: [2064876, 109123 ],
+            series: [33.1, 23.4, 29.9, 13.6],
             options: {
                 chart: {
                     width: 500,
@@ -24,7 +24,7 @@ class CardOne extends React.Component {
                         shadeIntensity: 0.65
                     },
                 },
-                labels: ['จำนวนสุนัขที่มีเจ้าของ', 'จำนวนสุนัขที่ไม่มีเจ้าของ', ],
+                labels: ['วัยต้น 60 -64 ปี', 'วัยต้น 65 - 69 ปี', 'วัยกลาง 70 - 79 ปี', 'วัยปลาย 80 ปีขึ้นไป'],
                 responsive: [{
                     breakpoint: 550,
                     options: {
@@ -48,7 +48,7 @@ class CardOne extends React.Component {
 
         return (
             <div id="chart">
-                <ReactApexChart options={this.state.options} series={this.state.series} type="pie" width={500} />
+                <ReactApexChart options={this.state.options} series={this.state.series}  type="pie" width={500} />
             </div>
 
         );
@@ -56,4 +56,4 @@ class CardOne extends React.Component {
 }
 
 
-export default CardOne
+export default ChartOne
