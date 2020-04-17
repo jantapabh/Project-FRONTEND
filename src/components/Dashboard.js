@@ -24,6 +24,7 @@ import Deposits from './Deposits';
 import Orders from './Orders';
 import fire from '../config/fire';
 import { Button } from 'react-bootstrap'
+import Main from '../pages/Main'
 
 function Copyright() {
     return (
@@ -159,11 +160,11 @@ export default function Dashboard() {
                             <Button
                                 type="submit"
                                 variant="contained"
-                                color="primary"
+                                color="white"
                                 className="submit"
                                 onClick={logout}
-                                style={{ height: 60, borderRadius: 90 }}
-                                href="/"
+                                style={{ height: 50, borderRadius: 90 }}
+                                href="/main"
                             >
                                 LOGOUT
                         </Button>

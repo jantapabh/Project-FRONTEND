@@ -108,7 +108,7 @@ class Login extends Component {
                         <Container component="main" maxWidth="xs">
                             <div className="paper">
                                 <Typography component="h1" variant="h5">
-                                    <img src={logo2} style={{ borderRadius: 3000, height: 200, width: 200 }} /></Typography>
+                                    <img src={logo2} style={{ borderRadius: 3000, height: 200, width: 200 , margin: 20, padding: 10}} /></Typography>
                                 <form className="form" noValidate>
                                     <TextField
                                         variant="outlined"
@@ -152,13 +152,14 @@ class Login extends Component {
                 </div>
             )
         }
-
+else{
         return (
             <div>
                 <Dashboard />
             </div>
         )
     }
+}
 
 }
 

@@ -17,11 +17,8 @@ function SidebarTwo(props) {
                     <Nav className="mr-auto">
                     </Nav>
                     <Form inline>
-                    <Button variant="outline-info" href="/chart" style={{width: 230, height: 60, borderRadius: 60, margin: 5, padding: 5}}>
+                    <Button variant="info" href="/chart" style={{width: 230, height: 60, borderRadius: 60, margin: 5, padding: 5}}>
                             <h3>สอบถามเพิ่มเติม</h3>
-                            </Button>
-                    <Button variant="info" href="/register" style={{width: 170, height: 60, borderRadius: 60, margin: 5, padding: 5}}>
-                            <h3>ลงทะเบียน</h3>
                             </Button>
                     </Form>
                 </Navbar.Collapse>
