@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Carousel, Card } from 'react-bootstrap';
 import "node_modules/video-react/dist/video-react.css"; // import css
 import { MDBRow, MDBCol, MDBIcon, MDBCardBody } from "mdbreact";
-
+import { Player } from 'video-react';
 
 //ส่วนหน้าหลักในการแสดงข้อมูลของผู็สูงอายุสำหรับผู้ใช้ทั่วไป
 //ข้อมูลที่ควรมี
