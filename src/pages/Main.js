@@ -5,7 +5,6 @@ import { MDBRow, MDBCol, MDBIcon, MDBCardBody } from "mdbreact";
 import { Player } from 'video-react';
 import show from '../static/images/show.gif'
 import ChartOne from '../components/charts/ChartOne'
-import accidentChart from '../components/charts/accidentChart'
 import CardHome from '../components/charts/CardHome'
 
 //ส่วนหน้าหลักในการแสดงข้อมูลของผู็สูงอายุสำหรับผู้ใช้ทั่วไป
@@ -26,7 +25,7 @@ const Main = () => {
                         <h5 className="font-weight-light mb-3 p-3">
                             <strong>อ้างอิงข้อมูลจาก : สำนักงานสถิติแห่งชาติ  </strong>
                         </h5>
-                        <Card border="white" style={{ width: '42rem', height: '23rem', padding: 30, margin: 10, borderRadius: 200 }} center>
+                        <Card border="white" style={{ width: '42rem', height: '23rem', padding: 30, margin: 10,}} center>
                             <ChartOne />
                         </Card>
                     </MDBCol>
