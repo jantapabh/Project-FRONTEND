@@ -6,6 +6,7 @@ import { Player } from 'video-react';
 import show from '../static/images/show.gif'
 import ChartOne from '../components/charts/ChartOne'
 import CardHome from '../components/charts/CardHome'
+import howtouse from '../static/images/howtouse.png'
 
 //ส่วนหน้าหลักในการแสดงข้อมูลของผู็สูงอายุสำหรับผู้ใช้ทั่วไป
 //ข้อมูลที่ควรมี
@@ -46,8 +47,8 @@ const Main = () => {
             <MDBCardBody>
                 <MDBRow>
                     <MDBCol lg="4">
-                        <Card border="white" style={{ width: '90rem', height: '10rem', padding: 10, margin: 10, borderRadius: 100 }}>
-                       วิธีเข้าใช้งานระบบ
+                        <Card border="white" style={{ width: '90rem', height: '15rem', padding: 10, margin: 10, borderRadius: 100 }}>
+                       <img src={howtouse} />
                         </Card>
                     </MDBCol>
                 </MDBRow>
