@@ -18,12 +18,15 @@ import Link from '@material-ui/core/Link';
 import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
+import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
+
+//componets
 import { mainListItems, secondaryListItems } from './ListItems';
 import Chart from './Chart';
 import Deposits from './Deposits';
 import Orders from './Orders';
 import Main from '../pages/Main'
-import fire from '../config/fire';
+
 
 function Copyright() {
     return (
@@ -129,14 +132,6 @@ export default function Dashboard() {
         setOpen(false);
     };
     const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight);
-
-    const logout = e => {
-
-        e.preventDefault()
-  
-    fire.auth().signOut();
-  }
-
     return (
         <div className={classes.root}>
             <CssBaseline />
@@ -156,7 +151,7 @@ export default function Dashboard() {
           </Typography>
                     <IconButton color="inherit">
                         <Badge badgeContent={0} color="dark">
-                        <ExitToAppIcon onClick={logout} />
+                        <ExitToAppIcon  />
                         </Badge>
                     </IconButton>
                 </Toolbar>

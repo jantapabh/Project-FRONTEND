@@ -11,6 +11,7 @@ import LayersIcon from '@material-ui/icons/Layers';
 import AssignmentIcon from '@material-ui/icons/Assignment';
 import MapIcon from '@material-ui/icons/Map';
 import Link from '@material-ui/core/Link';
+import fire from '../config/fire';
 
 
 //import component
@@ -67,6 +68,15 @@ export const mainListItems = (
 //ส่วนเมนู 2
 
 
+const logout = e => {
+
+  e.preventDefault()
+
+fire.auth().signOut();
+}
+
+
+
 export const secondaryListItems = (
 
     <div>
@@ -94,6 +104,15 @@ export const secondaryListItems = (
 
       <Link href="/problem">
       <ListItem button style={{borderRadius: 90}}>
+        <ListItemIcon>
+          <AssignmentIcon />
+        </ListItemIcon>
+        <ListItemText primary="ปัญหาการใช้งาน" />
+      </ListItem>
+      </Link>
+
+      <Link href="/">
+      <ListItem button style={{borderRadius: 90}} onClick={}>
         <ListItemIcon>
           <AssignmentIcon />
         </ListItemIcon>
