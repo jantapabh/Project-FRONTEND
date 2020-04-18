@@ -63,7 +63,7 @@ export const mainListItems = (
       </ListItem>
       </Link>
 
-      <Link href="/customers">
+      <Link href="/moreDetails">
       <ListItem button style={{borderRadius: 90}}>
         <ListItemIcon>
           <LayersIcon />
