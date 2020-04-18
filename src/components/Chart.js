@@ -29,7 +29,7 @@ const Chart = () => {
 
   return (
     <React.Fragment>
-      <Title>Today</Title>
+      <Title>แสดงข้อมูลผู้สูงอายุ</Title>
       <ResponsiveContainer>
         <LineChart
           data={data}

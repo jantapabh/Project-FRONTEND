@@ -12,6 +12,7 @@ import AssignmentIcon from '@material-ui/icons/Assignment';
 import MapIcon from '@material-ui/icons/Map';
 import Link from '@material-ui/core/Link';
 import fire from '../config/fire';
+import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 
 
 //import component
@@ -29,9 +30,9 @@ export const mainListItems = (
 <Link href="/">
       <ListItem button style={{borderRadius: 90}}>
         <ListItemIcon>
-          <DashboardIcon />
+          <ArrowBackIosIcon />
         </ListItemIcon>
-        <ListItemText primary="กลับหน้าหลัก" />
+        <ListItemText primary="หน้าหลัก" />
       </ListItem>
     </Link>
 
