@@ -10,6 +10,9 @@ import BarChartIcon from '@material-ui/icons/BarChart';
 import LayersIcon from '@material-ui/icons/Layers';
 import AssignmentIcon from '@material-ui/icons/Assignment';
 import MapIcon from '@material-ui/icons/Map';
+import fire from '../config/fire';
+
+
 
 // กำหนดส่วนแสดงเมนูด้านข้างเมื่อกด
 
@@ -44,6 +47,13 @@ export const mainListItems = (
 
 //ส่วนเมนู 2 
 
+const logout = e => {
+
+  e.preventDefault()
+
+  fire.auth().signOut();
+}
+
 export const secondaryListItems = (
   <div>
     <ListSubheader inset>เกี่ยวกับระบบ</ListSubheader>
@@ -64,6 +74,12 @@ export const secondaryListItems = (
         <AssignmentIcon />
       </ListItemIcon>
       <ListItemText primary="ปัญหาการใช้งาน" />
+    </ListItem>
+    <ListItem button>
+      <ListItemIcon onClick={logout}>
+      <AssignmentIcon />
+      </ListItemIcon>
+      <ListItemText primary="ออกจากระบบ" />
     </ListItem>
   </div>
 );

@@ -22,8 +22,6 @@ import { mainListItems, secondaryListItems } from './ListItems';
 import Chart from './Chart';
 import Deposits from './Deposits';
 import Orders from './Orders';
-import fire from '../config/fire';
-import { Button } from 'react-bootstrap'
 import Main from '../pages/Main'
 
 function Copyright() {
@@ -131,12 +129,7 @@ export default function Dashboard() {
     };
     const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight);
 
-    const logout = e => {
-
-        e.preventDefault()
-
-        fire.auth().signOut();
-    }
+ 
 
     return (
         <div className={classes.root}>
@@ -156,7 +149,7 @@ export default function Dashboard() {
                         AI ELDERY : ระบบแสดงการแจ้งเตือนและเฝ้าระวังการเกิดอุบัติเหตุในผู้สูงอายุ
           </Typography>
                     <IconButton color="inherit">
-                        <Badge badgeContent={4} color="dark">
+                        <Badge badgeContent={0} color="dark">
                           {/* ใส่ส่วนแจ้งเตือน */}
                         </Badge>
                     </IconButton>
