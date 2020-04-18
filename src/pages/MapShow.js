@@ -6,6 +6,7 @@ import Item from 'antd/lib/list/Item';
 import '../App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import SidebarMap from '../components/Map/SidebarMap'
+import List from '../components/Map/List'
 
 //Bootstrap react
 import { Card } from 'react-bootstrap'
@@ -16,7 +17,7 @@ import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
 
 //Bulma
 
-import { Button, Level, Heading,  } from 'react-bulma-components/dist'
+import { Button, Level, Heading, } from 'react-bulma-components/dist'
 
 var mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
 
@@ -40,8 +41,7 @@ const MapShow = () => {
             </div>
             <MDBRow>
                 <MDBCol md="4">
-            
-
+                    <List />
                 </MDBCol>
                 <MDBCol md="8">
                     <ReactMapGL
