@@ -17,12 +17,13 @@ import Paper from '@material-ui/core/Paper';
 import Link from '@material-ui/core/Link';
 import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
-import NotificationsIcon from '@material-ui/icons/Notifications';
+import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 import { mainListItems, secondaryListItems } from './ListItems';
 import Chart from './Chart';
 import Deposits from './Deposits';
 import Orders from './Orders';
 import Main from '../pages/Main'
+import fire from '../config/fire';
 
 function Copyright() {
     return (
@@ -129,7 +130,12 @@ export default function Dashboard() {
     };
     const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight);
 
- 
+    const logout = e => {
+
+        e.preventDefault()
+  
+    fire.auth().signOut();
+  }
 
     return (
         <div className={classes.root}>
@@ -150,7 +156,7 @@ export default function Dashboard() {
           </Typography>
                     <IconButton color="inherit">
                         <Badge badgeContent={0} color="dark">
-                          {/* ใส่ส่วนแจ้งเตือน */}
+                        <ExitToAppIcon onClick={logout} />
                         </Badge>
                     </IconButton>
                 </Toolbar>

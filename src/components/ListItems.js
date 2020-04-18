@@ -10,7 +10,6 @@ import BarChartIcon from '@material-ui/icons/BarChart';
 import LayersIcon from '@material-ui/icons/Layers';
 import AssignmentIcon from '@material-ui/icons/Assignment';
 import MapIcon from '@material-ui/icons/Map';
-import fire from '../config/fire';
 import Link from '@material-ui/core/Link';
 
 
@@ -67,12 +66,6 @@ export const mainListItems = (
 
 //ส่วนเมนู 2
 
-const logout = e => {
-
-      e.preventDefault()
-
-  fire.auth().signOut();
-}
 
 export const secondaryListItems = (
 
@@ -107,15 +100,5 @@ export const secondaryListItems = (
         <ListItemText primary="ปัญหาการใช้งาน" />
       </ListItem>
       </Link>
-
-    
-      <ListItem button style={{borderRadius: 90}} onClick={logout}>
-        <ListItemIcon>
-          <AssignmentIcon />
-        </ListItemIcon>
-        <ListItemText primary="ออกจากระบบ" />
-      </ListItem>
-  
-      
     </div>
 );
