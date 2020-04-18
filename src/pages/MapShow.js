@@ -6,7 +6,7 @@ import Item from 'antd/lib/list/Item';
 import '../App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import SidebarMap from '../components/Map/SidebarMap'
-import List from '../components/Map/List'
+import ListShow from '../components/ListShow'
 
 //Bootstrap react
 import { Card } from 'react-bootstrap'

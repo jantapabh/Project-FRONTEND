@@ -97,8 +97,8 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function List() {
-    
+export default function ListShow() {
+
   const classes = useStyles();
 
   return (
