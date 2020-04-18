@@ -105,8 +105,8 @@ export default function ListShow() {
     <React.Fragment>
       <CssBaseline />
       <Paper square className={classes.paper}>
-        <Typography className={classes.text} variant="h5" gutterBottom>
-          Inbox
+        <Typography className={classes.text} variant="h6" gutterBottom>
+         USER LIST
         </Typography>
         <List className={classes.list}>
           {messages.map(({ id, primary, secondary, person }) => (
@@ -123,23 +123,6 @@ export default function ListShow() {
           ))}
         </List>
       </Paper>
-      <AppBar position="fixed" color="primary" className={classes.appBar}>
-        <Toolbar>
-          <IconButton edge="start" color="inherit" aria-label="open drawer">
-            <MenuIcon />
-          </IconButton>
-          <Fab color="secondary" aria-label="add" className={classes.fabButton}>
-            <AddIcon />
-          </Fab>
-          <div className={classes.grow} />
-          <IconButton color="inherit">
-            <SearchIcon />
-          </IconButton>
-          <IconButton edge="end" color="inherit">
-            <MoreIcon />
-          </IconButton>
-        </Toolbar>
-      </AppBar>
     </React.Fragment>
   );
 }

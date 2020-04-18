@@ -25,8 +25,8 @@ const MapShow = () => {
 
     const [viewport, setViewport] = useState({
 
-        width: "50wh",
-        height: "90vh",
+        width: "100wh",
+        height: "130vh",
         latitude: 7.878978,
         longitude: 98.398392,
         zoom: 12
@@ -41,7 +41,7 @@ const MapShow = () => {
             </div>
             <MDBRow>
                 <MDBCol md="4">
-                    <List />
+                    <ListShow />
                 </MDBCol>
                 <MDBCol md="8">
                     <ReactMapGL
