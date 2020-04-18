@@ -19,73 +19,104 @@ import Link from '@material-ui/core/Link';
 import MapShow from '../pages/MapShow'
 
 
-
 // กำหนดส่วนแสดงเมนูด้านข้างเมื่อกด
 
+
 export const mainListItems = (
+
   <div>
-    <ListItem button>
-      <ListItemIcon>
-        <DashboardIcon />
-      </ListItemIcon>
-      <ListItemText primary="ข้อมูลผู้สูงอายุ" />
-    </ListItem>
-    <ListItem button>
-      <ListItemIcon>
-        <MapIcon />
-      </ListItemIcon>
-      <ListItemText primary="การแจ้งเตือนโดยแผนที่" />
-    </ListItem>
-    <ListItem button>
-      <ListItemIcon>
-        <BarChartIcon />
-      </ListItemIcon>
-      <ListItemText primary="ข้อมูลผู้ใช้" />
-    </ListItem>
-    <ListItem button>
-      <ListItemIcon>
-        <LayersIcon />
-      </ListItemIcon>
-      <ListItemText primary="เพิ่มเติม" />
-    </ListItem>
+
+    <Link href="/dashboard">
+      <ListItem button>
+        <ListItemIcon>
+          <DashboardIcon />
+        </ListItemIcon>
+        <ListItemText primary="ข้อมูลผู้สูงอายุ" />
+      </ListItem>
+    </Link>
+
+    <Link href="/map">
+      <ListItem button>
+        <ListItemIcon>
+          <MapIcon />
+        </ListItemIcon>
+        <ListItemText primary="การแจ้งเตือนโดยแผนที่" />
+      </ListItem>
+    </Link>
+
+    <Link href="/customers">
+      <ListItem button>
+        <ListItemIcon>
+          <BarChartIcon />
+        </ListItemIcon>
+        <ListItemText primary="ข้อมูลผู้ใช้" />
+      </ListItem>
+      </Link>
+
+      <Link href="/customers">
+      <ListItem button>
+        <ListItemIcon>
+          <LayersIcon />
+        </ListItemIcon>
+        <ListItemText primary="เพิ่มเติม" />
+      </ListItem>
+      </Link>
+   
   </div>
 );
 
-//ส่วนเมนู 2 
+//ส่วนเมนู 2
 
 const logout = e => {
 
-  e.preventDefault()
+      e.preventDefault()
 
   fire.auth().signOut();
 }
 
 export const secondaryListItems = (
-  <div>
-    <ListSubheader inset>เกี่ยวกับระบบ</ListSubheader>
-    <ListItem button>
-      <ListItemIcon>
-        <AssignmentIcon />
-      </ListItemIcon>
-      <ListItemText primary="แนะนำอุปกรณ์" />
-    </ListItem>
-    <ListItem button>
-      <ListItemIcon>
-        <AssignmentIcon />
-      </ListItemIcon>
-      <ListItemText primary="วิธีการใช้งาน" />
-    </ListItem>
-    <ListItem button>
-      <ListItemIcon>
-        <AssignmentIcon />
-      </ListItemIcon>
-      <ListItemText primary="ปัญหาการใช้งาน" />
-    </ListItem>
-    <ListItem button>
-      <ListItemIcon onClick={logout}>
-        <AssignmentIcon />
-      </ListItemIcon>
-      <ListItemText primary="ออกจากระบบ" />
-    </ListItem>
-  </div>
+
+    <div>
+
+      <ListSubheader inset>เกี่ยวกับระบบ</ListSubheader>
+
+
+      <Link href="/about">
+      <ListItem button>
+        <ListItemIcon>
+          <AssignmentIcon />
+        </ListItemIcon>
+        <ListItemText primary="แนะนำอุปกรณ์" />
+      </ListItem>
+      </Link>
+
+      <Link href="/how">
+      <ListItem button>
+        <ListItemIcon>
+          <AssignmentIcon />
+        </ListItemIcon>
+        <ListItemText primary="วิธีการใช้งาน" />
+      </ListItem>
+      </Link>
+
+      <Link href="/problem">
+      <ListItem button>
+        <ListItemIcon>
+          <AssignmentIcon />
+        </ListItemIcon>
+        <ListItemText primary="ปัญหาการใช้งาน" />
+      </ListItem>
+      </Link>
+
+ 
+      <ListItem button>
+        <ListItemIcon onClick={logout}>
+          <AssignmentIcon />
+        </ListItemIcon>
+        <ListItemText primary="ออกจากระบบ" />
+      </ListItem>
+      
+
+
+    </div>
 );
