@@ -27,7 +27,7 @@ export const mainListItems = (
   <div>
 
     <Link href="/dashboard">
-      <ListItem button>
+      <ListItem button style={{borderRadius: 90}}>
         <ListItemIcon>
           <DashboardIcon />
         </ListItemIcon>
@@ -36,7 +36,7 @@ export const mainListItems = (
     </Link>
 
     <Link href="/map">
-      <ListItem button>
+      <ListItem button style={{borderRadius: 90}}>
         <ListItemIcon>
           <MapIcon />
         </ListItemIcon>
@@ -45,7 +45,7 @@ export const mainListItems = (
     </Link>
 
     <Link href="/customers">
-      <ListItem button>
+      <ListItem button style={{borderRadius: 90}}>
         <ListItemIcon>
           <BarChartIcon />
         </ListItemIcon>
@@ -54,7 +54,7 @@ export const mainListItems = (
       </Link>
 
       <Link href="/customers">
-      <ListItem button>
+      <ListItem button style={{borderRadius: 90}}>
         <ListItemIcon>
           <LayersIcon />
         </ListItemIcon>
@@ -82,7 +82,7 @@ export const secondaryListItems = (
 
 
       <Link href="/about">
-      <ListItem button>
+      <ListItem button style={{borderRadius: 90}}>
         <ListItemIcon>
           <AssignmentIcon />
         </ListItemIcon>
@@ -91,7 +91,7 @@ export const secondaryListItems = (
       </Link>
 
       <Link href="/how">
-      <ListItem button>
+      <ListItem button style={{borderRadius: 90}}>
         <ListItemIcon>
           <AssignmentIcon />
         </ListItemIcon>
@@ -100,7 +100,7 @@ export const secondaryListItems = (
       </Link>
 
       <Link href="/problem">
-      <ListItem button>
+      <ListItem button style={{borderRadius: 90}}>
         <ListItemIcon>
           <AssignmentIcon />
         </ListItemIcon>
@@ -109,7 +109,7 @@ export const secondaryListItems = (
       </Link>
 
  
-      <ListItem button>
+      <ListItem button style={{borderRadius: 90}}>
         <ListItemIcon onClick={logout}>
           <AssignmentIcon />
         </ListItemIcon>
