@@ -18,6 +18,11 @@ import AddIcon from '@material-ui/icons/Add';
 import SearchIcon from '@material-ui/icons/Search';
 import MoreIcon from '@material-ui/icons/MoreVert';
 
+
+
+//แสดงรายการในส่วน map สำหรับส่วนข้อมูลที่จำเป็น สถานะ การแจ้งเตือน โอกาสเสี่ยง
+
+
 const messages = [
   {
     id: 1,
@@ -69,7 +74,7 @@ const messages = [
 
 const useStyles = makeStyles((theme) => ({
   text: {
-    padding: theme.spacing(2, 2, 0),
+    padding: theme.spacing(2, 2, 2),
   },
   paper: {
     paddingBottom: 50,
