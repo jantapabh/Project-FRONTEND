@@ -9,7 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import SidebarMap from '../components/Map/SidebarMap'
 
 //Bootstrap react
-import { Container, Row, Col } from 'react-bootstrap'
+import { Container, Row, Col, ListGroup } from 'react-bootstrap'
 
 var mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
 
@@ -17,8 +17,8 @@ const MapShow = () => {
 
     const [viewport, setViewport] = useState({
 
-        width: "100wh",
-        height: "100vh",
+        width: "50wh",
+        height: "90vh",
         latitude: 7.878978,
         longitude: 98.398392,
         zoom: 12
@@ -34,7 +34,7 @@ const MapShow = () => {
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-sm-4">
-
+                        {/* ใส่ข้อมูลรายชื่อผู้ปวดพร้อมที่อยู่ อาการ สถานะ และความเสี่ยงที่เกิด */}
                     </div>
                     <div class="col-sm-8" >
                         <ReactMapGL
