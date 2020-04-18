@@ -20,6 +20,7 @@ import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 
+
 //componets
 import { mainListItems, secondaryListItems } from './ListItems';
 import Chart from './Chart';
@@ -150,8 +151,10 @@ export default function Dashboard() {
                         AI ELDERY : ระบบแสดงการแจ้งเตือนและเฝ้าระวังการเกิดอุบัติเหตุในผู้สูงอายุ
           </Typography>
                     <IconButton color="inherit">
-                        <Badge badgeContent={0} color="dark">
-                        <ExitToAppIcon  />
+                        <Badge badgeContent={0} color="white">
+                            
+                               {/* แสดงอะไร */}
+                            
                         </Badge>
                     </IconButton>
                 </Toolbar>

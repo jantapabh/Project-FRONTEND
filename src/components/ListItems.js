@@ -26,6 +26,15 @@ export const mainListItems = (
 
   <div>
 
+<Link href="/">
+      <ListItem button style={{borderRadius: 90}}>
+        <ListItemIcon>
+          <DashboardIcon />
+        </ListItemIcon>
+        <ListItemText primary="กลับหน้าหลัก" />
+      </ListItem>
+    </Link>
+
     <Link href="/dashboard">
       <ListItem button style={{borderRadius: 90}}>
         <ListItemIcon>
@@ -111,13 +120,13 @@ export const secondaryListItems = (
       </ListItem>
       </Link>
 
-      <Link href="/">
-      <ListItem button style={{borderRadius: 90}} onClick={}>
+      
+      <ListItem button style={{borderRadius: 90}}>
         <ListItemIcon>
-          <AssignmentIcon />
+          <AssignmentIcon onClick={logout} />
         </ListItemIcon>
-        <ListItemText primary="ปัญหาการใช้งาน" />
+        <ListItemText primary="ออกจากระบบ" />
       </ListItem>
-      </Link>
+ 
     </div>
 );
