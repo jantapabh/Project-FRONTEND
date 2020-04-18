@@ -108,15 +108,14 @@ export const secondaryListItems = (
       </ListItem>
       </Link>
 
- 
-      <ListItem button style={{borderRadius: 90}}>
-        <ListItemIcon onClick={logout}>
+    
+      <ListItem button style={{borderRadius: 90}} onClick={logout}>
+        <ListItemIcon>
           <AssignmentIcon />
         </ListItemIcon>
         <ListItemText primary="ออกจากระบบ" />
       </ListItem>
+  
       
-
-
     </div>
 );
