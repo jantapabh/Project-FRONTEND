@@ -20,6 +20,11 @@ import Contact from './pages/Contact';
 import Chat from './pages/Chat'
 import Main from './pages/Main'
 import Customer from './pages/Customer';
+import Detail from './pages/Detail';
+import About from './pages/About';
+import How from './pages/How';
+import Problem from './pages/Problem';
+
 
 //หน้าแอปส่วนหลักในการทำการ Route และdesof render หน้า
 
@@ -39,6 +44,9 @@ const App = () => {
           <Route path="/chat" component={Chat} />
           <Route path="/customers" component={Customer} />
           <Route path="/moreDetails" component={Detail} />
+          <Route path="/about" component={About} />
+          <Route path="/how" component={How} />
+          <Route path="/problem" component={Problem} />
         </BrowserRouter>
       </div>
     )

@@ -2,15 +2,15 @@ import React from 'react'
 
 //ส่วนของรายละเอียดแสดงเพิ่มเติม
 
-const Detail = () => {
+const How = () => {
 
     return (
 
         <div>
-            Detail
+           How to use
         </div>
 
     )
 }
 
-export default Detail
+export default How
