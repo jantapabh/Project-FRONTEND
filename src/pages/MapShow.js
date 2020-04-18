@@ -16,7 +16,6 @@ import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
 
 //Bulma
 
-import 'react-bulma-components/basic/react-bulma-components.min.css';
 import { Button, Level, Heading,  } from 'react-bulma-components/dist'
 
 var mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
@@ -41,32 +40,7 @@ const MapShow = () => {
             </div>
             <MDBRow>
                 <MDBCol md="4">
-                    <Level mobile renderAs="nav">
-                        <Level.Item textAlignment="centered">
-                            <div>
-                                <p className="heading">tweets</p>
-                                <Heading renderAs="p">3,456</Heading>
-                            </div>
-                        </Level.Item>
-                        <Level.Item textAlignment="centered">
-                            <div>
-                                <p className="heading">following</p>
-                                <Heading renderAs="p">123</Heading>
-                            </div>
-                        </Level.Item>
-                        <Level.Item textAlignment="centered">
-                            <div>
-                                <p className="heading">followers</p>
-                                <Heading renderAs="p">456K</Heading>
-                            </div>
-                        </Level.Item>
-                        <Level.Item textAlignment="centered">
-                            <div>
-                                <p className="heading">likes</p>
-                                <Heading renderAs="p">789</Heading>
-                            </div>
-                        </Level.Item>
-                    </Level>
+            
 
                 </MDBCol>
                 <MDBCol md="8">
