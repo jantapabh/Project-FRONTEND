@@ -11,6 +11,12 @@ import LayersIcon from '@material-ui/icons/Layers';
 import AssignmentIcon from '@material-ui/icons/Assignment';
 import MapIcon from '@material-ui/icons/Map';
 import fire from '../config/fire';
+import Link from '@material-ui/core/Link';
+
+
+//import component
+
+import MapShow from '../pages/MapShow'
 
 
 
@@ -77,7 +83,7 @@ export const secondaryListItems = (
     </ListItem>
     <ListItem button>
       <ListItemIcon onClick={logout}>
-      <AssignmentIcon />
+        <AssignmentIcon />
       </ListItemIcon>
       <ListItemText primary="ออกจากระบบ" />
     </ListItem>
