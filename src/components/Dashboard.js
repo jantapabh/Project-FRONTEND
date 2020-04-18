@@ -31,7 +31,7 @@ function Copyright() {
         <Typography variant="body2" color="textSecondary" align="center">
             {'Copyright © '}
             <Link color="inherit" href="https://material-ui.com/">
-                Your Website
+                AI ELDERY
       </Link>{' '}
             {new Date().getFullYear()}
             {'.'}
@@ -152,22 +152,12 @@ export default function Dashboard() {
                     >
                         <MenuIcon />
                     </IconButton>
-                    <Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>
-                        Dashboard
+                    <Typography component="h1" variant="h6" color="link" noWrap className={classes.title}>
+                        AI ELDERY : ระบบแสดงการแจ้งเตือนและเฝ้าระวังการเกิดอุบัติเหตุในผู้สูงอายุ
           </Typography>
                     <IconButton color="inherit">
-                        <Badge badgeContent={4} color="secondary">
-                            <Button
-                                type="submit"
-                                variant="contained"
-                                color="white"
-                                className="submit"
-                                onClick={logout}
-                                style={{ height: 50, borderRadius: 90 }}
-                                href="/main"
-                            >
-                                LOGOUT
-                        </Button>
+                        <Badge badgeContent={4} color="dark">
+                          {/* ใส่ส่วนแจ้งเตือน */}
                         </Badge>
                     </IconButton>
                 </Toolbar>

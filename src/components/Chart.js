@@ -8,6 +8,8 @@ function createData(time, amount) {
   return { time, amount };
 }
 
+//กราฟแกน x,y
+
 const data = [
   createData('00:00', 0),
   createData('03:00', 300),
@@ -19,8 +21,10 @@ const data = [
   createData('21:00', 2400),
   createData('24:00', undefined),
 ];
+//สร้างกราฟเรียกฟงัก์ชั่น create Data
 
-export default function Chart() {
+const Chart = () => {
+
   const theme = useTheme();
 
   return (
@@ -43,7 +47,7 @@ export default function Chart() {
               position="left"
               style={{ textAnchor: 'middle', fill: theme.palette.text.primary }}
             >
-              Sales ($)
+              Sales ($) 
             </Label>
           </YAxis>
           <Line type="monotone" dataKey="amount" stroke={theme.palette.primary.main} dot={false} />
@@ -52,3 +56,5 @@ export default function Chart() {
     </React.Fragment>
   );
 }
+
+export default Chart;

@@ -4,6 +4,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Title from './Title';
 
+//ส่วนแสดงจำนวนผู้สูงอายุในประเทศไทยปัจจุบันแบ่งแยกเป็นชายและหญิงและหากกดในส่วนของ View balance จะแสดงผู้สูงอายุในแต่ละจังหวัดโดยรวม
+
 function preventDefault(event) {
   event.preventDefault();
 }
@@ -14,11 +16,13 @@ const useStyles = makeStyles({
   },
 });
 
-export default function Deposits() {
+const Deposits = () => {
+
   const classes = useStyles();
+
   return (
     <React.Fragment>
-      <Title>Recent Deposits</Title>
+      <Title>จำนวนผู้สูงอายุในประเทศไทย</Title>
       <Typography component="p" variant="h4">
         $3,024.00
       </Typography>
@@ -33,3 +37,5 @@ export default function Deposits() {
     </React.Fragment>
   );
 }
+
+export default Deposits;

@@ -5,6 +5,8 @@ import footer2 from '../static/images/footer2.png'
 import { Button } from 'react-bootstrap'
 
 
+// Footer แสดงในส่วนหน้าหลัก
+
 const Footer = () => {
     return (
         <MDBFooter color="white" className="font-small pt-3 mt-4" style={{ height: 230 }}>

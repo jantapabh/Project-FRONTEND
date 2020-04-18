@@ -8,6 +8,9 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Title from './Title';
 
+//ส่วนตารางช่องล่าง
+//ใช้ในการแสดงข้อมูล . . . 
+
 // Generate Order Data
 function createData(id, date, name, shipTo, paymentMethod, amount) {
   return { id, date, name, shipTo, paymentMethod, amount };
