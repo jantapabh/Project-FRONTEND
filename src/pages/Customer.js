@@ -8,7 +8,7 @@ const Customer = () => {
     return (
 
         <div>
-          <MapTwo />
+ Customers
         </div>
 
     )

@@ -18,7 +18,10 @@ import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
 //Bulma
 
 import { Button, Level, Heading, } from 'react-bulma-components/dist'
+import MapTwo from '../components/Map/MapTwo';
 
+
+//ส่วนแสดงการแจ้งเตือน Map
 var mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
 
 const MapShow = () => {
@@ -44,12 +47,13 @@ const MapShow = () => {
                     <ListShow />
                 </MDBCol>
                 <MDBCol md="8">
-                    <ReactMapGL
+                    {/* <ReactMapGL
                         {...viewport}
                         onViewportChange={setViewport}
                         mapStyle="mapbox://styles/mapbox/outdoors-v11"
                         mapboxApiAccessToken="pk.eyJ1IjoiaGFtYTg5NyIsImEiOiJjazR6ZG5yY20wOWgzM21tcWVlbnFtOXB4In0.KjTfvistF0bqFqTk0OVsTA">
-                    </ReactMapGL>
+                    </ReactMapGL> */}
+                    <MapTwo />
                 </MDBCol>
             </MDBRow>
         </div>

@@ -28,30 +28,7 @@ class MapTwo extends Component {
 
     state = {
 
-        greenIcon: {
-
-            lat: 7.8948795,
-            lng: 98.350931,
-
-            // มอ ภูเก็ต
-
-        },
-        redIcon: {
-
-            lat: 7.892717,
-            lng: 98.3473852,
-
-            // รพ ดีบุก
-
-        },
-        orangeIcon: {
-
-            lat: 7.8809728,
-            lng: 98.3598775,
-
-            // เขารัง
-
-        },
+      
        peopleIconOne: {
 
             lat: 7.9034581,
@@ -70,8 +47,8 @@ class MapTwo extends Component {
         },
         peopleIconThree: {
 
-            lat: 7.892717,
-            lng: 98.3473852,
+            lat: 7.8489556,
+            lng: 98.3075393,
 
 
             // ป่าตอง
@@ -90,16 +67,6 @@ class MapTwo extends Component {
 
 
 
-    // peopleIcon = L.icon({
-
-    //     iconUrl: plepeo,
-    //     iconSize: [60,95],
-    //     shadowSize: [50,64],
-    //     iconAnchor: [22,94],
-    //     shadowAnchor: [4, 62],
-    //     popupAnchor: [-3, -76]
-
-    // });
 
 
     peopleIconOne = L.icon({
@@ -146,43 +113,7 @@ class MapTwo extends Component {
 
     });
 
-      greenIcon = L.icon({
-
-          iconUrl: leafGreen,
-          shadowUrl: leafShadow,
-          iconSize: [38,95],
-          shadowSize: [50,64],
-          iconAnchor: [22,94],
-          shadowAnchor: [4, 62],
-          popupAnchor: [-3, -76]
-
-      });
-
-      
-      redIcon = L.icon({
-
-        iconUrl: leafRed,
-        shadowUrl: leafShadow,
-        iconSize: [38,95],
-        shadowSize: [50,64],
-        iconAnchor: [22,94],
-        shadowAnchor: [4, 62],
-        popupAnchor: [-3, -76]
-
-    });
-
-    
-    orangeIcon = L.icon({
-
-        iconUrl: leafOrange,
-        shadowUrl: leafShadow,
-        iconSize: [38,95],
-        shadowSize: [50,64],
-        iconAnchor: [22,94],
-        shadowAnchor: [4, 62],
-        popupAnchor: [-3, -76]
-
-    });
+ 
 
     render() {
 
@@ -194,35 +125,31 @@ class MapTwo extends Component {
    const positionPeopleFour = [this.state.peopleIconFour.lat, this.state.peopleIconFour.lng]
 
 
-   const positionGreenIcon = [this.state.greenIcon.lat, this.state.greenIcon.lng]
-   const positionRedIcon = [this.state.redIcon.lat, this.state.redIcon.lng]
-   const positionOrangeIcon = [this.state.orangeIcon.lat, this.state.orangeIcon.lng]
-  
         return (
             <div>
-            <Map className="map" center={positionGreenIcon} zoom={this.state.zoom}>
+            <Map className="map" center={positionPeopleOne} zoom={this.state.zoom}>
                 <TileLayer
                     attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 />
                 <Marker position={positionPeopleOne} icon={this.peopleIconOne}>
                     <Popup>
-                        A pretty CSS3 popup. <br /> Easily customizable.
+                       คนที่ 1 <br /> 
               </Popup>
                 </Marker>
                 <Marker position={positionPeopleTwo} icon={this.peopleIconTwo}>
                     <Popup>
-                        A pretty CSS3 popup. <br /> Easily customizable.
+                    คนที่ 2 <br /> 
               </Popup>
                 </Marker>
                 <Marker position={positionPeopleThree} icon={this.peopleIconThree}>
                     <Popup>
-                        A pretty CSS3 popup. <br /> Easily customizable.
+                    คนที่ 3 <br /> 
               </Popup>
                 </Marker>
                 <Marker position={positionPeopleFour} icon={this.peopleIconFour}>
                     <Popup>
-                        A pretty CSS3 popup. <br /> Easily customizable.
+                    คนที่ 4 <br /> 
               </Popup>
                 </Marker>
             </Map>
