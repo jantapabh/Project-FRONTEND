@@ -2,7 +2,10 @@ import React, { Component } from 'react'
 import L from 'leaflet'
 import './Map.css'
 import { Map, TileLayer, Marker, Popup } from 'react-leaflet'
+import leafGreen from '../static/images/leaf-green.png'
 
+
+//เรียกไอคอน
 var myIcon = L.icon({
 
     iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Map_marker.svg/512px-Map_marker.svg.png',
