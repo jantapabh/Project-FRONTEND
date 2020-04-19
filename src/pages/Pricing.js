@@ -35,7 +35,7 @@ export default function Pricing() {
                                 <img src={logo} style={{ margin: 50 }} />
                             </Typography>
                             <Typography component="h1" variant="h4" maxWidth="lg" align="center" color="textPrimary" gutterBottom>
-                                <img src={content} style={{ margin: 50 }} />
+                                <img src={content} style={{ margin: 50, borderRadius: 200 }} />
                             </Typography>
                         </Grid>
                     </React.Fragment>
