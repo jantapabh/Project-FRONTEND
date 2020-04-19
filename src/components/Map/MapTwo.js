@@ -2,8 +2,11 @@ import React, { Component } from 'react'
 import L from 'leaflet'
 import './Map.css'
 import { Map, TileLayer, Marker, Popup } from 'react-leaflet'
-import leafGreen from '../static/images/leaf-green.png'
 
+//Import Popup images
+import leafGreen from './assets/leafGreen.png'
+import leafRed from './assets/leafRed.png'
+import leafOrange from './assets/leafOrange.png'
 
 //เรียกไอคอน
 var myIcon = L.icon({
