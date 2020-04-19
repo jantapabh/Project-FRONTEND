@@ -4,10 +4,7 @@ import './Map.css'
 import { Map, TileLayer, Marker, Popup } from 'react-leaflet'
 
 //Import Popup images
-import leafGreen from './assets/leafGreen.png'
-import leafRed from './assets/leafRed.png'
-import leafOrange from './assets/leafOrange.png'
-import leafShadow from './assets/leafShadow.png'
+
 import peopleOne from './assets/peopleOne.png'
 import peopleTwo from './assets/peopleTwo.png'
 import peopleThree from './assets/peopleThree.png'
