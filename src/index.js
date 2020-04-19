@@ -6,6 +6,10 @@ import * as serviceWorker from './serviceWorker';
 import {BrowserRouter, Router, Route, Link} from 'react-router-dom'
 import {browserHistory} from 'react-router'
 
+//Leaflet
+
+import 'leaflet/dist/leaflet.css'
+
 render(
   <BrowserRouter>
     <App />
