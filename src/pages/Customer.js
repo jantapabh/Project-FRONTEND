@@ -9,10 +9,10 @@ const Customer = () => {
     return (
 
         <div>
- Customers
+            Customers
         </div>
 
     )
 }
 
-export default Customer
+export default Customer;
