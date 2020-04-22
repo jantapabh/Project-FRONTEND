@@ -1,6 +1,8 @@
 import firebase from 'firebase'
 
 
+//ส้วนดึงค่าจาก firebase
+
 const firebaseConfig = {
   apiKey: "AIzaSyCbtxpjI4-4yvfGl04rsRIujMrOs7wVsvg",
   authDomain: "prepar-project.firebaseapp.com",
