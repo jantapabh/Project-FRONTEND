@@ -27,7 +27,7 @@ const MapShow = () => {
             <div>
                 <SidebarMap />
             </div>
-           
+          
         </div>
     )
 }

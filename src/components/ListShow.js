@@ -1,5 +1,5 @@
 import React from 'react';
-import { Accordion, Card, Modal, Button } from 'react-bootstrap'
+import { Accordion, Card, Modal, Button, Toast} from 'react-bootstrap'
 
 //แสดงรายการในส่วน map สำหรับส่วนข้อมูลที่จำเป็น สถานะ การแจ้งเตือน โอกาสเสี่ยง
 
@@ -34,7 +34,7 @@ const ListShow = props => {
 
   return (
     <div>
-      <Accordion defaultActiveKey="0">
+      {/* <Accordion defaultActiveKey="0">
         <Card>
             <Button variant="primary" onClick={() => setModalShow(true)}>
               Launch vertically centered modal
@@ -56,7 +56,23 @@ const ListShow = props => {
             <Card.Body>Hello! I'm another body</Card.Body>
           </Accordion.Collapse>
         </Card>
-      </Accordion>
+      </Accordion> */}
+      <Toast>
+        <Toast.Header>
+          <img src="holder.js/20x20?text=%20" className="rounded mr-2" alt="" />
+          <strong className="mr-auto">Bootstrap</strong>
+          <small>just now</small>
+        </Toast.Header>
+        <Toast.Body>See? Just like this.</Toast.Body>
+      </Toast>
+      <Toast>
+        <Toast.Header>
+          <img src="holder.js/20x20?text=%20" className="rounded mr-2" alt="" />
+          <strong className="mr-auto">Bootstrap</strong>
+          <small>2 seconds ago</small>
+        </Toast.Header>
+        <Toast.Body>Heads up, toasts will stack automatically</Toast.Body>
+      </Toast>
     </div>
   )
 }
