@@ -1,8 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios'
-import Icon from '@ant-design/icons';
-import ReactMapGL, { NavigationControl, Marker, Popup } from 'react-map-gl';
-import Item from 'antd/lib/list/Item';
 import '../App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import SidebarMap from '../components/Map/SidebarMap'
