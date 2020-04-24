@@ -12,7 +12,6 @@ import Sidebar from './components/Sidebar'
 
 //Pages
 
-import Map from './pages/MapShow'
 import Login from './pages/Login';
 import Pricing from './pages/Pricing';
 import MapShow from './pages/MapShow';

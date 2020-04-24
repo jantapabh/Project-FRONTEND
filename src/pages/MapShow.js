@@ -47,12 +47,6 @@ const MapShow = () => {
                     <ListShow />
                 </MDBCol>
                 <MDBCol md="8">
-                    {/* <ReactMapGL
-                        {...viewport}
-                        onViewportChange={setViewport}
-                        mapStyle="mapbox://styles/mapbox/outdoors-v11"
-                        mapboxApiAccessToken="pk.eyJ1IjoiaGFtYTg5NyIsImEiOiJjazR6ZG5yY20wOWgzM21tcWVlbnFtOXB4In0.KjTfvistF0bqFqTk0OVsTA">
-                    </ReactMapGL> */}
                     <MapTwo />
                 </MDBCol>
             </MDBRow>
