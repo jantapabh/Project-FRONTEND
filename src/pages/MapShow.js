@@ -25,18 +25,14 @@ const MapShow = () => {
             <div>
                 <SidebarMap />
             </div>
-            <div>
-            <MDBRow>
-                <MDBCol md="4" style={{ padding: 5}}>
+            <div class="rows is-mobile">
+                <MapTwo />
+            </div>
+            <div class="column">
                     <ListShow />
-                </MDBCol>
-                <MDBCol md="8">
-                    <MapTwo />
-                </MDBCol>
-            </MDBRow>
-            </div>  
+                </div>
         </div>
-    ) 
+    )
 }
 
 
