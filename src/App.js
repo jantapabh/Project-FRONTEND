@@ -4,8 +4,6 @@ import './App.css';
 // Router
 import { BrowserRouter, Route, Link, Router, Redirect } from 'react-router-dom';
 
-
-
 //import Components and Pages
 
 import Chart from './components/Chart'
@@ -13,8 +11,6 @@ import Dashboard from './components/Dashboard'
 import Sidebar from './components/Sidebar'
 
 //Pages
-
-
 
 import Map from './pages/MapShow'
 import Login from './pages/Login';
