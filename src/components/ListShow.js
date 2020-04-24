@@ -4,10 +4,10 @@ import { Accordion, Card, Modal, Button } from 'react-bootstrap'
 //แสดงรายการในส่วน map สำหรับส่วนข้อมูลที่จำเป็น สถานะ การแจ้งเตือน โอกาสเสี่ยง
 
 
-const ListShow = () => {
-
+const ListShow = props => {
 
   const MyVerticallyCenteredModal = props => {
+
     return (
       <Modal
         {...props}
@@ -32,13 +32,10 @@ const ListShow = () => {
 
   const [modalShow, setModalShow] = React.useState(false);
 
-
-
   return (
     <div>
       <Accordion defaultActiveKey="0">
         <Card>
-         
             <Button variant="primary" onClick={() => setModalShow(true)}>
               Launch vertically centered modal
       </Button>
@@ -47,8 +44,6 @@ const ListShow = () => {
               show={modalShow}
               onHide={() => setModalShow(false)}
             />
-
-
           <Accordion.Collapse eventKey="0">
             <Card.Body>Hello! I'm the body</Card.Body>
           </Accordion.Collapse>

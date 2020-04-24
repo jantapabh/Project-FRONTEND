@@ -29,12 +29,11 @@ const MapShow = () => {
                 <MapTwo />
             </div>
             <div class="column">
-                    <ListShow />
-                </div>
+                <ListShow />
+            </div>
         </div>
     )
 }
-
 
 export default MapShow;
 
