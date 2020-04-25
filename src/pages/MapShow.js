@@ -16,9 +16,6 @@ import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
 import { Button, Level, Heading, } from 'react-bulma-components/dist'
 import MapTwo from '../components/Map/MapTwo';
 
-{/* <MapTwo />
-<ListShow /> */}
-
 
 const MapShow = () => {
 
@@ -28,7 +25,9 @@ const MapShow = () => {
             <div>
                 <SidebarMap />
             </div>
-          
+            <div>
+                {/* ใส่ส่วน mapTwo กับ List  */}
+            </div>
         </div>
     )
 }
