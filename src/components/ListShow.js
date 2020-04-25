@@ -1,21 +1,23 @@
 import React from 'react';
-import { Accordion, Card, Modal, Button, Toast} from 'react-bootstrap'
+import { Accordion, Card, Modal, Button, Toast } from 'react-bootstrap'
 
 //แสดงรายการในส่วน map สำหรับส่วนข้อมูลที่จำเป็น สถานะ การแจ้งเตือน โอกาสเสี่ยง
 
 
 const ListShow = props => {
-  
+
 
   const MyVerticallyCenteredModal = props => {
 
     return (
+
       <Modal
         {...props}
         size="lg"
         aria-labelledby="contained-modal-title-vcenter"
         centered
       >
+        
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
             Modal heading
