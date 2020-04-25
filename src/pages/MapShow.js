@@ -18,7 +18,6 @@ import MapTwo from '../components/Map/MapTwo';
 import SidebarMap from '../components/Map/SidebarMap'
 import ListShow from '../components/ListShow'
 
-
 const MapShow = () => {
 
     return (
