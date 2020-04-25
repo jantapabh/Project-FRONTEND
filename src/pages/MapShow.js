@@ -20,7 +20,6 @@ import MapTwo from '../components/Map/MapTwo';
 const MapShow = () => {
 
     return (
-
         <div>
             <div>
                 <SidebarMap />
