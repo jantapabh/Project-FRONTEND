@@ -80,6 +80,4 @@ const ListShow = props => {
     </div>
   )
 }
-
-
 export default ListShow;
