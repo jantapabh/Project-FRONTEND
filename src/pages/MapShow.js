@@ -33,7 +33,6 @@ const MapShow = () => {
     )
 }
 
-
 export default MapShow;
 
 
