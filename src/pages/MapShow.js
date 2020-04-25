@@ -20,7 +20,7 @@ import ListShow from '../components/ListShow'
 
 
 const MapShow = () => {
-    
+
     return (
         <div>
             <div>
@@ -32,6 +32,7 @@ const MapShow = () => {
         </div>
     )
 }
+
 
 export default MapShow;
 
