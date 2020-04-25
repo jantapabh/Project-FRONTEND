@@ -10,7 +10,6 @@ const ListShow = props => {
   const MyVerticallyCenteredModal = props => {
 
     return (
-
       <Modal
         {...props}
         size="lg"
