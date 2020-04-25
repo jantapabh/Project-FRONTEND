@@ -17,7 +17,7 @@ const ListShow = props => {
         aria-labelledby="contained-modal-title-vcenter"
         centered
       >
-        
+
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
             Modal heading
@@ -60,6 +60,7 @@ const ListShow = props => {
           </Accordion.Collapse>
         </Card>
       </Accordion> */}
+      
       <Toast>
         <Toast.Header>
           <img src="holder.js/20x20?text=%20" className="rounded mr-2" alt="" />
