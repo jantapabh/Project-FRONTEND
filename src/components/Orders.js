@@ -34,8 +34,10 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Orders() {
+const Orders = () => {
+
   const classes = useStyles();
+
   return (
     <React.Fragment>
       <Title>แสดงข้อมูลผู้สูงอายุ</Title>
@@ -69,3 +71,5 @@ export default function Orders() {
     </React.Fragment>
   );
 }
+
+export default Orders;
