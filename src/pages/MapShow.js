@@ -9,7 +9,6 @@ import { Card } from 'react-bootstrap'
 
 import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
 
-
 //Bulma
 
 import { Button, Level, Heading, } from 'react-bulma-components/dist'
