@@ -7,7 +7,7 @@ const Detail = () => {
     return (
 
         <div>
-            Detail
+            ใ่รายบะเอียดของข้อมูลผู้ใช้ต่าง ๆ 
         </div>
 
     )
