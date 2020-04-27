@@ -69,7 +69,6 @@ const Orders = () => {
         </Link>
       </div>
     </React.Fragment>
-    
   );
 }
 
