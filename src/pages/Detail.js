@@ -5,7 +5,6 @@ import React from 'react'
 const Detail = props => {
 
     return (  
-        
         <div>
             ใ่รายบะเอียดของข้อมูลผู้ใช้ต่าง ๆ 
         </div>
