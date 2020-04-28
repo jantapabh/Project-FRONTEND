@@ -2,7 +2,7 @@ import React from 'react'
 
 //ส่วนของรายละเอียดแสดงเพิ่มเติม
 
-const Detail = () => {
+const Detail = props => {
 
     return (  
         
