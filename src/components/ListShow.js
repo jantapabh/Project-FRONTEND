@@ -33,7 +33,7 @@ const ListShow = props => {
   const [modalShow, setModalShow] = React.useState(false);
 
   return (
-    <div>
+    <div style={{ margin: 5, padding: 5}}>
       {/* <Accordion defaultActiveKey="0">
         <Card>
             <Button variant="primary" onClick={() => setModalShow(true)}>
@@ -60,7 +60,6 @@ const ListShow = props => {
 
       <Toast>
         <Toast.Header>
-          <img src="holder.js/20x20?text=%20" className="rounded mr-2" alt="" />
           <strong className="mr-auto">Bootstrap</strong>
           <small>just now</small>
         </Toast.Header>
