@@ -27,7 +27,7 @@ const MapShow = () => {
                 <SidebarMap />
             </div>
             <div>
-                {/* ใส่ส่วน mapTwo กับ List  */}
+                
             </div>
         </div>
     )
