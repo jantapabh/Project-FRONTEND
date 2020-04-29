@@ -28,8 +28,12 @@ const MapShow = () => {
             </div>
             <div>
                 <MDBRow>
-                    <MDBCol md="3">.col-md-3</MDBCol>
-                    <MDBCol md="6">.col-md-4</MDBCol>
+                    <MDBCol md="3">
+                        <ListShow />
+                    </MDBCol>
+                    <MDBCol md="6">
+                        <MapTwo />
+                    </MDBCol>
                 </MDBRow>
             </div>
         </div>
