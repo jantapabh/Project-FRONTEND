@@ -33,7 +33,7 @@ const ListShow = props => {
         <Toast.Body>
           <Row>
             <Col xs="6">
-              <Button outline color="primary">primary</Button>{' '}
+              <Button outline color="primary">Eldery : 1</Button>{' '}
               </Col>
             <Col xs="6">
               <Button color="danger" onClick={toggle}>ดูข้อมูล</Button>
@@ -63,7 +63,7 @@ const ListShow = props => {
         <Toast.Body>
           <Row>
             <Col xs="6">
-              <Button outline color="primary">primary</Button>{' '}
+              <Button outline color="primary">Eldery : 2</Button>{' '}
             </Col>
             <Col xs="6">
               <Button color="danger" onClick={toggle}>ดูข้อมูล</Button>
@@ -93,7 +93,7 @@ const ListShow = props => {
         <Toast.Body>
           <Row>
             <Col xs="6">
-              <Button outline color="primary">primary</Button>{' '}
+              <Button outline color="primary">Eldery : 3</Button>{' '}
             </Col>
             <Col xs="6">
               <Button color="danger" onClick={toggle}>ดูข้อมูล</Button>
@@ -123,7 +123,7 @@ const ListShow = props => {
         <Toast.Body>
           <Row>
             <Col xs="6">
-              <Button outline color="primary">primary</Button>{' '}
+              <Button outline color="primary">Eldery : 4</Button>{' '}
             </Col>
             <Col xs="6">
               <Button color="danger" onClick={toggle}>ดูข้อมูล</Button>
