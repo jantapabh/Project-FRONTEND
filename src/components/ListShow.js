@@ -11,7 +11,7 @@ const ListShow = props => {
     buttonLabel,
     className
   } = props;
-  
+
 
   const [modal, setModal] = useState(false);
   const [nestedModal, setNestedModal] = useState(false);
@@ -33,16 +33,17 @@ const ListShow = props => {
       <Toast>
         <Toast.Body>
           <Row>
-            <Col xs="6">
+            <Col xs="7">
               <Button outline color="primary">ผู้สูงอายุคนที่ 1</Button>{' '}
               </Col>
-            <Col xs="6">
+            <Col xs="5">
               <Button color="danger" onClick={toggle}>ดูข้อมูล</Button>
               <Modal isOpen={modal} toggle={toggle} className={className}>
-                <ModalHeader toggle={toggle}>Modal title</ModalHeader>
+                <ModalHeader toggle={toggle}>ข้อมูลผู้ใช้</ModalHeader>
                 <ModalBody>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          <br />
+                  
+                  {/* เพิ่มข้อมูลผู้ใข้ */}
+                 
                   <Modal isOpen={nestedModal} toggle={toggleNested} onClosed={closeAll ? toggle : undefined}>
                     <ModalHeader>Nested Modal title</ModalHeader>
                     <ModalBody>Stuff and things</ModalBody>
