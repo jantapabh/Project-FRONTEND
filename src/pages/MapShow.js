@@ -27,7 +27,10 @@ const MapShow = () => {
                 <SidebarMap />
             </div>
             <div>
-                
+                <MDBRow>
+                    <MDBCol md="3">.col-md-3</MDBCol>
+                    <MDBCol md="6">.col-md-4</MDBCol>
+                </MDBRow>
             </div>
         </div>
     )
