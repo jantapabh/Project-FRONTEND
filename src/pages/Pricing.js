@@ -21,9 +21,10 @@ const useStyles = makeStyles((theme) => ({
 
 
 export default function Pricing() {
+    
 
     const classes = useStyles();
-    
+
 
     return (
         <div>
