@@ -146,7 +146,7 @@ export default function Dashboard() {
                     >
                         <MenuIcon style={{ borderRadius: 300}} />
                     </IconButton>
-                    <IconButton color="inherit">
+                    <IconButton color="dark">
                         <Badge badgeContent={0} color="white">
                             
                                {/* แสดงอะไร */}
