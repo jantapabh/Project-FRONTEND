@@ -29,7 +29,7 @@ const MapShow = () => {
             <div>
                 <MDBRow>
                     <MDBCol md="3">
-                        <ListShow style={{margin: 5, padding: 5}} />
+                        <ListShow />
                     </MDBCol>
                     <MDBCol md="9">
                         <MapTwo />
