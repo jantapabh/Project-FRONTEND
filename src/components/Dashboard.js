@@ -144,11 +144,8 @@ export default function Dashboard() {
                         onClick={handleDrawerOpen}
                         className={clsx(classes.menuButton, open && classes.menuButtonHidden)}
                     >
-                        <MenuIcon />
+                        <MenuIcon style={{ borderRadius: 300}} />
                     </IconButton>
-                    <Typography component="h1" variant="h6" color="link" noWrap className={classes.title}>
-                        AI ELDERY : ระบบแสดงการแจ้งเตือนและเฝ้าระวังการเกิดอุบัติเหตุในผู้สูงอายุ
-          </Typography>
                     <IconButton color="inherit">
                         <Badge badgeContent={0} color="white">
                             

@@ -27,15 +27,6 @@ export const mainListItems = (
 
   <div>
 
-<Link href="/">
-      <ListItem button style={{borderRadius: 90}}>
-        <ListItemIcon>
-          <ArrowBackIosIcon />
-        </ListItemIcon>
-        <ListItemText primary="หน้าหลัก" />
-      </ListItem>
-    </Link>
-
     <Link href="/dashboard">
       <ListItem button style={{borderRadius: 90}}>
         <ListItemIcon>
