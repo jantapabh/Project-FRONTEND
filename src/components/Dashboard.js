@@ -1,6 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button} from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 import clsx from 'clsx';
 import { makeStyles } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -30,6 +30,9 @@ import Deposits from './Deposits';
 import Orders from './Orders';
 import Main from '../pages/Main'
 
+//Import Firebase Auth
+
+import fire from '../config/fire';
 
 function Copyright() {
     return (
@@ -43,6 +46,15 @@ function Copyright() {
         </Typography>
     );
 }
+
+function logout(e){
+
+    e.preventDefault()
+  
+  fire.auth().signOut();
+
+  }
+  
 
 const drawerWidth = 240;
 
@@ -146,19 +158,20 @@ export default function Dashboard() {
                         onClick={handleDrawerOpen}
                         className={clsx(classes.menuButton, open && classes.menuButtonHidden)}
                     >
-                        <MenuIcon style={{ borderRadius: 300}} />
+                        <MenuIcon style={{ borderRadius: 300 }} />
                     </IconButton>
                     <IconButton>
-                        <Badge badgeContent={0} color="white"> 
-                        <Button variant="info" style={{ borderRadius: 300}}>
-                            <h4>AI ELDERY</h4>
+                        <Badge badgeContent={0} color="white">
+                            <Button variant="info" href="/" style={{ borderRadius: 300 }}>
+                                <h4>AI ELDERY</h4>
                             </Button>
                         </Badge>
                     </IconButton>
-                    <IconButton>
-                        <Badge badgeContent={0} color="white"> 
-                        <Button variant="info" style={{ borderRadius: 300}}>
-                            <h4>ออกจากระบบ</h4>
+                    <IconButton
+                     position="right">
+                        <Badge>
+                            <Button variant="info" style={{ borderRadius: 300 }}>
+                                <h4>ออกจากระบบ</h4>
                             </Button>
                         </Badge>
                     </IconButton>
