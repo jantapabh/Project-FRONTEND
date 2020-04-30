@@ -166,14 +166,14 @@ export default function Dashboard() {
                     <IconButton>
                         <Badge badgeContent={0} color="white">
                             <Button variant="info" href="/" style={{ borderRadius: 300 }}>
-                                <h4>AI ELDERY</h4>
+                                <h5>AI ELDERY</h5>
                             </Button>
                         </Badge>
                     </IconButton>
                     <IconButton>
                         <Badge>
                             <Button variant="info" onClick={logout} style={{ borderRadius: 300 }}>
-                                <h4>ออกจากระบบ</h4>
+                                <h5>ออกจากระบบ</h5>
                             </Button>
                         </Badge>
                     </IconButton>
