@@ -8,6 +8,7 @@ import { Button } from 'react-bootstrap'
 // Footer แสดงในส่วนหน้าหลัก
 
 const Footer = () => {
+
     return (
         <MDBFooter color="white" className="font-small pt-3 mt-4" style={{ height: 230 }}>
             <MDBContainer fluid className="text-center text-md-left">
@@ -15,7 +16,7 @@ const Footer = () => {
                     <MDBCol md="4" center>
                         <img src={footer1} style={{ width: 400, height: 150 }} />
                     </MDBCol>
-                    <MDBCol md="4" center>
+                    <MDBCol md="5" center>
                         <img src={footer2} style={{ width: 400, height: 150 }} />
                     </MDBCol>
                     <MDBCol md="0" center>
