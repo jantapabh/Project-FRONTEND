@@ -173,7 +173,7 @@ export default function Dashboard() {
                     <IconButton>
                         <Badge>
                             <Button variant="info" onClick={logout} style={{ borderRadius: 300 , width: 160, height: 50}}>
-                                <h5>ออกจากระบบ</h5>
+                                <h4>ออกจากระบบ</h4>
                             </Button>
                         </Badge>
                     </IconButton>
