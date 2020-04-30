@@ -8,6 +8,7 @@ import logo from '../static/images/logo.png'
 import content from '../static/images/content.png'
 import Sidebar from '../components/Sidebar'
 import Main from './Main'
+import content2 from '../static/images/content2.png'
 
 // Show หน้านี้ทุกครั้งเมื่อผู้ฝช้เข้ามาและสามารถดูข้อมูลได้คราวๆ เกี่ยวกับผู้สูงอายุ
 //หน้านี้มี SIdebar + รูปและก็ Main โดยหน้านี้จะแสเงสำหรับผู้ใช้ทั่วไป
@@ -34,7 +35,7 @@ export default function Pricing() {
                     <React.Fragment >
                         <Grid container component="main" className={classes.root} align="center">
                             <Typography component="h1" variant="h4" maxWidth="lg" align="center" color="textPrimary" gutterBottom>
-                                <img src={logo} style={{ margin: 50 }} />
+                                <img src={content2} style={{ margin: 50 }} />
                             </Typography>
                             <Typography component="h1" variant="h4" maxWidth="lg" align="center" color="textPrimary" gutterBottom>
                                 <img src={content} style={{ margin: 50, borderRadius: 300 }} />
