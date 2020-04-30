@@ -26,8 +26,9 @@ const Main = () => {
         <div>
             <MDBCardBody>
                 <MDBRow>
-                   
-                   
+                <MDBCol lg="4">
+                        
+                </MDBCol>
                 </MDBRow>
             </MDBCardBody>
             <MDBCardBody>
