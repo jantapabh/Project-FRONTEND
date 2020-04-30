@@ -35,7 +35,7 @@ const Deposits = () => {
       </Typography>
       <div>
         <Link color="primary" href="#" onClick={preventDefault}>
-          View balance
+          <ChartThree />
         </Link>
       </div>
     </React.Fragment>
