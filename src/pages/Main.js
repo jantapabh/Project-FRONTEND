@@ -42,7 +42,7 @@ const Main = () => {
                         <h5 className="font-family-normal mb-3 p-0">
                             <strong style={{ margin: 5 }}>กราฟวงกลมแสดงจำนวนสุนัข (ปี 2562 รอบที่ 1)</strong>
                         </h5>
-                        <Card border="primary" style={{ width: '35rem', height: '23rem', padding: 30, margin: 10 }} center>
+                        <Card border="primary" style={{ width: '35rem', height: '23rem', padding: 30, margin: 10, borderRadius: 3000 }} center>
                             <ChartOne />
                         </Card>
                     </MDBCol>
@@ -54,8 +54,8 @@ const Main = () => {
                         <h5 className="font-family-normal mb-3 p-0">
                             <strong style={{ margin: 5 }}>กราฟวงกลมแสดงจำนวนแมว (ปี 2562 รอบที่ 1)</strong>
                         </h5>
-                        <Card border="primary" style={{ width: '35rem', height: '23rem', padding: 30, margin: 10, borderRadius: 3000 }} center>
-                        <img src={show} style={{ height: 300, borderRadius: 3000  }} /> 
+                        <Card border="white" style={{ width: '35rem', height: '23rem', padding: 30, margin: 10, borderRadius: 3000 }} center>
+                        <img src={show} style={{ height: 340, borderRadius: 3000  }} /> 
                         </Card>
                     </MDBCol>
                 </MDBRow>
