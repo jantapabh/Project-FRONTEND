@@ -27,8 +27,8 @@ const Deposits = () => {
   return (
     <React.Fragment>
       <Title>จำนวนผู้สูงอายุในประเทศไทย</Title>
-      <Typography component="p" variant="h4">
-        โดยรวม 60 % จากประชากรทั้งหมด
+      <Typography component="p" variant="h8">
+        โดยรวม 60 % จากประชากรทั้งหมดภายในประเทศ
       </Typography>
       <Typography color="textSecondary" className={classes.depositContext}>
         on 15 March, 2019
