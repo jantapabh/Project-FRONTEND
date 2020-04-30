@@ -26,15 +26,6 @@ export const mainListItems = (
 
   <div>
 
-    <Link href="/dashboard">
-      <ListItem button style={{borderRadius: 90}}>
-        <ListItemIcon>
-          <DashboardIcon />
-        </ListItemIcon>
-        <ListItemText primary="ข้อมูลผู้สูงอายุ" />
-      </ListItem>
-    </Link>
-
     <Link href="/map">
       <ListItem button style={{borderRadius: 90}}>
         <ListItemIcon>
@@ -81,15 +72,6 @@ export const secondaryListItems = (
           <AssignmentIcon />
         </ListItemIcon>
         <ListItemText primary="แนะนำอุปกรณ์" />
-      </ListItem>
-      </Link>
-
-      <Link href="/how">
-      <ListItem button style={{borderRadius: 90}}>
-        <ListItemIcon>
-          <AssignmentIcon />
-        </ListItemIcon>
-        <ListItemText primary="วิธีการใช้งาน" />
       </ListItem>
       </Link>
 

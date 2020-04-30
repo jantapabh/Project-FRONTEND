@@ -47,14 +47,7 @@ function Copyright() {
     );
 }
 
-function logout(e){
 
-    e.preventDefault()
-  
-  fire.auth().signOut();
-
-  }
-  
 
 const drawerWidth = 240;
 
@@ -138,6 +131,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function Dashboard() {
+
     const classes = useStyles();
     const [open, setOpen] = React.useState(true);
     const handleDrawerOpen = () => {
@@ -147,6 +141,15 @@ export default function Dashboard() {
         setOpen(false);
     };
     const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight);
+
+   const logout = e => {
+
+        e.preventDefault()
+      
+      fire.auth().signOut();
+    
+      }
+      
     return (
         <div className={classes.root}>
             <AppBar position="absolute" className={clsx(classes.appBar, open && classes.appBarShift)}>
@@ -167,10 +170,9 @@ export default function Dashboard() {
                             </Button>
                         </Badge>
                     </IconButton>
-                    <IconButton
-                     position="right">
+                    <IconButton>
                         <Badge>
-                            <Button variant="info" style={{ borderRadius: 300 }}>
+                            <Button variant="info" onClick={logout} style={{ borderRadius: 300 }}>
                                 <h4>ออกจากระบบ</h4>
                             </Button>
                         </Badge>
