@@ -3,8 +3,9 @@
 import React, { Component } from 'react'
 import ChartFour from 'react-apexcharts'
 
-class ChartFour extends React.Component {
+class ChartFour extends Component {
     constructor(props) {
+        
         super(props);
 
         this.state = {
