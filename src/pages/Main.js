@@ -5,13 +5,13 @@ import { MDBRow, MDBCol, MDBIcon, MDBCardBody } from "mdbreact";
 import { Player } from 'video-react';
 import show from '../static/images/show.gif'
 import ChartOne from '../components/charts/ChartOne'
-import howtouse from '../static/images/howtouse.png'
-import how1 from '../static/images/how1.png'
-import how2 from '../static/images/how2.png'
-import how3 from '../static/images/how3.png'
 import ChartTwo from '../components/charts/ChartTwo'
 import Footer from '../components/Footer'
 import footer3 from '../static/images/footer3.png'
+import Typography from '@material-ui/core/Typography';
+import { makeStyles } from '@material-ui/core/styles';
+import Container from '@material-ui/core/Container';
+import Grid from '@material-ui/core/Grid';
 
 
 
@@ -22,19 +22,39 @@ import footer3 from '../static/images/footer3.png'
 
 const Main = () => {
 
+    const useStyles = makeStyles((theme) => ({
+        root: {
+            height: '100vh',
+        }
+    }));
+
+    const classes = useStyles();
+
     return (
         <div>
             <MDBCardBody>
                 <MDBRow>
                 <MDBCol lg="4">
-                        
+                <React.Fragment >
+                        <Grid container component="main" className={classes.root} align="center">
+                            <Typography component="h1" variant="h4" maxWidth="lg" align="center" color="textPrimary" gutterBottom>
+                               
+                            </Typography>
+                        </Grid>
+                    </React.Fragment>
                 </MDBCol>
                 </MDBRow>
             </MDBCardBody>
             <MDBCardBody>
                 <MDBRow>
                     <MDBCol lg="4">
-                        
+                    <React.Fragment >
+                        <Grid container component="main" className={classes.root} align="center">
+                            <Typography component="h1" variant="h4" maxWidth="lg" align="center" color="textPrimary" gutterBottom>
+                             
+                            </Typography>
+                        </Grid>
+                    </React.Fragment>
                     </MDBCol>
                 </MDBRow>
             </MDBCardBody>
