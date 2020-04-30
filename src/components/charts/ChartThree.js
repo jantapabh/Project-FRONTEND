@@ -1,9 +1,8 @@
-import React, {Component} from 'react'
-import ApexCharts from 'apexcharts'
+import React, { Component} from 'react'
+import ReactApexChart from 'react-apexcharts'
 
 
-class ChartThree extends Component {
-
+class ApexChart extends Component {
     constructor(props) {
         super(props);
 
@@ -37,9 +36,13 @@ class ChartThree extends Component {
 
     render() {
         return (
+
+
             <div id="chart">
                 <ReactApexChart options={this.state.options} series={this.state.series} type="pie" width={380} />
             </div>
+
+
         );
     }
 }
