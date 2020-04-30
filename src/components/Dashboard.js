@@ -1,6 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button, Container, Nav, Navbar, NavDropdown, FormControl, Form } from 'react-bootstrap';
+import { Button} from 'react-bootstrap';
 import clsx from 'clsx';
 import { makeStyles } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -146,13 +146,19 @@ export default function Dashboard() {
                         onClick={handleDrawerOpen}
                         className={clsx(classes.menuButton, open && classes.menuButtonHidden)}
                     >
-                        
                         <MenuIcon style={{ borderRadius: 300}} />
                     </IconButton>
-                    <IconButton color="dark">
+                    <IconButton>
                         <Badge badgeContent={0} color="white"> 
-                        <Button variant="outline-info" href="/contact" style={{width: 150, height: 50, borderRadius: 50, margin: 5}}>
-                            <h4>ติดต่อเรา</h4>
+                        <Button variant="info" style={{ borderRadius: 300}}>
+                            <h4>AI ELDERY</h4>
+                            </Button>
+                        </Badge>
+                    </IconButton>
+                    <IconButton>
+                        <Badge badgeContent={0} color="white"> 
+                        <Button variant="info" style={{ borderRadius: 300}}>
+                            <h4>ออกจากระบบ</h4>
                             </Button>
                         </Badge>
                     </IconButton>
