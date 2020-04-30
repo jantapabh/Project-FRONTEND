@@ -161,18 +161,18 @@ export default function Dashboard() {
                         onClick={handleDrawerOpen}
                         className={clsx(classes.menuButton, open && classes.menuButtonHidden)}
                     >
-                        <MenuIcon style={{ borderRadius: 300 }} />
+                        <MenuIcon />
                     </IconButton>
-                    <IconButton>
+                    <IconButton >
                         <Badge badgeContent={0} color="white">
-                            <Button variant="info" href="/" style={{ borderRadius: 300 }}>
-                                <h5>AI ELDERY</h5>
+                            <Button variant="info" href="/" style={{ borderRadius: 300 , width: 160, height: 50}}>
+                                <h4>AI ELDERY</h4>
                             </Button>
                         </Badge>
                     </IconButton>
                     <IconButton>
                         <Badge>
-                            <Button variant="info" onClick={logout} style={{ borderRadius: 300 }}>
+                            <Button variant="info" onClick={logout} style={{ borderRadius: 300 , width: 160, height: 50}}>
                                 <h5>ออกจากระบบ</h5>
                             </Button>
                         </Badge>
