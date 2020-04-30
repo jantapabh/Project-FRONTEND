@@ -8,7 +8,8 @@ import { Button, Container, Nav, Navbar, NavDropdown, FormControl, Form } from '
 function Sidebar(props) {
     return (
         <div>
-            <Navbar bg="dark" expand="lg">
+            
+            <Navbar bg="dark" expand="lg" style={{ width: 1500}}>
                 <Navbar.Brand href="/">
                     <Button variant="outline-primary" style={{width: 230, height: 60, borderRadius: 60,margin: 5, padding: 5}}>
                         <h2>AI ELDERY</h2>
