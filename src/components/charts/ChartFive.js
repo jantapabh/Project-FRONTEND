@@ -1,42 +1,50 @@
-import React from 'react';
-import Link from '@material-ui/core/Link';
-import { makeStyles } from '@material-ui/core/styles';
-import Typography from '@material-ui/core/Typography';
-import Title from './Title';
+import React, { Component} from 'react'
+import ReactApexChart from 'react-apexcharts'
 
 
-//ส่วนแสดงจำนวนผู้สูงอายุในประเทศไทยปัจจุบันแบ่งแยกเป็นชายและหญิงและหากกดในส่วนของ View balance จะแสดงผู้สูงอายุในแต่ละจังหวัดโดยรวม
+class ChartFive extends Component {
+    constructor(props) {
+        super(props);
 
-function preventDefault(event) {
-  event.preventDefault();
+        this.state = {
+
+            series: [44, 55, 13, 43, 22],
+            options: {
+                chart: {
+                    width: 380,
+                    type: 'pie',
+                },
+                labels: ['Team A', 'Team B', 'Team C', 'Team D', 'Team E'],
+                responsive: [{
+                    breakpoint: 480,
+                    options: {
+                        chart: {
+                            width: 200
+                        },
+                        legend: {
+                            position: 'bottom'
+                        }
+                    }
+                }]
+            },
+
+
+        };
+    }
+
+
+
+    render() {
+        return (
+
+
+            <div id="chart">
+                <ReactApexChart options={this.state.options} series={this.state.series} type="pie" width={280} />
+            </div>
+
+
+        );
+    }
 }
 
-const useStyles = makeStyles({
-  depositContext: {
-    flex: 1,
-  },
-});
-
-const ChartFive = () => {
-
-  const classes = useStyles();
-
-  return (
-    <React.Fragment>
-      <Title>จำนวนผู้สูงอายุในประเทศไทย</Title>
-      <Typography component="p" variant="h8">
-        โดยรวม 60 % จากประชากรทั้งหมดภายในประเทศ
-      </Typography>
-      <Typography color="textSecondary" className={classes.depositContext}>
-        on 15 March, 2019
-      </Typography>
-      <div>
-        <Link color="primary" href="#" onClick={preventDefault}>
-          <ChartThree />
-        </Link>
-      </div>
-    </React.Fragment>
-  );
-}
-
-export default ChartFive;
+export default ChartFive
