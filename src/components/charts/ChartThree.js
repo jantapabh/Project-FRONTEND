@@ -39,7 +39,7 @@ class ChartThree extends Component {
 
 
             <div id="chart">
-                <ReactApexChart options={this.state.options} series={this.state.series} type="pie" width={380} />
+                <ReactApexChart options={this.state.options} series={this.state.series} type="pie" width={280} />
             </div>
 
 

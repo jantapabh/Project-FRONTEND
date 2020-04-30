@@ -28,7 +28,7 @@ const Deposits = () => {
     <React.Fragment>
       <Title>จำนวนผู้สูงอายุในประเทศไทย</Title>
       <Typography component="p" variant="h4">
-        $3,024.00
+        โดยรวม 60 % จากประชากรทั้งหมด
       </Typography>
       <Typography color="textSecondary" className={classes.depositContext}>
         on 15 March, 2019
