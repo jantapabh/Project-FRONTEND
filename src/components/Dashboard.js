@@ -22,7 +22,6 @@ import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 
-
 //componets
 import { mainListItems, secondaryListItems } from './ListItems';
 import Chart from './Chart';
@@ -33,6 +32,12 @@ import Main from '../pages/Main'
 //Import Firebase Auth
 
 import fire from '../config/fire';
+
+//Import Card
+
+import CardOne from './CardOne'
+import CardTwo from './CardTwo'
+import CardThree from './CardThree'
 
 function Copyright() {
     return (
@@ -213,10 +218,22 @@ export default function Dashboard() {
                             </Paper>
                         </Grid>
                         {/* Recent Orders */}
-                        <Grid item xs={12}>
-                            <Paper className={classes.paper}>
-                                <Orders />
+                        <Grid container spacing={3}>
+                        <Grid item xs={12} md={8} lg={4}>
+                            <Paper className={fixedHeightPaper}>
+                                <CardOne />
                             </Paper>
+                        </Grid>
+                        <Grid item xs={12} md={8} lg={4}>
+                            <Paper className={fixedHeightPaper}>
+                                <CardTwo />
+                            </Paper>
+                        </Grid>
+                        <Grid item xs={12} md={8} lg={4}>
+                            <Paper className={fixedHeightPaper}>
+                                <CardThree />
+                            </Paper>
+                        </Grid>
                         </Grid>
                     </Grid>
                     <Box pt={4}>
