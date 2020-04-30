@@ -34,27 +34,29 @@ const Main = () => {
         <div>
             <MDBCardBody>
                 <MDBRow>
-                <MDBCol lg="4">
-                <React.Fragment >
-                        <Grid container component="main" className={classes.root} align="center">
-                            <Typography component="h1" variant="h4" maxWidth="lg" align="center" color="textPrimary" gutterBottom>
-                               
-                            </Typography>
-                        </Grid>
-                    </React.Fragment>
-                </MDBCol>
-                </MDBRow>
-            </MDBCardBody>
-            <MDBCardBody>
-                <MDBRow>
-                    <MDBCol lg="4">
-                    <React.Fragment >
-                        <Grid container component="main" className={classes.root} align="center">
-                            <Typography component="h1" variant="h4" maxWidth="lg" align="center" color="textPrimary" gutterBottom>
-                             
-                            </Typography>
-                        </Grid>
-                    </React.Fragment>
+                    <MDBCol lg="6">
+                        <a href="#!" className="green-text">
+                            <h6 className="font-weight-bold mb-3">
+                                <MDBIcon icon="dog" className="pr-2" size="3x" /> Animal</h6>
+                        </a>
+                        <h5 className="font-family-normal mb-3 p-0">
+                            <strong style={{ margin: 5 }}>กราฟวงกลมแสดงจำนวนสุนัข (ปี 2562 รอบที่ 1)</strong>
+                        </h5>
+                        <Card border="primary" style={{ width: '42rem', height: '23rem', padding: 30, margin: 10 }} center>
+                            <ChartOne />
+                        </Card>
+                    </MDBCol>
+                    <MDBCol lg="5">
+                        <a href="#!" className="green-text">
+                            <h6 className="font-weight-bold mb-3">
+                                <MDBIcon icon="dog" className="pr-2" size="3x" /> Animal</h6>
+                        </a>
+                        <h5 className="font-family-normal mb-3 p-0">
+                            <strong style={{ margin: 5 }}>กราฟวงกลมแสดงจำนวนแมว (ปี 2562 รอบที่ 1)</strong>
+                        </h5>
+                        <Card border="primary" style={{ width: '42rem', height: '23rem', padding: 30, margin: 10 }} center>
+                        <img src={show} style={{ height: 300 }} /> 
+                        </Card>
                     </MDBCol>
                 </MDBRow>
             </MDBCardBody>
@@ -66,3 +68,4 @@ const Main = () => {
 }
 
 export default Main;
+
