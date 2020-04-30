@@ -1,4 +1,6 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Button, Container, Nav, Navbar, NavDropdown, FormControl, Form } from 'react-bootstrap';
 import clsx from 'clsx';
 import { makeStyles } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -148,10 +150,10 @@ export default function Dashboard() {
                         <MenuIcon style={{ borderRadius: 300}} />
                     </IconButton>
                     <IconButton color="dark">
-                        <Badge badgeContent={0} color="white">
-                            
-                               {/* แสดงอะไร */}
-                            
+                        <Badge badgeContent={0} color="white"> 
+                        <Button variant="outline-info" href="/contact" style={{width: 150, height: 50, borderRadius: 50, margin: 5}}>
+                            <h4>ติดต่อเรา</h4>
+                            </Button>
                         </Badge>
                     </IconButton>
                 </Toolbar>
