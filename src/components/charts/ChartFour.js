@@ -5,11 +5,8 @@ import ChartFour from 'react-apexcharts'
 
 class ChartFour extends Component {
     constructor(props) {
-        
         super(props);
-
         this.state = {
-
             series: [{
                 data: [21, 22, 10, 28, 16, 21, 13, 30]
             }],
@@ -60,17 +57,12 @@ class ChartFour extends Component {
         };
     }
 
-
-
     render() {
+        
         return (
-
-
             <div id="chart">
                 <ReactApexChart options={this.state.options} series={this.state.series} type="bar" height={350} />
             </div>
-
-
         );
     }
 }

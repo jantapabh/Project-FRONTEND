@@ -3,6 +3,9 @@ import { useTheme } from '@material-ui/core/styles';
 import { LineChart, Line, XAxis, YAxis, Label, ResponsiveContainer } from 'recharts';
 import Title from './Title';
 
+//import ChartFour
+import ChartFour from './charts/ChartFour'
+
 // Generate Sales Data
 function createData(time, amount) {
   return { time, amount };
@@ -31,7 +34,7 @@ const Chart = () => {
     <React.Fragment>
       <Title>แสดงข้อมูลผู้สูงอายุที่อาศัยอยู่บ้านเพียงลำพัง</Title>
       <ResponsiveContainer>
-        
+        <ChartFour />
       </ResponsiveContainer>
     </React.Fragment>
   );
