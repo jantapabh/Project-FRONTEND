@@ -80,7 +80,7 @@ export default class ChartTwo extends Component {
   render() {
     return (
       <BarChart
-        width={1400}
+        width={1200}
         height={450}
         data={data}
         margin={{

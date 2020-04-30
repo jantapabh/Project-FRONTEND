@@ -5,13 +5,13 @@ import { MDBRow, MDBCol, MDBIcon, MDBCardBody } from "mdbreact";
 import { Player } from 'video-react';
 import show from '../static/images/show.gif'
 import ChartOne from '../components/charts/ChartOne'
+import howtouse from '../static/images/howtouse.png'
+import how1 from '../static/images/how1.png'
+import how2 from '../static/images/how2.png'
+import how3 from '../static/images/how3.png'
 import ChartTwo from '../components/charts/ChartTwo'
 import Footer from '../components/Footer'
 import footer3 from '../static/images/footer3.png'
-import Typography from '@material-ui/core/Typography';
-import { makeStyles } from '@material-ui/core/styles';
-import Container from '@material-ui/core/Container';
-import Grid from '@material-ui/core/Grid';
 
 
 
@@ -22,40 +22,89 @@ import Grid from '@material-ui/core/Grid';
 
 const Main = () => {
 
-    const useStyles = makeStyles((theme) => ({
-        root: {
-            height: '100vh',
-        }
-    }));
-
-    const classes = useStyles();
-
     return (
         <div>
             <MDBCardBody>
                 <MDBRow>
                     <MDBCol lg="6">
-                        <a href="#!" className="green-text">
-                            <h6 className="font-weight-bold mb-3">
-                                <MDBIcon icon="dog" className="pr-2" size="3x" /> Animal</h6>
+                    <a href="#!" className="green-text">
+                            <h4 className="font-weight-light mb-3">
+                                <MDBIcon fab icon="accessible-icon" className="pr-2" size="3x" />ร้อยละของผู้สูงอายุจำแนกตามกลุ่มวัย</h4>
                         </a>
-                        <h5 className="font-family-normal mb-3 p-0">
-                            <strong style={{ margin: 5 }}>กราฟวงกลมแสดงจำนวนสุนัข (ปี 2562 รอบที่ 1)</strong>
+                        <h5 className="font-weight-light mb-3 p-3">
+                            <strong>อ้างอิงข้อมูลจาก : สำนักงานสถิติแห่งชาติ  </strong>
                         </h5>
-                        <Card border="primary" style={{ width: '35rem', height: '23rem', padding: 30, margin: 10, borderRadius: 3000 }} center>
+                        <Card border="info" style={{ width: '34rem', height: '25rem', padding: 30, margin: 10, borderRadius: 70}} center>
                             <ChartOne />
                         </Card>
                     </MDBCol>
-                    <MDBCol lg="5">
-                        <a href="#!" className="green-text">
-                            <h6 className="font-weight-bold mb-3">
-                                <MDBIcon icon="dog" className="pr-2" size="3x" /> Animal</h6>
+                    <MDBCol lg="6">
+                    <a href="#!" className="green-text">
+                            <h4 className="font-weight-light mb-3">
+                                <MDBIcon fab icon="accessible-icon" className="pr-2" size="3x" />อุบัติเหตุการหกล้มในผู้สูงอายุและการป้องกัน</h4>
                         </a>
-                        <h5 className="font-family-normal mb-3 p-0">
-                            <strong style={{ margin: 5 }}>กราฟวงกลมแสดงจำนวนแมว (ปี 2562 รอบที่ 1)</strong>
+                        <h5 className="font-weight-light mb-3 p-3">
+                            <strong>อ้างอิงข้อมูลจาก: กรมควบคุมโรค </strong>
                         </h5>
-                        <Card border="white" style={{ width: '35rem', height: '23rem', padding: 30, margin: 10, borderRadius: 3000 }} center>
-                        <img src={show} style={{ height: 340, borderRadius: 3000  }} /> 
+                        <Card border="info" style={{ width: '30rem', height: '23rem',borderRadius: 200 }} center>
+                            <img src={show} style={{ width: 600, height: 370, borderRadius: 200 }} />
+                        </Card>
+                    </MDBCol>
+                </MDBRow>
+            </MDBCardBody>
+            <MDBCardBody center>
+                    <MDBRow>
+                        <MDBCol lg="9" lg="center">
+                        <a href="#!" className="green-text">
+                            <h4 className="font-weight-light mb-3">
+                                <MDBIcon fab icon="accessible-icon" className="pr-2" size="3x" />แผนภูมิแสดงอัตราการเสียชีวิตของผู้สูงอายุจากการพลัดตกหกล้มจำแนกตามรายเขตปี พ.ศ. 2561</h4>
+                        </a>
+                        <h5 className="font-weight-light mb-3 p-3">
+                            <strong>อ้างอิงข้อมูลจาก: ข้อมูลมรณบัตร พ.ศ.2561 กองยุทธศาสตร์และแผนงาน สำนักงานปลัดกระทรวงสาธารณสุข </strong>
+                        </h5>
+                            <Card border="info"  style={{ width: '76rem', height: '30rem', padding: 10, marginLeft: 20, }} center>
+                              <ChartTwo  />
+                            </Card>
+                        </MDBCol>
+                    </MDBRow>
+                </MDBCardBody>
+            <MDBCardBody>
+                <MDBRow>
+                    <MDBCol lg="3">
+                        <Card border="white" style={{ width: '76rem', height: '15rem', padding: 10, margin: 10, borderRadius: 100 }}>
+                       <img src={howtouse} />
+                       {/* วิธีการเข้าใช้งาน AI ELDERY */}
+                        </Card>
+                    </MDBCol>
+                </MDBRow>
+            </MDBCardBody>
+            <MDBCardBody>
+                <MDBRow>
+                    <MDBCol lg="4">
+                        <Card border="primary" style={{ width: '20rem', height: '20rem', marginLeft: 90,borderRadius: 100 }}>
+                      <img src={how1} style={{ width: 300, height: 300, borderRadius: 100, }} />
+                        {/* //ส่วนติดต่อ */}
+                        </Card>
+                    </MDBCol>
+                    <MDBCol lg="4">
+                        <Card border="primary" style={{ width: '20rem', height: '20rem',marginLeft: 90, borderRadius: 100 }}>
+                        <img src={how2} style={{ width: 300, height: 300, borderRadius: 100, }} />
+                        {/* //ส่วนรอลงทะเบียน */}
+                        </Card>
+                    </MDBCol>
+                    <MDBCol lg="4">
+                        <Card border="primary" style={{ width: '20rem', height: '20rem', marginLeft: 90, borderRadius: 100 }}>
+                        <img src={how3} style={{ width: 300, height: 300, borderRadius: 200, }} />
+                        {/* รับอุปกรณ์ */}
+                        </Card>
+                    </MDBCol>
+                </MDBRow>
+            </MDBCardBody>
+            <MDBCardBody>
+                <MDBRow>
+                    <MDBCol lg="9">
+                        <Card border="white" style={{ width: '76rem', height: '20rem', }}>
+                      <img src={footer3} style={{ width: 1200, height: 300, borderRadius: 200}} />
                         </Card>
                     </MDBCol>
                 </MDBRow>
@@ -68,4 +117,3 @@ const Main = () => {
 }
 
 export default Main;
-
