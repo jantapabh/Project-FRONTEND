@@ -52,22 +52,6 @@ const Main = () => {
                     </MDBCol>
                 </MDBRow>
             </MDBCardBody>
-            <MDBCardBody center>
-                    <MDBRow>
-                        <MDBCol lg="9" lg="center">
-                        <a href="#!" className="green-text">
-                            <h4 className="font-weight-light mb-3">
-                                <MDBIcon fab icon="accessible-icon" className="pr-2" size="3x" />แผนภูมิแสดงอัตราการเสียชีวิตของผู้สูงอายุจากการพลัดตกหกล้มจำแนกตามรายเขตปี พ.ศ. 2561</h4>
-                        </a>
-                        <h5 className="font-weight-light mb-3 p-3">
-                            <strong>อ้างอิงข้อมูลจาก: ข้อมูลมรณบัตร พ.ศ.2561 กองยุทธศาสตร์และแผนงาน สำนักงานปลัดกระทรวงสาธารณสุข </strong>
-                        </h5>
-                            <Card border="info"  style={{ width: '76rem', height: '30rem', padding: 10, marginLeft: 20, }} center>
-                              <ChartTwo  />
-                            </Card>
-                        </MDBCol>
-                    </MDBRow>
-                </MDBCardBody>
             <MDBCardBody>
                 <MDBRow>
                     <MDBCol lg="3">
@@ -102,9 +86,9 @@ const Main = () => {
             </MDBCardBody>
             <MDBCardBody center>
                 <MDBRow>
-                    <MDBCol lg="9">
+                    <MDBCol lg="12">
                         <Card border="white" style={{ width: '76rem', height: '20rem', }}>
-                      <img src={footer3} style={{ width: 1200, height: 300, borderRadius: 500}} />
+                      <img src={footer3} style={{ width: 5000, height: 300, borderRadius: 500, alignItems: 'center'}} />
                         </Card>
                     </MDBCol>
                 </MDBRow>
