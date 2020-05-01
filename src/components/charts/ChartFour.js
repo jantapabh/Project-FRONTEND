@@ -13,7 +13,7 @@ class ChartFour extends Component {
       
         series: [{
           name: '80 ปีขึ้นไป',
-          data: [44, 55, 57, 56, 61, 58, 63, 60, 66]
+          data: [7, 10, 11, 9,, 9 ,11, 13, 20, 22]
         }, {
           name: '70-79 ปี',
           data: [76, 85, 101, 98, 87, 105, 91, 114, 94]
@@ -46,7 +46,7 @@ class ChartFour extends Component {
           },
           yaxis: {
             title: {
-              text: '$ (thousands)'
+              text: 'อัตราการเสียชีวิตต่อประชากรแสนคน'
             }
           },
           fill: {
@@ -55,7 +55,7 @@ class ChartFour extends Component {
           tooltip: {
             y: {
               formatter: function (val) {
-                return "$ " + val + " thousands"
+                return "จำนวน" + val + " คน"
               }
             }
           }
