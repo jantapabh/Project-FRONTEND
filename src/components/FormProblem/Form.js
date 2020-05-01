@@ -31,7 +31,7 @@ const Form = () => {
         </label>
                         <textarea type="text" id="defaultFormContactMessageEx" className="form-control" rows="3" />
                         <div className="text-center mt-4">
-                            <MDBBtn color="warning" outline type="submit">
+                            <MDBBtn color="warning"  type="submit" style={{ width: 150, height: 50}}>
                                 Send
                     <MDBIcon far icon="paper-plane" className="ml-2" />
                             </MDBBtn>

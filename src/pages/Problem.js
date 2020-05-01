@@ -27,14 +27,14 @@ const Problem = () => {
             <div>
                 <SidebarProblem />
             </div>
-            <div style={{ display: 'flex', justifyContent: 'center', margin: 50 }}>
+            <div style={{ display: 'flex', justifyContent: 'center', margin: 20 }}>
                 <MDBRow>
                     <MDBCol md="12">
                         <Form />
                     </MDBCol>
                 </MDBRow>
                 <MDBRow style={{ display: 'flex', justifyContent: 'center', margin: 20 }}>
-                    <MDBCol md="3">
+                    <MDBCol md="5">
                         <MDBContainer>
                             <img src={problem} />
                         </MDBContainer>
