@@ -26,7 +26,7 @@ const Chart = () => {
   return (
     <React.Fragment>
       <Title>
-        <h6>ข้อมูลอัตราการเสียชีวิตจากการพลัดตกหกล้มของกลุ่มอายุ 60 ปีขึ้นไป ปี พ.ศ. 2551 - 2558</h6></Title>
+        <h6>ข้อมูลอัตราการเสียชีวิตจากการพลัดตกหกล้มของกลุ่มอายุ 60 ปีขึ้นไป ปี พ.ศ. 2552 - 2561</h6></Title>
         <Typography color="textSecondary" className={classes.depositContext}>
         ข้อมูลจากกองยุทธศาสตร์สาธารณสุขและสิ่งแวดล้อม
       </Typography>
