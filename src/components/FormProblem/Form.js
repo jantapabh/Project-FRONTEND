@@ -5,7 +5,7 @@ const Form = () => {
     
     return (
 
-        <div style={{ margin: 10}}>
+        <div style={{ margin: 10, backgroundColor: 'gray', padding: 20, borderRadius: 100}}>
         <MDBContainer>
             <MDBRow>
                 <MDBCol md="50">
