@@ -21,7 +21,6 @@ import Main from './pages/Main'
 import Customer from './pages/Customer';
 import Detail from './pages/Detail';
 import About from './pages/About';
-import How from './pages/How';
 import Problem from './pages/Problem';
 
 
@@ -44,8 +43,7 @@ const App = () => {
           <Route path="/customers" component={Customer} />
           <Route path="/moreDetails" component={Detail} />
           <Route path="/about" component={About} />
-          <Route path="/how" component={How} />
-          <Route path="/problem" component={Problem} />
+           <Route path="/problem" component={Problem} />
         </BrowserRouter>
       </div>
     )
