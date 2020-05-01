@@ -9,7 +9,7 @@ const About = () => {
     return (
 
         <div>
-         กดกดก
+        
         </div>
 
     )
