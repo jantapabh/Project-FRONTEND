@@ -14,6 +14,7 @@ import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
 
 
 import SidebarCustomer from '../components/SidebarCustomer';
+import Intro from '../components/Intro';
 
 
 const Detail = () => {
@@ -24,14 +25,7 @@ const Detail = () => {
                 <SidebarCustomer/>
             </div>
             <div>
-                <MDBRow>
-                    <MDBCol md="3">
-                        
-                    </MDBCol>
-                    <MDBCol md="9">
-                       
-                    </MDBCol>
-                </MDBRow>
+               <Intro />
             </div>
         </div>
     )

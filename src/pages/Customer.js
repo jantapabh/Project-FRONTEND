@@ -24,14 +24,7 @@ const Customer = () => {
                 <SidebarCustomer/>
             </div>
             <div>
-                <MDBRow>
-                    <MDBCol md="3">
-                        
-                    </MDBCol>
-                    <MDBCol md="9">
-                       
-                    </MDBCol>
-                </MDBRow>
+                
             </div>
         </div>
     )
