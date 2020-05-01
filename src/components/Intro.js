@@ -155,15 +155,15 @@ export default function Intro() {
                     <Typography component="h2" variant="h3" color="textPrimary">
                       ${tier.price}
                     </Typography>
-                     <Typography component="h2" variant="h3" color="textPrimary">
-                      ${tier.price}
+                    <Typography variant="h6" color="textSecondary">
+                      /mo
                     </Typography>
                   </div>
                   <ul>
                     {tier.description.map((line) => (
-                       <Typography component="h2" variant="h3" color="textPrimary">
-                      ${tier.price}
-                    </Typography>
+                      <Typography component="li" variant="subtitle1" align="center" key={line}>
+                        {line}
+                      </Typography>
                     ))}
                   </ul>
                 </CardContent>
