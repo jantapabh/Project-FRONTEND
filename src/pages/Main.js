@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Carousel, Card } from 'react-bootstrap';
-import { MDBRow, MDBCol, MDBIcon, MDBCardBody } from "mdbreact";
+import { MDBRow, MDBCol, MDBIcon, MDBCardBody, MDBContainer } from "mdbreact";
 import { Player } from 'video-react';
 import show from '../static/images/show.gif'
 import ChartOne from '../components/charts/ChartOne'
@@ -24,6 +24,7 @@ const Main = () => {
 
     return (
         <div>
+       
             <MDBCardBody>
                 <MDBRow>
                     <MDBCol lg="6">
@@ -52,6 +53,8 @@ const Main = () => {
                     </MDBCol>
                 </MDBRow>
             </MDBCardBody>
+         
+           
             <MDBCardBody>
                 <MDBRow>
                     <MDBCol lg="3">
@@ -62,6 +65,8 @@ const Main = () => {
                     </MDBCol>
                 </MDBRow>
             </MDBCardBody>
+            
+         
             <MDBCardBody>
                 <MDBRow>
                     <MDBCol lg="4">
@@ -84,6 +89,7 @@ const Main = () => {
                     </MDBCol>
                 </MDBRow>
             </MDBCardBody>
+        
             <div>
                 <Footer />
             </div>
