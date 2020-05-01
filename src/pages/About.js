@@ -25,10 +25,10 @@ const About = () => {
                 <SidebarCustomer/>
             </div>
             <div style={{ display: 'flex', justifyContent: 'center', margin: 20 }}>
-                <MDBRow style={{ display: 'flex', justifyContent: 'center', margin: 20 }}>
+                <MDBRow>
                     <MDBCol md="5">
                         <MDBContainer>
-                            <img src={customer} />
+                            <img src={customer} style={{ width: 400, height: 400 }} />
                         </MDBContainer>
                     </MDBCol>
                 </MDBRow>
