@@ -72,7 +72,7 @@ class ChartFour extends Component {
         
 
   <div id="chart">
-<ReactApexChart options={this.state.options} series={this.state.series} type="bar" height={200} />
+<ReactApexChart options={this.state.options} series={this.state.series} type="bar" height={190} />
 </div>
 
 

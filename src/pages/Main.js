@@ -100,11 +100,11 @@ const Main = () => {
                     </MDBCol>
                 </MDBRow>
             </MDBCardBody>
-            <MDBCardBody>
+            <MDBCardBody center>
                 <MDBRow>
                     <MDBCol lg="9">
                         <Card border="white" style={{ width: '76rem', height: '20rem', }}>
-                      <img src={footer3} style={{ width: 1200, height: 300, borderRadius: 200}} />
+                      <img src={footer3} style={{ width: 1200, height: 300, borderRadius: 500}} />
                         </Card>
                     </MDBCol>
                 </MDBRow>
