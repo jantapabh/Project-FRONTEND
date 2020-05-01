@@ -1,19 +1,42 @@
-import React from 'react'
-import MapTwo from '../components/Map/MapTwo'
-import SidebarCustomer from '../components/SidebarCustomer'
+import React, { useState, useEffect } from 'react';
+import '../App.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-//ส่วนสำหรับเก็บข้อมูลของ users ที่ใช้งานระบบ
-// เก็บข้อฒูล user ในรูปแบบ Card ซึ่งสามารถกดเพื่อดูข้อฒูแต่ในคนได้ 
+//Bootstrap react
+import { Card } from 'react-bootstrap'
+
+//MDB
+
+import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
+
+
+//Components Based
+
+
+import SidebarCustomer from '../components/SidebarCustomer';
+
 
 const Customer = () => {
 
     return (
-
         <div>
-          <SidebarCustomer />
+            <div>
+                <SidebarCustomer/>
+            </div>
+            <div>
+                <MDBRow>
+                    <MDBCol md="3">
+                        
+                    </MDBCol>
+                    <MDBCol md="9">
+                       
+                    </MDBCol>
+                </MDBRow>
+            </div>
         </div>
-
     )
 }
 
 export default Customer;
+
+

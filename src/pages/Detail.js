@@ -1,14 +1,42 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
+import '../App.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-//ส่วนของรายละเอียดแสดงเพิ่มเติม
+//Bootstrap react
+import { Card } from 'react-bootstrap'
 
-const Detail = props => {
+//MDB
 
-    return (  
+import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
+
+
+//Components Based
+
+
+import SidebarCustomer from '../components/SidebarCustomer';
+
+
+const Detail = () => {
+
+    return (
         <div>
-            ใ่รายบะเอียดของข้อมูลผู้ใช้ต่าง ๆ 
+            <div>
+                <SidebarCustomer/>
+            </div>
+            <div>
+                <MDBRow>
+                    <MDBCol md="3">
+                        
+                    </MDBCol>
+                    <MDBCol md="9">
+                       
+                    </MDBCol>
+                </MDBRow>
+            </div>
         </div>
     )
 }
 
-export default Detail
+export default Detail;
+
+
