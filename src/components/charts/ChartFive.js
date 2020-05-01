@@ -7,20 +7,20 @@ class ChartFive extends React.Component {
 
     this.state = {
     
-      series: [70],
+      series: [60],
       options: {
         chart: {
-          height: 350,
+          height: 370,
           type: 'radialBar',
         },
         plotOptions: {
           radialBar: {
             hollow: {
-              size: '70%',
+              size: '60%',
             }
           },
         },
-        labels: ['Cricket'],
+        labels: ['การลื่น'],
       },
     
     
@@ -34,7 +34,7 @@ class ChartFive extends React.Component {
       
 
 <div id="chart">
-<ReactApexChart options={this.state.options} series={this.state.series} type="radialBar" height={180} />
+<ReactApexChart options={this.state.options} series={this.state.series} type="radialBar" height={150} />
 </div>
 
 

@@ -8,7 +8,7 @@ class ChartSeven extends React.Component {
 
     super(props);
     this.state = {
-      series: [70],
+      series: [18],
       options: {
         chart: {
           height: 350,
@@ -21,7 +21,7 @@ class ChartSeven extends React.Component {
             }
           },
         },
-        labels: ['Cricket'],
+        labels: ['ตกหรือล้มทั่วไป'],
       },
 
 
@@ -33,9 +33,9 @@ class ChartSeven extends React.Component {
     return (
 
       <div id="chart">
-        <ReactApexChart options={this.state.options} series={this.state.series} type="radialBar" height={180} />
+        <ReactApexChart options={this.state.options} series={this.state.series} type="radialBar" height={150} />
       </div>
-      
+
     );
   }
 }

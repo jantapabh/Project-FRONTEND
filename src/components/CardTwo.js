@@ -28,7 +28,7 @@ const CardTwo= () => {
     <React.Fragment>
       <Title>สาเหตุการพลัดตกหกล้มของกลุ่มอายุ 60 ปีขึ้นไป</Title>
       <Typography component="p" variant="h9">
-        โดยรวม 60 % จากประชากรทั้งหมดภายในประเทศ
+      การตกหรือล้มจากบันไดหรือที่สูง
       </Typography>
       <Typography color="textSecondary" className={classes.depositContext}>
       ข้อมูลจากระบบเฝ้าระวังการบาดเจ็บแห่งชาติ (IS) สำนักระบาดวิทยา กรมควบคุมโรค
