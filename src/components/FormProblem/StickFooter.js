@@ -43,14 +43,14 @@ export default function StickyFooter() {
     <div className={classes.root}>
       <CssBaseline />
       <Container component="main" className={classes.main} maxWidth="sm">
-        <Typography variant="h2" component="h1" gutterBottom>
-          Sticky footer
+        <Typography variant="h4" component="h3" gutterBottom>
+        แจ้งปัญหาเกี่ยวกับการใช้งานอุปกรณ์
         </Typography>
         <Typography variant="h5" component="h2" gutterBottom>
           {'Pin a footer to the bottom of the viewport.'}
           {'The footer will move as the main element of the page grows.'}
         </Typography>
-        <Typography variant="body1">Sticky footer placeholder.</Typography>
+        {/* <Typography variant="body1">แจ้งปัญหาเกี่ยวกับการใช้งานอุปกรณ์</Typography> */}
       </Container>
       <footer className={classes.footer}>
         <Container maxWidth="sm">

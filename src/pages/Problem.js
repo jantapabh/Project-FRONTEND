@@ -17,7 +17,7 @@ import { Button, Level, Heading, } from 'react-bulma-components/dist'
 
 import SidebarProblem from '../components/SidebarProblem'
 import ListShow from '../components/ListShow'
-
+import Form from '../components/FormProblem/Form'
 
 const Problem= () => {
 
@@ -27,7 +27,7 @@ const Problem= () => {
                 <SidebarProblem />
             </div>
             <div>
-               
+                <Form />
             </div>
         </div>
     )
