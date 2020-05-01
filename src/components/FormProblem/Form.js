@@ -2,13 +2,15 @@ import React from "react";
 import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBIcon } from 'mdbreact';
 
 const Form = () => {
+    
     return (
-        <div>
+
+        <div style={{ margin: 10}}>
         <MDBContainer>
             <MDBRow>
                 <MDBCol md="50">
                     <form>
-                        <p className="h4 text-center mb-4">Write to us</p>
+                        <p className="h3 text-center mb-4">Write to Problem</p>
                         <label htmlFor="defaultFormContactNameEx" className="grey-text">
                             Your name
         </label>
