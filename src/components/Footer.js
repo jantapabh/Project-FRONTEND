@@ -10,7 +10,7 @@ import { Button } from 'react-bootstrap'
 const Footer = () => {
 
     return (
-        <MDBFooter color="white" className="font-small pt-3 mt-4" style={{ height: 230 }}>
+        <MDBFooter color="unique" className="font-small pt-3 mt-4" style={{ height: 230 }}>
             <MDBContainer fluid className="text-center text-md-left">
                 <MDBRow>
                     <MDBCol md="4" center>

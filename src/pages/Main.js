@@ -84,15 +84,6 @@ const Main = () => {
                     </MDBCol>
                 </MDBRow>
             </MDBCardBody>
-            <MDBCardBody center>
-                <MDBRow>
-                    <MDBCol lg="12">
-                        <Card border="white" style={{ width: '76rem', height: '20rem', }}>
-                      <img src={footer3} style={{ width: 5000, height: 300, borderRadius: 500, alignItems: 'center'}} />
-                        </Card>
-                    </MDBCol>
-                </MDBRow>
-            </MDBCardBody>
             <div>
                 <Footer />
             </div>
