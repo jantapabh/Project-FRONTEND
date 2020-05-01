@@ -99,7 +99,7 @@ class ChartSix extends React.Component {
 
 <div id="card">
 <div id="chart">
-<ReactApexChart options={this.state.options} series={this.state.series} type="radialBar" height={350} />
+<ReactApexChart options={this.state.options} series={this.state.series} type="radialBar" height={180} />
 </div>
 </div>
 

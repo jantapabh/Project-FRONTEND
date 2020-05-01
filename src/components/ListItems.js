@@ -12,6 +12,7 @@ import AssignmentIcon from '@material-ui/icons/Assignment';
 import MapIcon from '@material-ui/icons/Map';
 import Link from '@material-ui/core/Link';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
+import SyncProblemIcon from '@material-ui/icons/SyncProblem';
 
 
 //import component
@@ -52,20 +53,6 @@ export const mainListItems = (
         <ListItemText primary="เพิ่มเติม" />
       </ListItem>
       </Link>
-   
-  </div>
-);
-
-//ส่วนเมนู 2
-
-
-
-export const secondaryListItems = (
-
-    <div>
-
-      <ListSubheader inset>เกี่ยวกับระบบ</ListSubheader>
-
       <Link href="/about">
       <ListItem button style={{borderRadius: 90}}>
         <ListItemIcon>
@@ -78,11 +65,12 @@ export const secondaryListItems = (
       <Link href="/problem">
       <ListItem button style={{borderRadius: 90}}>
         <ListItemIcon>
-          <AssignmentIcon />
+          <SyncProblemIcon />
         </ListItemIcon>
         <ListItemText primary="ปัญหาการใช้งาน" />
       </ListItem>
       </Link>
- 
-    </div>
+   
+  </div>
 );
+
