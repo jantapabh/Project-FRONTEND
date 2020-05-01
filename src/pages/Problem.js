@@ -1,16 +1,45 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
+import '../App.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-//ส่วนของรายละเอียดแสดงเพิ่มเติม
+//Bootstrap react
+import { Card } from 'react-bootstrap'
 
-const Problem = () => {
+//MDB
+
+import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
+
+//Bulma
+
+import { Button, Level, Heading, } from 'react-bulma-components/dist'
+
+//Components Based
+
+import SidebarProblem from '../components/Map/SidebarProblem'
+import ListShow from '../components/ListShow'
+
+
+const Problem= () => {
 
     return (
-
         <div>
-            ปัญหาที่ผู้ใข้งานเจอในการใช้งานทั้ง Hardware และ Software
+            <div>
+                <SidebarProblem />
+            </div>
+            <div>
+                <MDBRow>
+                    <MDBCol md="3">
+                        <ListShow />
+                    </MDBCol>
+                    <MDBCol md="9">
+                       
+                    </MDBCol>
+                </MDBRow>
+            </div>
         </div>
-
     )
 }
 
-export default Problem
+export default Problem;
+
+
