@@ -15,7 +15,7 @@ class ChartFour extends Component {
           name: '80 ปีขึ้นไป',
           data: [7, 10, 11, 9,, 9 ,11, 13, 20, 22]
         }, {
-          name: '70-79 ปี'
+          name: '70-79 ปี',
           data: [6, 7, 7, 13, 14, 11, 12, 13, 12]
         }, {
           name: '60-69 ปี',

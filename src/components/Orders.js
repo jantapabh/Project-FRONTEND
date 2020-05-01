@@ -14,11 +14,9 @@ import Title from './Title';
 const Orders = () => {
 
  
-
   return (
     <React.Fragment>
       <Title>แสดงข้อมูลผู้สูงอายุ</Title>
-      
     </React.Fragment>
   );
 }

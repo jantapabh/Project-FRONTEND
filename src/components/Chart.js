@@ -13,7 +13,7 @@ const Chart = () => {
 
   return (
     <React.Fragment>
-      <Title>แสดงข้อมูลผู้สูงอายุที่อาศัยอยู่บ้านเพียงลำพัง</Title>
+      <Title>ข้อมูลอัตราการเสียชีวิตจากการพลัดตกหกล้มของกลุ่มอายุ 60 ปีขึ้นไป ปี พ.ศ. 2551 - 2558</Title>
       <ResponsiveContainer>
         <ChartFour />
       </ResponsiveContainer>
