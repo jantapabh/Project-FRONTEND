@@ -13,13 +13,13 @@ class ChartFour extends Component {
       
         series: [{
           name: '80 ปีขึ้นไป',
-          data: [7, 10, 11, 9,, 9 ,11, 13, 20, 22]
+          data: [7, 10, 11, 9, 9 ,11, 13, 20, 22]
         }, {
           name: '70-79 ปี',
           data: [6, 7, 7, 13, 14, 11, 12, 13, 12]
         }, {
           name: '60-69 ปี',
-          data: [3, 4, 3, 5, 7, 5, 5, 6, 7, 6]
+          data: [3, 4, 3, 5, 7, 5, 5, 6, 7]
         }],
         options: {
           chart: {
@@ -72,7 +72,7 @@ class ChartFour extends Component {
         
 
   <div id="chart">
-<ReactApexChart options={this.state.options} series={this.state.series} type="bar" height={210} />
+<ReactApexChart options={this.state.options} series={this.state.series} type="bar" height={200} />
 </div>
 
 
