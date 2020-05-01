@@ -26,7 +26,7 @@ const CardTwo= () => {
 
   return (
     <React.Fragment>
-      <Title>จำนวนผู้สูงอายุในประเทศไทย</Title>
+      <Title>สาเหตุการพลัดตกหกล้มของกลุ่มอายุ 60 ปีขึ้นไป</Title>
       <Typography component="p" variant="h8">
         โดยรวม 60 % จากประชากรทั้งหมดภายในประเทศ
       </Typography>
