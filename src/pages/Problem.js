@@ -3,7 +3,7 @@ import '../App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 //Bootstrap react
-import { Card,} from 'react-bootstrap'
+import { Card, } from 'react-bootstrap'
 
 //MDB
 
@@ -18,20 +18,29 @@ import { Button, Level, Heading, } from 'react-bulma-components/dist'
 import SidebarProblem from '../components/SidebarProblem'
 import ListShow from '../components/ListShow'
 import Form from '../components/FormProblem/Form'
+import problem from '../static/images/problem.png'
 
-const Problem= () => {
+const Problem = () => {
 
     return (
         <div>
             <div>
                 <SidebarProblem />
             </div>
-            <div style={{ display: 'flex', justifyContent: 'center', margin: 50}}>
-                <Form />
+            <div style={{ display: 'flex', justifyContent: 'center', margin: 50 }}>
+                <MDBRow>
+                    <MDBCol md="12">
+                        <Form />
+                    </MDBCol>
+                </MDBRow>
+                <MDBRow style={{ display: 'flex', justifyContent: 'center', margin: 20 }}>
+                    <MDBCol md="3">
+                        <MDBContainer>
+                            <img src={problem} />
+                        </MDBContainer>
+                    </MDBCol>
+                </MDBRow>
             </div>
-            <MDBContainer>
-                as
-                </MDBContainer>
         </div>
     )
 }
