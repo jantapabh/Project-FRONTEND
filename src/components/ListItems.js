@@ -45,14 +45,8 @@ export const mainListItems = (
       </ListItem>
       </Link>
 
-      <Link href="/moreDetails">
-      <ListItem button style={{borderRadius: 90}}>
-        <ListItemIcon>
-          <LayersIcon />
-        </ListItemIcon>
-        <ListItemText primary="เพิ่มเติม" />
-      </ListItem>
-      </Link>
+   
+   
       <Link href="/about">
       <ListItem button style={{borderRadius: 90}}>
         <ListItemIcon>
@@ -68,6 +62,16 @@ export const mainListItems = (
           <SyncProblemIcon />
         </ListItemIcon>
         <ListItemText primary="ปัญหาการใช้งาน" />
+      </ListItem>
+      </Link>
+
+      
+      <Link href="/moreDetails">
+      <ListItem button style={{borderRadius: 90}}>
+        <ListItemIcon>
+          <LayersIcon />
+        </ListItemIcon>
+        <ListItemText primary="เพิ่มเติม" />
       </ListItem>
       </Link>
    
