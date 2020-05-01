@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Toast } from 'react-bootstrap'
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Col, Row, ListGroup, ListGroupItem } from 'reactstrap';
+import { Toast, Modal, Button, Row, Col } from 'react-bootstrap'
+
 
 
 //แสดงรายการในส่วน map สำหรับส่วนข้อมูลที่จำเป็น สถานะ การแจ้งเตือน โอกาสเสี่ยง
@@ -9,16 +9,43 @@ import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Col, Row, ListGroup
 
 const ListShow = props => {
 
+
+  function MyVerticallyCenteredModal(props) {
+    return (
+      <Modal
+        {...props}
+        size="lg"
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
+      >
+        <Modal.Header closeButton>
+          <Modal.Title id="contained-modal-title-vcenter">
+            Modal heading
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <h4>Centered Modal</h4>
+          <p>
+            Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
+            dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
+            consectetur ac, vestibulum at eros.
+          </p>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button onClick={props.onHide}>Close</Button>
+        </Modal.Footer>
+      </Modal>
+    );
+  }
+
   const {
     buttonLabel,
     className
   } = props;
 
   const [modal, setModal] = useState(false);
-
   const toggle = () => setModal(!modal);
-
-
+  const [modalShow, setModalShow] = React.useState(false);
 
   return (
 
@@ -30,22 +57,14 @@ const ListShow = props => {
               <Button outline color="primary">ผู้สูงอายุคนที่ 1</Button>{' '}
             </Col>
             <Col xs="5">
-              <Button color="danger" onClick={toggle}>ดูข้อมูล</Button>
-              <Modal isOpen={modal} fade={false} toggle={toggle} className={className}>
-                <ModalHeader toggle={toggle}>ข้อมูลผู้ใช้</ModalHeader>
-                <ModalBody>
-                  <ListGroup>
-                    <ListGroupItem active tag="a" href="#" action>Cras justo odio</ListGroupItem>
-                    <ListGroupItem tag="a" href="#" action>Dapibus ac facilisis in</ListGroupItem>
-                    <ListGroupItem tag="a" href="#" action>Morbi leo risus</ListGroupItem>
-                    <ListGroupItem tag="a" href="#" action>Porta ac consectetur ac</ListGroupItem>
-                    <ListGroupItem disabled tag="a" href="#" action>Vestibulum at eros</ListGroupItem>
-                  </ListGroup>
-                </ModalBody>
-                <ModalFooter>
-                  <Button color="secondary" onClick={toggle}>Cancel</Button>
-                </ModalFooter>
-              </Modal>
+              <Button variant="danger" onClick={() => setModalShow(true)}>
+                ดูข้อมูล
+      </Button>
+
+              <MyVerticallyCenteredModal
+                show={modalShow}
+                onHide={() => setModalShow(false)}
+              />
             </Col>
           </Row>
         </Toast.Body>
@@ -57,16 +76,14 @@ const ListShow = props => {
               <Button outline color="primary">ผู้สูงอายุคนที่ 2</Button>{' '}
             </Col>
             <Col xs="5">
-              <Button color="danger" onClick={toggle}>ดูข้อมูล</Button>
-              <Modal isOpen={modal} fade={false} toggle={toggle} className={className}>
-                <ModalHeader toggle={toggle}>ข้อมูลผู้ใช้</ModalHeader>
-                <ModalBody>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </ModalBody>
-                <ModalFooter>
-                  <Button color="secondary" onClick={toggle}>Cancel</Button>
-                </ModalFooter>
-              </Modal>
+              <Button variant="danger" onClick={() => setModalShow(true)}>
+                ดูข้อมูล
+      </Button>
+
+              <MyVerticallyCenteredModal
+                show={modalShow}
+                onHide={() => setModalShow(false)}
+              />
 
             </Col>
           </Row>
@@ -79,16 +96,15 @@ const ListShow = props => {
               <Button outline color="primary">ผู้สูงอายุคนที่ 3</Button>{' '}
             </Col>
             <Col xs="5">
-              <Button color="danger" onClick={toggle}>ดูข้อมูล</Button>
-              <Modal isOpen={modal} fade={false} toggle={toggle} className={className}>
-                <ModalHeader toggle={toggle}>ข้อมูลผู้ใช้</ModalHeader>
-                <ModalBody>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </ModalBody>
-                <ModalFooter>
-                  <Button color="secondary" onClick={toggle}>Cancel</Button>
-                </ModalFooter>
-              </Modal>
+              <Button variant="danger" onClick={() => setModalShow(true)}>
+                ดูข้อมูล
+      </Button>
+
+              <MyVerticallyCenteredModal
+                show={modalShow}
+                onHide={() => setModalShow(false)}
+              />
+
 
             </Col>
           </Row>
@@ -101,17 +117,14 @@ const ListShow = props => {
               <Button outline color="primary">ผู้สูงอายุคนที่ 4</Button>{' '}
             </Col>
             <Col xs="5">
-              <Button color="danger" onClick={toggle}>ดูข้อมูล</Button>
-              <Modal isOpen={modal} fade={false} toggle={toggle} className={className}>
-                <ModalHeader toggle={toggle}>ข้อมูลผู้ใช้</ModalHeader>
-                <ModalBody>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </ModalBody>
-                <ModalFooter>
-                  <Button color="secondary" onClick={toggle}>Cancel</Button>
-                </ModalFooter>
-              </Modal>
+              <Button variant="danger" onClick={() => setModalShow(true)}>
+                ดูข้อมูล
+      </Button>
 
+              <MyVerticallyCenteredModal
+                show={modalShow}
+                onHide={() => setModalShow(false)}
+              />
             </Col>
           </Row>
         </Toast.Body>
