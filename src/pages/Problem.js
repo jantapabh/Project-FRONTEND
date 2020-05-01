@@ -3,7 +3,7 @@ import '../App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 //Bootstrap react
-import { Card } from 'react-bootstrap'
+import { Card,} from 'react-bootstrap'
 
 //MDB
 
@@ -29,6 +29,9 @@ const Problem= () => {
             <div style={{ display: 'flex', justifyContent: 'center', margin: 50}}>
                 <Form />
             </div>
+            <MDBContainer>
+                as
+                </MDBContainer>
         </div>
     )
 }
