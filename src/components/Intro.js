@@ -135,9 +135,6 @@ export default function Intro() {
         <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
          AI ELDERY
         </Typography>
-        <Typography variant="h5" align="center" color="textSecondary" component="p">
-         ระบบแจ้งเตือนและเฝ้าระวังการเคลื่อนไหวของผู้สูงอายุ
-        </Typography>
       </Container>
       {/* End hero unit */}
       <Container maxWidth="md" component="main">
@@ -151,7 +148,6 @@ export default function Intro() {
                   subheader={tier.subheader}
                   titleTypographyProps={{ align: 'center' }}
                   subheaderTypographyProps={{ align: 'center' }}
-                  action={tier.title === 'Pro' ? <StarIcon /> : null}
                   className={classes.cardHeader}
                 />
                 <CardContent>
@@ -159,15 +155,15 @@ export default function Intro() {
                     <Typography component="h2" variant="h3" color="textPrimary">
                       ${tier.price}
                     </Typography>
-                    <Typography variant="h6" color="textSecondary">
-                      /mo
+                     <Typography component="h2" variant="h3" color="textPrimary">
+                      ${tier.price}
                     </Typography>
                   </div>
                   <ul>
                     {tier.description.map((line) => (
-                      <Typography component="li" variant="subtitle1" align="center" key={line}>
-                        {line}
-                      </Typography>
+                       <Typography component="h2" variant="h3" color="textPrimary">
+                      ${tier.price}
+                    </Typography>
                     ))}
                   </ul>
                 </CardContent>
