@@ -3,6 +3,8 @@ import Link from '@material-ui/core/Link';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Title from './Title';
+import { Row, Col } from 'react-bootstrap';
+import one from '../static/images/one.png'
 
 //Import Chart
 
@@ -20,7 +22,7 @@ const useStyles = makeStyles({
   },
 });
 
-const CardTwo= () => {
+const CardTwo = () => {
 
   const classes = useStyles();
 
@@ -28,14 +30,17 @@ const CardTwo= () => {
     <React.Fragment>
       <Title>สาเหตุการพลัดตกหกล้มของกลุ่มอายุ 60 ปีขึ้นไป</Title>
       <Typography component="p" variant="h9">
-      การตกหรือล้มจากบันไดหรือที่สูง
+        การตกหรือล้มจากบันไดหรือที่สูง
       </Typography>
       <Typography color="textSecondary" className={classes.depositContext}>
-      ข้อมูลจากระบบเฝ้าระวังการบาดเจ็บแห่งชาติ (IS) สำนักระบาดวิทยา กรมควบคุมโรค
+        ข้อมูลจากระบบเฝ้าระวังการบาดเจ็บแห่งชาติ (IS) สำนักระบาดวิทยา กรมควบคุมโรค
       </Typography>
       <div>
         <Link color="primary" href="#" onClick={preventDefault}>
-          <ChartSix />
+          <Row>
+            <Col><img src={one} style={{ width: 170, height: 90, margin: 10, padding: 10}} /></Col>
+            <Col> <ChartSix /></Col>
+          </Row>
         </Link>
       </div>
     </React.Fragment>

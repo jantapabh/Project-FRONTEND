@@ -3,6 +3,8 @@ import Link from '@material-ui/core/Link';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Title from './Title';
+import { Row, Col } from 'react-bootstrap';
+import one from '../static/images/one.png'
 
 //Import Chart
 
@@ -36,8 +38,11 @@ const CardOne = () => {
      <h9> ข้อมูลจากระบบเฝ้าระวังการบาดเจ็บแห่งชาติ (IS) สำนักระบาดวิทยา กรมควบคุมโรค</h9>
       </Typography>
       <div>
-        <Link color="primary" href="#" onClick={preventDefault}>
-          <ChartFive />
+      <Link color="primary" href="#" onClick={preventDefault}>
+          <Row>
+            <Col><img src={one} style={{ width: 170, height: 90, margin: 10, padding: 10}} /></Col>
+            <Col> <ChartFive /></Col>
+          </Row>
         </Link>
       </div>
     </React.Fragment>
