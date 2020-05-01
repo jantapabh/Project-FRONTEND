@@ -24,7 +24,7 @@ import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 
 
 //componets
-import { mainListItems} from './ListItems';
+import { mainListItems } from './ListItems';
 import Chart from './Chart';
 import Deposits from './Deposits';
 import Orders from './Orders';
@@ -148,14 +148,14 @@ export default function Dashboard() {
     };
     const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight);
 
-   const logout = e => {
+    const logout = e => {
 
         e.preventDefault()
-      
-      fire.auth().signOut();
-    
-      }
-      
+
+        fire.auth().signOut();
+
+    }
+
     return (
         <div className={classes.root}>
             <AppBar position="absolute" className={clsx(classes.appBar, open && classes.appBarShift)}>
@@ -169,16 +169,18 @@ export default function Dashboard() {
                     >
                         <MenuIcon />
                     </IconButton>
-                    <IconButton >
-                        <Badge badgeContent={0} color="white">
-                            <Button variant="info" href="/" style={{ borderRadius: 300 , width: 160, height: 50}}>
+                    <Typography component="h1" noWrap className={classes.title}>
+                    <IconButton>
+                        <Badge  color="white">
+                            <Button variant="info" href="/" style={{ borderRadius: 300, width: 160, height: 50 }}>
                                 <h4>AI ELDERY</h4>
                             </Button>
                         </Badge>
                     </IconButton>
-                    <IconButton>
+                    </Typography>
+                    <IconButton color="inherit">
                         <Badge>
-                            <Button variant="info" onClick={logout} style={{ borderRadius: 300 , width: 160, height: 50}}>
+                            <Button variant="info" onClick={logout} style={{ borderRadius: 300, width: 160, height: 50 }}>
                                 <h4>ออกจากระบบ</h4>
                             </Button>
                         </Badge>
@@ -218,21 +220,21 @@ export default function Dashboard() {
                         </Grid>
                         {/* Recent Orders */}
                         <Grid container spacing={3}>
-                        <Grid item xs={12} md={8} lg={4}>
-                            <Paper className={fixedHeightPaper}>
-                                <CardOne />
-                            </Paper>
-                        </Grid>
-                        <Grid item xs={12} md={8} lg={4}>
-                            <Paper className={fixedHeightPaper}>
-                                <CardTwo />
-                            </Paper>
-                        </Grid>
-                        <Grid item xs={12} md={8} lg={4}>
-                            <Paper className={fixedHeightPaper}>
-                                <CardThree />
-                            </Paper>
-                        </Grid>
+                            <Grid item xs={12} md={8} lg={4}>
+                                <Paper className={fixedHeightPaper}>
+                                    <CardOne />
+                                </Paper>
+                            </Grid>
+                            <Grid item xs={12} md={8} lg={4}>
+                                <Paper className={fixedHeightPaper}>
+                                    <CardTwo />
+                                </Paper>
+                            </Grid>
+                            <Grid item xs={12} md={8} lg={4}>
+                                <Paper className={fixedHeightPaper}>
+                                    <CardThree />
+                                </Paper>
+                            </Grid>
                         </Grid>
                     </Grid>
                     <Box pt={4}>
