@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Toast } from 'react-bootstrap'
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Col, Row } from 'reactstrap';
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Col, Row, ListGroup, ListGroupItem } from 'reactstrap';
 
 
 //แสดงรายการในส่วน map สำหรับส่วนข้อมูลที่จำเป็น สถานะ การแจ้งเตือน โอกาสเสี่ยง
@@ -34,8 +34,14 @@ const ListShow = props => {
               <Modal isOpen={modal} fade={false} toggle={toggle} className={className}>
                 <ModalHeader toggle={toggle}>ข้อมูลผู้ใช้</ModalHeader>
                 <ModalBody>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </ModalBody>
+                  <ListGroup>
+                    <ListGroupItem active tag="a" href="#" action>Cras justo odio</ListGroupItem>
+                    <ListGroupItem tag="a" href="#" action>Dapibus ac facilisis in</ListGroupItem>
+                    <ListGroupItem tag="a" href="#" action>Morbi leo risus</ListGroupItem>
+                    <ListGroupItem tag="a" href="#" action>Porta ac consectetur ac</ListGroupItem>
+                    <ListGroupItem disabled tag="a" href="#" action>Vestibulum at eros</ListGroupItem>
+                  </ListGroup>
+                </ModalBody>
                 <ModalFooter>
                   <Button color="secondary" onClick={toggle}>Cancel</Button>
                 </ModalFooter>
