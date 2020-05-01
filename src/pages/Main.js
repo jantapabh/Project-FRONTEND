@@ -53,18 +53,18 @@ const Main = () => {
                     </MDBCol>
                 </MDBRow>
             </MDBCardBody>
-         
-           
+       
             <MDBCardBody>
                 <MDBRow>
                     <MDBCol lg="3">
-                        <Card border="white" style={{ width: '76rem', height: '15rem', padding: 10, margin: 10, borderRadius: 100 }}>
+                        <Card border="white" style={{ width: '76rem', height: '15rem', padding: 10, marginLeft: 180, borderRadius: 100 }}>
                        <img src={howtouse} />
                        {/* วิธีการเข้าใช้งาน AI ELDERY */}
                         </Card>
                     </MDBCol>
                 </MDBRow>
             </MDBCardBody>
+            
             
          
             <MDBCardBody>
