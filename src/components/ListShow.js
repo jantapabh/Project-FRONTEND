@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Toast, Modal, Button, Row, Col } from 'react-bootstrap'
+import { ListGroup, ListGroupItem, Progress } from 'reactstrap';
 
 
 
@@ -20,16 +21,21 @@ const ListShow = props => {
       >
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
-            Modal heading
+            ข้อมูลผู้ใช้
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <h4>Centered Modal</h4>
-          <p>
-            Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-            dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-            consectetur ac, vestibulum at eros.
-          </p>
+          <ListGroup>
+          <ListGroupItem active tag="a" href="#" action>สถานะ : ปกติ</ListGroupItem>
+            <ListGroupItem  tag="a" href="#" action>ชื่อ : นาง จันเจ้า ดวงโต</ListGroupItem>
+            <ListGroupItem tag="a" href="#" action>อายุ 70 ปี</ListGroupItem>
+            <ListGroupItem tag="a" href="#" action>ที่อยู่ : ดาวอังคาร</ListGroupItem>
+            <ListGroupItem tag="a" href="#" action>โรคประจำตัว : ไม่มี</ListGroupItem>
+            <ListGroupItem disabled tag="a" href="#" action> 
+            <h5>อัตราการเคลื่อนไหวผิดปกติ</h5>
+            <div className="text-center">50%</div>
+              <Progress value={50} color="success" /></ListGroupItem>
+          </ListGroup>
         </Modal.Body>
         <Modal.Footer>
           <Button onClick={props.onHide}>Close</Button>
