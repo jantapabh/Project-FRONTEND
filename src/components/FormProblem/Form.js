@@ -10,7 +10,7 @@ const Form = () => {
             <MDBRow>
                 <MDBCol md="50">
                     <form>
-                        <p className="h3 text-center mb-4">Write to Problem</p>
+                        <p className="h3 text-center mb-4" style={{ backgroundColor: 'red', margin: 20, padding: 20, borderRadius: 50}}>Write Problem on Your Device</p>
                         <label htmlFor="defaultFormContactNameEx" className="grey-text">
                             Your name
         </label>
