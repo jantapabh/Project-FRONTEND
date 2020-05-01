@@ -15,7 +15,7 @@ import { Button, Level, Heading, } from 'react-bulma-components/dist'
 
 //Components Based
 
-import SidebarProblem from '../components/Map/SidebarProblem'
+import SidebarProblem from '../components/SidebarProblem'
 import ListShow from '../components/ListShow'
 
 
@@ -29,7 +29,7 @@ const Problem= () => {
             <div>
                 <MDBRow>
                     <MDBCol md="3">
-                        <ListShow />
+                        
                     </MDBCol>
                     <MDBCol md="9">
                        

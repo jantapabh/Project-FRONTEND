@@ -5,7 +5,7 @@ import { Button, Container, Nav, Navbar, NavDropdown, FormControl, Form } from '
 //ใช้  react bootstrap 
 //Tapbar สำหรับเอาไว้แสดงหน้าส่วน login 
 
-function SidebarProblem(props) {
+function SidebarCustomer(props) {
     return (
         <div>
             <Navbar bg="dark" expand="lg">
@@ -24,5 +24,5 @@ function SidebarProblem(props) {
     );
 }
 
-export default SidebarProblem;
+export default SidebarCustomer;
 
