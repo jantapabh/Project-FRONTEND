@@ -8,13 +8,13 @@ class ChartThree extends Component {
 
         this.state = {
 
-            series: [44, 55, 13, 43, 22],
+            series: [42, 58],
             options: {
                 chart: {
                     width: 380,
                     type: 'pie',
                 },
-                labels: ['Team A', 'Team B', 'Team C', 'Team D', 'Team E'],
+                labels: ['ผู้สูงอายุเพศชาย', 'ผู้สูงอายุเพศหญิง'],
                 responsive: [{
                     breakpoint: 480,
                     options: {
@@ -36,13 +36,9 @@ class ChartThree extends Component {
 
     render() {
         return (
-
-
             <div id="chart">
                 <ReactApexChart options={this.state.options} series={this.state.series} type="pie" width={280} />
             </div>
-
-
         );
     }
 }

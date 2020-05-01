@@ -27,11 +27,11 @@ const Deposits = () => {
   return (
     <React.Fragment>
       <Title>จำนวนผู้สูงอายุในประเทศไทย</Title>
-      <Typography component="p" variant="h8">
-        โดยรวม 60 % จากประชากรทั้งหมดภายในประเทศ
+      <Typography component="p" variant="h9">
+       คิดเป็นร้อยละ 18.63 จากประชากรทั้งหมดภายในประเทศ
       </Typography>
       <Typography color="textSecondary" className={classes.depositContext}>
-        on 15 March, 2019
+        ข้อมูลจากกองยุทธศาสตร์สาธารณสุขและสิ่งแวดล้อม
       </Typography>
       <div>
         <Link color="primary" href="#" onClick={preventDefault}>
