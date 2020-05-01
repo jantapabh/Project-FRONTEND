@@ -27,11 +27,11 @@ const CardOne = () => {
   return (
     <React.Fragment>
       <Title>สาเหตุการพลัดตกหกล้มของกลุ่มอายุ 60 ปีขึ้นไป</Title>
-      <Typography component="p" variant="h8">
+      <Typography component="p" variant="h9">
         โดยรวม 60 % จากประชากรทั้งหมดภายในประเทศ
       </Typography>
       <Typography color="textSecondary" className={classes.depositContext}>
-        on 15 March, 2019
+      ข้อมูลจากระบบเฝ้าระวังการบาดเจ็บแห่งชาติ (IS) สำนักระบาดวิทยา กรมควบคุมโรค
       </Typography>
       <div>
         <Link color="primary" href="#" onClick={preventDefault}>

@@ -1,4 +1,4 @@
-import React, { Component} from 'react'
+import React, { Component } from 'react'
 import ReactApexChart from 'react-apexcharts'
 
 class ChartSix extends React.Component {
@@ -6,7 +6,7 @@ class ChartSix extends React.Component {
     super(props);
 
     this.state = {
-    
+
       series: [75],
       options: {
         chart: {
@@ -20,7 +20,7 @@ class ChartSix extends React.Component {
           radialBar: {
             startAngle: -135,
             endAngle: 225,
-             hollow: {
+            hollow: {
               margin: 0,
               size: '70%',
               background: '#fff',
@@ -48,7 +48,7 @@ class ChartSix extends React.Component {
                 opacity: 0.35
               }
             },
-        
+
             dataLabels: {
               show: true,
               name: {
@@ -58,7 +58,7 @@ class ChartSix extends React.Component {
                 fontSize: '17px'
               },
               value: {
-                formatter: function(val) {
+                formatter: function (val) {
                   return parseInt(val);
                 },
                 color: '#111',
@@ -86,24 +86,18 @@ class ChartSix extends React.Component {
         },
         labels: ['Percent'],
       },
-    
-    
+
+
     };
   }
 
-
-
   render() {
     return (
-      
-
-<div id="card">
-<div id="chart">
-<ReactApexChart options={this.state.options} series={this.state.series} type="radialBar" height={180} />
-</div>
-</div>
-
-
+      <div id="card">
+        <div id="chart">
+          <ReactApexChart options={this.state.options} series={this.state.series} type="radialBar" height={180} />
+        </div>
+      </div>
     );
   }
 }

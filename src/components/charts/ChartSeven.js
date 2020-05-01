@@ -1,13 +1,13 @@
-import React, { Component} from 'react'
+import React, { Component } from 'react'
 import ReactApexChart from 'react-apexcharts'
 
 
 class ChartSeven extends React.Component {
-  constructor(props) {
-    super(props);
 
+  constructor(props) {
+
+    super(props);
     this.state = {
-    
       series: [70],
       options: {
         chart: {
@@ -23,22 +23,19 @@ class ChartSeven extends React.Component {
         },
         labels: ['Cricket'],
       },
-    
-    
+
+
     };
   }
 
-
-
   render() {
+
     return (
+
+      <div id="chart">
+        <ReactApexChart options={this.state.options} series={this.state.series} type="radialBar" height={180} />
+      </div>
       
-
-<div id="chart">
-<ReactApexChart options={this.state.options} series={this.state.series} type="radialBar" height={180} />
-</div>
-
-
     );
   }
 }
