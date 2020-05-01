@@ -26,7 +26,7 @@ const Problem= () => {
             <div>
                 <SidebarProblem />
             </div>
-            <div>
+            <div style={{ display: 'flex', justifyContent: 'center'}}>
                 <Form />
             </div>
         </div>

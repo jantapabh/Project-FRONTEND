@@ -3,9 +3,10 @@ import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBIcon } from 'mdbreact';
 
 const Form = () => {
     return (
-        <MDBContainer center>
+        <div>
+        <MDBContainer>
             <MDBRow>
-                <MDBCol md="6">
+                <MDBCol md="50">
                     <form>
                         <p className="h4 text-center mb-4">Write to us</p>
                         <label htmlFor="defaultFormContactNameEx" className="grey-text">
@@ -37,6 +38,7 @@ const Form = () => {
                 </MDBCol>
             </MDBRow>
         </MDBContainer>
+        </div>
     );
 };
 
