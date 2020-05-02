@@ -15,7 +15,7 @@ import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
 
 import SidebarCustomer from '../components/SidebarCustomer';
 import Intro from '../components/Intro';
-
+import problem from '../static/images/problem.png'
 
 const Detail = () => {
 
@@ -25,7 +25,13 @@ const Detail = () => {
                 <SidebarCustomer/>
             </div>
             <div>
-               <Intro />
+            <MDBRow style={{ display: 'flex', justifyContent: 'center', margin: 20 }}>
+                    <MDBCol md="5">
+                        <MDBContainer>
+                            <img src={problem} />
+                        </MDBContainer>
+                    </MDBCol>
+                </MDBRow>
             </div>
         </div>
     )
