@@ -17,6 +17,7 @@ import problem from '../static/images/problem.png'
 const Detail = () => {
 
     return (
+        
         <div>
             <div>
                 <SidebarCustomer />
