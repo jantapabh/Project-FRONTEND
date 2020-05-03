@@ -17,7 +17,7 @@ import problem from '../static/images/problem.png'
 const Detail = () => {
 
     return (
-        
+
         <div>
             <div>
                 <SidebarCustomer />
@@ -32,6 +32,7 @@ const Detail = () => {
                 </MDBRow>
             </div>
         </div>
+        
     )
 }
 
