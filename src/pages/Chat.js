@@ -7,7 +7,7 @@ const Chat = () => {
 
     return (
         <div>
-            CHAT
+           ทำ Chat Bot ตอบคำถาม
         </div>
     )
 }
