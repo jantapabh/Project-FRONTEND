@@ -6,9 +6,11 @@ import React from 'react'
 const Chat = () => {
 
     return (
+
         <div>
            ทำ Chat Bot ตอบคำถาม
         </div>
+        
     )
 }
 
