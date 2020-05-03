@@ -14,10 +14,11 @@ import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
 import SidebarCustomer from '../components/SidebarCustomer';
 import problem from '../static/images/problem.png'
 
+
 const Detail = () => {
 
     return (
-        
+
         <div>
             <div>
                 <SidebarCustomer />
