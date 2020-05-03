@@ -5,10 +5,10 @@ import React from 'react'
 
 const Chat = () => {
 
-    return(
+    return (
         <div>
             CHAT
-            </div>
+        </div>
     )
 }
 
