@@ -9,9 +9,7 @@ import { Card } from 'react-bootstrap'
 
 import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
 
-
 //Components Based
-
 
 import SidebarCustomer from '../components/SidebarCustomer';
 import problem from '../static/images/problem.png'
