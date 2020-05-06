@@ -6,6 +6,7 @@ import Title from './Title';
 import { Row, Col } from 'react-bootstrap';
 import one from '../static/images/one.png'
 
+
 //Import Chart
 
 import ChartFive from './charts/ChartFive'
