@@ -8,7 +8,6 @@ import one from '../static/images/one.png'
 
 //Import Chart
 
-
 import ChartFive from './charts/ChartFive'
 
 //ส่วนแสดงจำนวนผู้สูงอายุในประเทศไทยปัจจุบันแบ่งแยกเป็นชายและหญิงและหากกดในส่วนของ View balance จะแสดงผู้สูงอายุในแต่ละจังหวัดโดยรวม
