@@ -49,5 +49,4 @@ const CardOne = () => {
   );
 }
 
-
 export default CardOne;
