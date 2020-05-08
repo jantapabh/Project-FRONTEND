@@ -21,7 +21,6 @@ const useStyles = makeStyles({
 });
 
 const CardTwo = () => {
-
   const classes = useStyles();
   return (
     <React.Fragment>
