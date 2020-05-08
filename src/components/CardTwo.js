@@ -23,7 +23,6 @@ const useStyles = makeStyles({
 const CardTwo = () => {
 
   const classes = useStyles();
-
   return (
     <React.Fragment>
       <Title>สาเหตุการพลัดตกหกล้มของกลุ่มอายุ 60 ปีขึ้นไป</Title>
