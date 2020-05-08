@@ -7,7 +7,6 @@ import { Row, Col } from 'react-bootstrap';
 import one from '../static/images/one.png'
 
 //Import Chart
-
 import ChartSix from './charts/ChartSix'
 
 //ส่วนแสดงจำนวนผู้สูงอายุในประเทศไทยปัจจุบันแบ่งแยกเป็นชายและหญิงและหากกดในส่วนของ View balance จะแสดงผู้สูงอายุในแต่ละจังหวัดโดยรวม
