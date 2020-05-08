@@ -21,9 +21,7 @@ import MapShow from '../pages/MapShow'
 
 // กำหนดส่วนแสดงเมนูด้านข้างเมื่อกด
 export const mainListItems = (
-
   <div>
-
     <Link href="/map">
       <ListItem button style={{borderRadius: 90}}>
         <ListItemIcon>
