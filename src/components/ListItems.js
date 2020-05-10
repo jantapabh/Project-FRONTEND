@@ -58,7 +58,6 @@ export const mainListItems = (
         <ListItemText primary="ปัญหาการใช้งาน" />
       </ListItem>
       </Link>
-
       
       <Link href="/moreDetails">
       <ListItem button style={{borderRadius: 90}}>
