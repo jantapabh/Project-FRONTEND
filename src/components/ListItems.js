@@ -30,7 +30,6 @@ export const mainListItems = (
       </ListItem>
     </Link>
 
-
     <Link href="/customers">
       <ListItem button style={{borderRadius: 90}}>
         <ListItemIcon>
@@ -40,7 +39,6 @@ export const mainListItems = (
       </ListItem>
       </Link>
       
-
       <Link href="/about">
       <ListItem button style={{borderRadius: 90}}>
         <ListItemIcon>
