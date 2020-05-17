@@ -42,7 +42,6 @@ export const mainListItems = (
       </Link>
       
 
-
       <Link href="/about">
       <ListItem button style={{borderRadius: 90}}>
         <ListItemIcon>
