@@ -16,6 +16,7 @@ const Chart = () => {
       flex: 1,
     },
   });
+  
 
   const classes = useStyles();
 
