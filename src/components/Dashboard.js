@@ -31,11 +31,9 @@ import Orders from './Orders';
 import Main from '../pages/Main'
 
 //Import Firebase Auth
-
 import fire from '../config/fire';
 
 //Import Card
-
 import CardOne from './CardOne'
 import CardTwo from './CardTwo'
 import CardThree from './CardThree'
