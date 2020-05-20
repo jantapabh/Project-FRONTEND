@@ -4,7 +4,6 @@ import footer1 from '../static/images/footer1.png'
 import footer2 from '../static/images/footer2.png'
 import { Button } from 'react-bootstrap'
 
-
 // Footer แสดงในส่วนหน้าหลัก
 const Footer = () => {
 
