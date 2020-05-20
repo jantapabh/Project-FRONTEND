@@ -18,7 +18,7 @@ const Chart = () => {
 
   const classes = useStyles();
   const theme = useTheme();
-
+  
   return (
     <React.Fragment>
       <Title>
