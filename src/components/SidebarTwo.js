@@ -24,7 +24,6 @@ function SidebarTwo(props) {
                 </Navbar.Collapse>
             </Navbar>
         </div>
-
     );
 }
 
