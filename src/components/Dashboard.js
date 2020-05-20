@@ -149,9 +149,7 @@ export default function Dashboard() {
     const logout = e => {
 
         e.preventDefault()
-
         fire.auth().signOut();
-
     }
 
     return (
