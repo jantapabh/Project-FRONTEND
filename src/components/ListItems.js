@@ -14,7 +14,6 @@ import Link from '@material-ui/core/Link';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import SyncProblemIcon from '@material-ui/icons/SyncProblem';
 
-
 //import component
 import MapShow from '../pages/MapShow'
 
