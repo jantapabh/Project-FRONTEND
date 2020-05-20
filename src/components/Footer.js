@@ -34,8 +34,6 @@ const Footer = () => {
                 </MDBContainer>
             </div>
         </MDBFooter>
-
-
     )
 }
 
