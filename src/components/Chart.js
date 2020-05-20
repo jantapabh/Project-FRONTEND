@@ -10,7 +10,6 @@ import Typography from '@material-ui/core/Typography';
 import ChartFour from './charts/ChartFour'
 
 const Chart = () => {
-
   const useStyles = makeStyles({
     depositContext: {
       flex: 1,
