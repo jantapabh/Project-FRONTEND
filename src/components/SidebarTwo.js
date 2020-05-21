@@ -6,7 +6,6 @@ import { Button, Container, Nav, Navbar, NavDropdown, FormControl, Form } from '
 //Tapbar สำหรับเอาไว้แสดงหน้าส่วน login 
 function SidebarTwo(props) {
     return (
-        
         <div>
             <Navbar bg="dark" expand="lg">
                 <Navbar.Brand href="/">
