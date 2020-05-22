@@ -26,5 +26,6 @@ function SidebarTwo(props) {
         </div>
     );
 }
+
 export default SidebarTwo;
 
