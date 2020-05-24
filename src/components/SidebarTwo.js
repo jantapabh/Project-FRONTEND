@@ -17,13 +17,11 @@ function SidebarTwo(props) {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
                     </Nav>
-
                     <Form inline>
                     <Button variant="info" href="/chat" style={{width: 230, height: 60, borderRadius: 60, margin: 5, padding: 5}}>
                             <h3>สอบถามเพิ่มเติม</h3>
                             </Button>
                     </Form>
-
                 </Navbar.Collapse>
             </Navbar>
         </div>
