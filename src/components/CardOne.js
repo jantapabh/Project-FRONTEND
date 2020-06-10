@@ -46,5 +46,4 @@ const classes = useStyles();
   );
 }
 
-
 export default CardOne;
