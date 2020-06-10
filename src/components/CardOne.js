@@ -23,7 +23,6 @@ const useStyles = makeStyles({
 
 const CardOne = () => {
 const classes = useStyles();
-
   return (
     <React.Fragment>
       <Title>
