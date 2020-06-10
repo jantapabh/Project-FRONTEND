@@ -185,7 +185,6 @@ export default function Dashboard() {
                 }}
                 open={open}
             >
-                
                 <div className={classes.toolbarIcon}>
                     <IconButton onClick={handleDrawerClose}>
                         <ChevronLeftIcon />
