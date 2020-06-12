@@ -14,7 +14,6 @@ import ChartFive from './charts/ChartFive'
 function preventDefault(event) {
   event.preventDefault();
 }
-
 const useStyles = makeStyles({
   depositContext: {
     flex: 1,
