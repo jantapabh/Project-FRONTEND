@@ -85,6 +85,7 @@ const ListShow = props => {
                 onHide={() => setModalShow(false)}
               />
 
+
             </Col>
           </Row>
         </Toast.Body>
@@ -104,7 +105,6 @@ const ListShow = props => {
                 show={modalShow}
                 onHide={() => setModalShow(false)}
               />
-
 
             </Col>
           </Row>
