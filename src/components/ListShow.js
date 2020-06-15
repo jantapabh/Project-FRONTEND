@@ -58,7 +58,6 @@ const ListShow = props => {
               <Button variant="danger" onClick={() => setModalShow(true)}>
                 ดูข้อมูล
       </Button>
-
               <MyVerticallyCenteredModal
                 show={modalShow}
                 onHide={() => setModalShow(false)}
