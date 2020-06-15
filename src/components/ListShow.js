@@ -47,7 +47,6 @@ const ListShow = props => {
   const [modalShow, setModalShow] = React.useState(false);
 
   return (
-
     <div style={{ margin: 5, padding: 5 }}>
       <Toast>
         <Toast.Body>
