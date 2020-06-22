@@ -6,7 +6,6 @@ import Title from './Title';
 import { Row, Col } from 'react-bootstrap';
 import one from '../static/images/one.png'
 
-
 //Import Chart
 import ChartFive from './charts/ChartFive'
 
@@ -15,6 +14,7 @@ function preventDefault(event) {
   event.preventDefault();
 }
 //ฟังก์ชั่นสำหรับกดปุ๋มแล้วไม่ refresh หน้าใหม่
+
 
 const useStyles = makeStyles({
   depositContext: {
