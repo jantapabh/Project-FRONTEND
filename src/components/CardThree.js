@@ -12,6 +12,7 @@ import ChartSeven from './charts/ChartSeven'
 
 //ส่วนแสดงจำนวนผู้สูงอายุในประเทศไทยปัจจุบันแบ่งแยกเป็นชายและหญิงและหากกดในส่วนของ View balance จะแสดงผู้สูงอายุในแต่ละจังหวัดโดยรวม
 
+
 function preventDefault(event) {
   event.preventDefault();
 }
