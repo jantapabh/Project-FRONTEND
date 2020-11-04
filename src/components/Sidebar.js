@@ -1,16 +1,14 @@
-import React from 'react';
+import React, {Component, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button, Container, Nav, Navbar, NavDropdown, FormControl, Form } from 'react-bootstrap';
+import { Button, Nav, Navbar,  Form } from 'react-bootstrap';
+import { useMediaQuery } from 'react-responsive';
 
-// Sidebar ที่เรียกใช้หน้าแรกที่ผู็ใช้เข้ามา 
-//เรียกใช้หลักนี้ในไฟล์ Pricing
-
-function Sidebar(props) {
+const Sidebar = prop => {
     return (
         <div>
-            <Navbar bg="dark" expand="lg">
+           <Navbar bg="white" expand="lg">
                 <Navbar.Brand href="/">
-                    <Button variant="outline-primary" style={{width: 230, height: 60, borderRadius: 60,margin: 5, padding: 5}}>
+                    <Button variant="outline-success" style={{width: 230, height: 60, borderRadius: 60,margin: 5, padding: 5}}>
                         <h2>AI ELDERY</h2>
                     </Button></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -18,15 +16,12 @@ function Sidebar(props) {
                     <Nav className="mr-auto">
                     </Nav>
                     <Form inline>
-                        <Button variant="outline-info" href="/contact" style={{width: 150, height: 50, borderRadius: 50, margin: 5}}>
+                            <Button variant="warning" href="/contact" style={{width: 150, height: 50, borderRadius: 50,margin: 5}}>
                             <h4>ติดต่อเรา</h4>
-                            </Button>
-                            <Button variant="info" href="/login" style={{width: 150, height: 50, borderRadius: 50,margin: 5}}>
-                            <h4>เข้าสู่ระบบ</h4>
                             </Button>
                     </Form>
                 </Navbar.Collapse>
-            </Navbar>
+            </Navbar> 
         </div>
     );
 }

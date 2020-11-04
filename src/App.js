@@ -11,7 +11,6 @@ import Dashboard from './components/Dashboard'
 import Sidebar from './components/Sidebar'
 
 //Pages
-
 import Login from './pages/Login';
 import Pricing from './pages/Pricing';
 import MapShow from './pages/MapShow';
@@ -29,7 +28,6 @@ import Problem from './pages/Problem';
 
 
 const App = () => {
-
     return (
       <div>
         <BrowserRouter>

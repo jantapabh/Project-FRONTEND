@@ -38,6 +38,8 @@ import CardOne from './CardOne'
 import CardTwo from './CardTwo'
 import CardThree from './CardThree'
 
+//หน้าแสดงแผนที่ที่ใช้ในการแสดงอัตรา
+
 function Copyright() {
     return (
         <Typography variant="body2" color="textSecondary" align="center">
