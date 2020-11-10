@@ -10,25 +10,10 @@ import Typography from '@material-ui/core/Typography';
 import ChartFour from './charts/ChartFour'
 
 const Chart = () => {
-  const useStyles = makeStyles({
-    depositContext: {
-      flex: 1,
-    },
-  });
 
-  const classes = useStyles();
-  const theme = useTheme();
-  
   return (
     <React.Fragment>
-      <Title>
-        <h6>ข้อมูลอัตราการเสียชีวิตจากการพลัดตกหกล้มของกลุ่มอายุ 60 ปีขึ้นไป ปี พ.ศ. 2552 - 2561</h6></Title>
-        <Typography color="textSecondary" className={classes.depositContext}>
-        ข้อมูลจากกองยุทธศาสตร์สาธารณสุขและสิ่งแวดล้อม
-      </Typography>
-      <ResponsiveContainer>
-        <ChartFour />
-      </ResponsiveContainer>
+     
     </React.Fragment>
   );
 }

@@ -10,38 +10,22 @@ import one from '../static/images/one.png'
 import ChartFive from './charts/ChartFive'
 
 //ส่วนแสดงจำนวนผู้สูงอายุในประเทศไทยปัจจุบันแบ่งแยกเป็นชายและหญิงและหากกดในส่วนของ View balance จะแสดงผู้สูงอายุในแต่ละจังหวัดโดยรวม
-function preventDefault(event) {
-  event.preventDefault();
-}
+// function preventDefault(event) {
+//   event.preventDefault();
+// }
 //ฟังก์ชั่นสำหรับกดปุ๋มแล้วไม่ refresh หน้าใหม่
 
-const useStyles = makeStyles({
-  depositContext: {
-    flex: 1,
-  },
-});
+// const useStyles = makeStyles({
+//   depositContext: {
+//     flex: 1,
+//   },
+// });
 
 const CardOne = () => {
-const classes = useStyles();
+
   return (
     <React.Fragment>
-      <Title>
-        <h9>สาเหตุการพลัดตกหกล้มของกลุ่มอายุ 60 ปีขึ้นไป</h9>
-        </Title>
-      <Typography component="p" variant="h9">
-      การลื่น สะดุดหรือก้าวพลาดบนพื้นระดับเดียวกัน
-      </Typography>
-      <Typography color="textSecondary" className={classes.depositContext}>
-     <h9> ข้อมูลจากระบบเฝ้าระวังการบาดเจ็บแห่งชาติ (IS) สำนักระบาดวิทยา กรมควบคุมโรค</h9>
-      </Typography>
-      <div>
-      <Link color="primary" href="#" onClick={preventDefault}>
-          <Row>
-            <Col><img src={one} style={{ width: 170, height: 90, margin: 10, padding: 10}} /></Col>
-            <Col> <ChartFive /></Col>
-          </Row>
-        </Link>
-      </div>
+      
     </React.Fragment>
   );
 }
