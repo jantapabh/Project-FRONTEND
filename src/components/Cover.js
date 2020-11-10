@@ -52,6 +52,11 @@ const Cover = prop => {
                             <h4>เข้าสู่ระบบ</h4>
                             </Button>
                     </Form>
+                    <Form inline>
+                            <Button variant="info" href="https://project-eldery.noeypatt.now.sh/" style={{width: 240, height: 50, borderRadius: 50,margin: 5}}>
+                            <h4>ฐานข้อมูลผู้สูงอายุ</h4>
+                            </Button>
+                    </Form>
                 </Navbar.Collapse>
             </Navbar> 
                             </div>

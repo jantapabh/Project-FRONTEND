@@ -21,7 +21,7 @@ async function postSheetValues() {
     const request = await axios.post(`${urlpost}`,
         {
             headers: {
-                Authorization: "Bearer 4/ya29.A0AfH6SMD2VI9HYqse68VZk0dG0ufmBpRoXBiwc4zIZANdVPYkAy8OGhTC1RwxEYK1GIr4QI-aNSkRYDO89Zbct9A0JUM7JBNKvMSfkL57ZU4GByq23N_LpbxDt_F2ZlwlD7oMbqmL-iNrAoEgryuTfOiTLaRrU2DBq1dGlJUOzf4",
+                Authorization: "Bearer 4/wgEQ6fQYE6MR-DWoBCboQV2KrEcYzSF3oB4tHkAD4dX0CJecMuPHFF2vZc9jkgjW8h-M6Fi0p1hgXzoUSehFkQs",
                 Content_Type: "application/x-www-form-urlencoded",
                 User_Agent:"google-oauth-playground",
                 Content_length:"320",
@@ -45,8 +45,6 @@ async function getSheet(token,col) {
         })
 
     return request.data.values
-
-    
 
 }
 
