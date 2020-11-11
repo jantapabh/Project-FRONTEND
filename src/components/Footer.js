@@ -4,14 +4,14 @@ import footer1 from '../static/images/footer1.png'
 import footer2 from '../static/images/footer2.png'
 import { Button } from 'react-bootstrap'
 
-// Footer แสดงในส่วนหน้าหลัก
+// Footer ส่วนท้ายแสดงในส่วนหน้าหลัก
 const Footer = () => {
 
     return (
         <MDBFooter color="unique" className="font-small pt-3 mt-4" style={{ height: 230 }}>
             <MDBContainer fluid className="text-center text-md-left">
                 <MDBRow>
-                    <MDBCol md="4" center>
+                    <MDBCol md="5" center>
                         <img src={footer1} style={{ width: 400, height: 150 }} />
                     </MDBCol>
                     <MDBCol md="4" center>

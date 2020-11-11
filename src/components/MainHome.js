@@ -6,6 +6,7 @@ import content2 from '../static/images/content2.png'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button, Nav, Navbar,  Form } from 'react-bootstrap';
 
+//หน้าหลักแสดงบนเว็บส่วนบนสุด
 
 const MainHome = prop => {
     const isSmallScreen = useMediaQuery({ maxDeviceWidth: 768.99 })
@@ -52,7 +53,7 @@ const MainHome = prop => {
                             </Button>
                     </Form>
                     <Form inline>
-                            <Button variant="info" href="https://project-eldery.noeypatt.now.sh/" style={{width: 240, height: 50, borderRadius: 50,margin: 5}}>
+                            <Button variant="info" href="https://elderly.netlify.app/?fbclid=IwAR2QyhQEVLPnqXY4sUHSOkstBnrHI5PX1rYeqmorbQBXg0ZGqBindCl6-aI" style={{width: 240, height: 50, borderRadius: 50,margin: 5}}>
                             <h4>ฐานข้อมูลผู้สูงอายุ</h4>
                             </Button>
                     </Form>

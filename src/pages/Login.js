@@ -9,8 +9,7 @@ import logo2 from '../static/images/logo2.png'
 import firebase from 'firebase'
 import './css/Login.css'
 import Dashboard from '../components/layout/Dashboard'
-
-
+import LoginBar from '../components/LoginBar'
 
 //Use Firebase Login
 
@@ -21,80 +20,17 @@ import fire from '../config/fire'
 
 class Login extends Component {
 
-    constructor(props) {
-        super(props)
-        this.LoginButton = this.LoginButton.bind(this)
-        this.RegisterButton = this.RegisterButton.bind(this)
-        this.handleChange = this.handleChange.bind(this)
-        this.state = {
+  
 
-            email: "",
-            password: "",
-            user: {}
-
-        }
-    }
-
-    componentDidMount() {
-
-        this.authListener()
-
-    }
-
-    authListener() {
-
-        fire.auth().onAuthStateChanged((user) => {
-            if (user) {
-                this.setState({ user })
-            }
-            else {
-                this.setState({ user: null })
-            }
-
-        })
-    }
-
-
-
-    LoginButton(e) {
-
-        e.preventDefault()
-        fire.auth().signInWithEmailAndPassword(this.state.email, this.state.password).then((u) => {
-            console.log(u)
-        }).catch((err) => {
-            console.log(err)
-        })
-    }
-
-    RegisterButton(e) {
-
-        e.preventDefault()
-        fire.auth().createUserWithEmailAndPassword(this.state.email, this.state.password).then((user) => {
-            console.log(user)
-        }).catch((err) => {
-            console.log(err)
-        })
-    }
-
-    handleChange(e) {
-
-        this.setState({
-            [e.target.name]: e.target.value
-        });
-
-    }
+    
 
     //Check User Login
 
     render() {
 
-        if (this.state.user == null) {
-
-            //  ส่วน Render จะเช็คเงื่อนไขเสมอว่าหากไม่มีการ สนเรื ก็จะไม่สามารถไปยัง Dashboard ได้
-
             return (
                 <div>
-               
+               <LoginBar />
                     <div>
                         <Container component="main" maxWidth="xs">
                             <div className="paper">
@@ -110,8 +46,7 @@ class Login extends Component {
                                         name="email"
                                         autoComplete="email"
                                         autoFocus
-                                        value={this.state.email}
-                                        onChange={this.handleChange}
+                                       
 
                                     />
                                     <TextField
@@ -122,8 +57,7 @@ class Login extends Component {
                                         label="Password"
                                         type="password"
                                         autoComplete="current-password"
-                                        value={this.state.password}
-                                        onChange={this.handleChange}
+                                       
                                     />
                                     <Button
                                         type="submit"
@@ -131,7 +65,6 @@ class Login extends Component {
                                         variant="contained"
                                         color="primary"
                                         className="submit"
-                                        onClick={this.LoginButton}
                                         style={{ height: 60, borderRadius: 90 }}
                                     > Sign In</Button>
                                 </form>
@@ -140,15 +73,7 @@ class Login extends Component {
                     </div>
                 </div>
             )
-        }
-else{
-        return (
-            <div>
-                <Dashboard />
-                {/* หากผู้ใช้ login จะไปยังส่วน Dashboard */}
-            </div>
-        )
-    }
+       
 }
 
 }

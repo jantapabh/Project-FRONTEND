@@ -7,6 +7,7 @@ import how2 from '../static/images/how2.png'
 import how3 from '../static/images/how3.png'
 import Footer from './Footer'
 
+//แสดงวิธีการเข้าใช้งานระบบ
 
 const { Step } = Steps;
 const Agency = () => {
