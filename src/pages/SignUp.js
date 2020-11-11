@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useState, useEffect } from 'react';
 import { MDBContainer, MDBBtn, MDBModal, MDBModalBody, MDBModalHeader, MDBModalFooter } from 'mdbreact';
 import './css/SignUp.css'
 import Avatar from '@material-ui/core/Avatar';
@@ -17,14 +17,58 @@ import Container from '@material-ui/core/Container';
 import './css/Login.css'
 import logo2 from '../static/images/logo2.png'
 import LoginBar from '../components/LoginBar'
+import service from '../components/service'
 
-class SignUp extends Component {
+const SignUp = () => {
+
+    const [data, setData] = useState()
+    const [email, setEmail] = useState('')
+    const [username, setUsername] = useState('')
+    const [password, sertPassword] = useState('')
+    const [visible, setVisible] = useState(false);
+    const [visibleSignup, setVisibleSignup] = useState(false);
+    const [status, setStatus] = useState(false);
 
 
+    const handleClick = () => {
+        setStatus(!status)
+    }
 
+    const fetchSignin = async ()=>{
+        let res = await service({
+            url: '/auth/signin',
+            method: 'post',
+            data: {
+                accountuser: username,
+                password: password
+            }
+        })
+        if(res.status === 200)
+        {
+            console.log(res.data)
+            
+        }
+    }
 
-    render() {
-        return (
+    const fetchSignUp = async ()=>{
+        let res = await service({
+            url: '/auth/signup',
+            method: 'post',
+            data: {
+                email:email,
+                username: username,
+                password: password
+            }
+        })
+        if(res.status === 200)
+        {
+            console.log(res.data)
+            
+        }
+    }
+
+    return (
+        <div>
             <div>
                 <LoginBar />
                 <Container component="main" maxWidth="xs">
@@ -33,7 +77,7 @@ class SignUp extends Component {
                         <Typography component="h1" variant="h5">
                             <img src={logo2} style={{ borderRadius: 3000, height: 200, width: 200, margin: 20, padding: 10 }} /></Typography>
                         <form className="form" noValidate>
-                        <TextField
+                            <TextField
                                 variant="outlined"
                                 margin="normal"
                                 fullWidth
@@ -41,10 +85,9 @@ class SignUp extends Component {
                                 name="username"
                                 autoComplete="username"
                                 autoFocus
-
-
+                                onChange={(e)=> setUsername(e.target.value)}
                             />
-                              <TextField
+                            <TextField
                                 variant="outlined"
                                 margin="normal"
                                 fullWidth
@@ -52,6 +95,7 @@ class SignUp extends Component {
                                 name="email"
                                 autoComplete="email"
                                 autoFocus
+                                onChange={(e)=> setEmail(e.target.value)}
                             />
                             <TextField
                                 variant="outlined"
@@ -61,7 +105,7 @@ class SignUp extends Component {
                                 name="password"
                                 autoComplete="password"
                                 autoFocus
-
+                                onChange={(e)=> sertPassword(e.target.value)}
 
                             />
                             <TextField
@@ -72,10 +116,11 @@ class SignUp extends Component {
                                 name="password"
                                 autoComplete="password"
                                 autoFocus
+                                onChange={(e)=> sertPassword(e.target.value)}
 
 
                             />
-                           
+
                             <Button
                                 type="submit"
                                 fullWidth
@@ -83,13 +128,14 @@ class SignUp extends Component {
                                 color="primary"
                                 className="submit"
                                 style={{ height: 60, borderRadius: 90 }}
+                                onClick={fetchSignUp}
                             >  ลงทะเบียน</Button>
                         </form>
                     </div>
                 </Container>
             </div>
-        );
-    }
+        </div>
+    )
 }
 
 export default SignUp;

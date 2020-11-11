@@ -12,6 +12,7 @@ import Dashboard from '../components/layout/Dashboard'
 import LoginBar from '../components/LoginBar'
 import { MDBContainer, MDBBtn, MDBModal, MDBModalBody, MDBModalHeader, MDBModalFooter } from 'mdbreact';
 import SignUp from './SignUp'
+import service from '../components/service'
 
 //Use Firebase Login
 
@@ -20,12 +21,31 @@ import fire from '../config/fire'
 //Use Material UI
 // User ไม่สามารถเข้าใช้ระบบได้หากไม่ Login หรือเป็นสมาชิกของระบบ
 
-class Login extends Component {
+const Login = () => {
 
 
+    const [email, setEmail] = useState('')
+    const [username, setUsername] = useState('')
+    const [password, sertPassword] = useState('')
+
+
+    const fetchSignin = async ()=>{
+        let res = await service({
+            url: '/auth/signin',
+            method: 'post',
+            data: {
+                accountuser: username,
+                password: password
+            }
+        })
+        if(res.status === 200)
+        {
+            console.log(res.data)
+            
+        }
+    }
     //Check User Login
 
-    render() {
             return (
                 <div>
                <LoginBar />
@@ -40,10 +60,12 @@ class Login extends Component {
                                         variant="outlined"
                                         margin="normal"
                                         fullWidth
-                                        label="Email Address"
-                                        name="email"
-                                        autoComplete="email"
+                                        label="Username"
+                                        name="username"
+                                        autoComplete="username"
                                         autoFocus
+                                        
+                                        onChange={(e)=> setUsername(e.target.value)}
                                        
 
                                     />
@@ -54,7 +76,9 @@ class Login extends Component {
                                         name="password"
                                         label="Password"
                                         type="password"
+                                      
                                         autoComplete="current-password"
+                                        onChange={(e)=> sertPassword(e.target.value)}
                                        
                                     />
                                     <Button
@@ -64,6 +88,7 @@ class Login extends Component {
                                         color="primary"
                                         className="submit"
                                         style={{ height: 60, borderRadius: 90 }}
+                                        onClick={fetchSignin}
                                     > เข้าสู่ระบบ</Button>
                                 </form>
                             </div>
@@ -72,7 +97,7 @@ class Login extends Component {
                 </div>
             )
        
-}
+
 
 }
 
