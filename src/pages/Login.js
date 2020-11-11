@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Nav, Navbar, NavDropdown, FormControl, Form } from 'react-bootstrap';
 import logo2 from '../static/images/logo2.png'
 import firebase from 'firebase'
-import './Login.css'
+import './css/Login.css'
 import Dashboard from '../components/Dashboard'
 
 
@@ -94,7 +94,7 @@ class Login extends Component {
 
             return (
                 <div>
-                    <SidebarTwo />
+               
                     <div>
                         <Container component="main" maxWidth="xs">
                             <div className="paper">

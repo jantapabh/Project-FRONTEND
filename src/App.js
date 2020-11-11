@@ -11,7 +11,7 @@ import Sidebar from './components/Sidebar'
 
 //Pages
 import Login from './pages/Login';
-import Pricing from './pages/Pricing';
+import Pricing from './pages/Home';
 import MapShow from './pages/MapShow';
 import Contact from './pages/Contact';
 import Chat from './pages/Chat'

@@ -1,7 +1,18 @@
-import React, { Component } from 'react'
+import React, {
+    Component
+} from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Carousel, Card } from 'react-bootstrap';
-import { MDBRow, MDBCol, MDBIcon, MDBCardBody, MDBContainer } from "mdbreact";
+import {
+    Carousel,
+    Card
+} from 'react-bootstrap';
+import {
+    MDBRow,
+    MDBCol,
+    MDBIcon,
+    MDBCardBody,
+    MDBContainer
+} from "mdbreact";
 import Footer from '../components/Footer'
 import Agency from '../components/Agency.js'
 
@@ -12,12 +23,12 @@ import Agency from '../components/Agency.js'
 
 const Main = () => {
 
-    return (
+    return ( 
         <div>
-          <div>
-      <Agency />
-      </div>
-      <Footer />
+        <div >
+        <Agency />
+        </div> 
+        <Footer />
         </div>
     )
 }
