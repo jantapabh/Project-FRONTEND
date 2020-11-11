@@ -19,6 +19,7 @@ import Main from './pages/Main'
 import Customer from './pages/Customer';
 import Detail from './pages/Detail';
 import About from './pages/About';
+import SignUp from './pages/SignUp'
 
 
 
@@ -40,6 +41,7 @@ const App = () => {
           <Route path="/customers" component={Customer} />
           <Route path="/moreDetails" component={Detail} />
           <Route path="/about" component={About} />
+          <Route path="/signup" component={SignUp} />
         </BrowserRouter>
       </div>
     )

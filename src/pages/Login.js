@@ -10,6 +10,8 @@ import firebase from 'firebase'
 import './css/Login.css'
 import Dashboard from '../components/layout/Dashboard'
 import LoginBar from '../components/LoginBar'
+import { MDBContainer, MDBBtn, MDBModal, MDBModalBody, MDBModalHeader, MDBModalFooter } from 'mdbreact';
+import SignUp from './SignUp'
 
 //Use Firebase Login
 
@@ -20,14 +22,10 @@ import fire from '../config/fire'
 
 class Login extends Component {
 
-  
-
-    
 
     //Check User Login
 
     render() {
-
             return (
                 <div>
                <LoginBar />
@@ -66,7 +64,7 @@ class Login extends Component {
                                         color="primary"
                                         className="submit"
                                         style={{ height: 60, borderRadius: 90 }}
-                                    > Sign In</Button>
+                                    > เข้าสู่ระบบ</Button>
                                 </form>
                             </div>
                         </Container>
