@@ -105,6 +105,7 @@ const SignUp = () => {
                                 name="password"
                                 autoComplete="password"
                                 autoFocus
+                                type="password"
                                 onChange={(e)=> sertPassword(e.target.value)}
 
                             />
@@ -116,6 +117,7 @@ const SignUp = () => {
                                 name="password"
                                 autoComplete="password"
                                 autoFocus
+                                type="password"
                                 onChange={(e)=> sertPassword(e.target.value)}
 
 
