@@ -8,7 +8,7 @@ import { Nav, Navbar, NavDropdown, FormControl, Form } from 'react-bootstrap';
 import logo2 from '../static/images/logo2.png'
 import firebase from 'firebase'
 import './css/Login.css'
-import Dashboard from '../components/Dashboard'
+import Dashboard from '../components/layout/Dashboard'
 
 
 

@@ -6,7 +6,7 @@ import { BrowserRouter, Route, Link, Router, Redirect } from 'react-router-dom';
 
 //import Components and Pages
 
-import Dashboard from './components/Dashboard'
+import Dashboard from './components/layout/Dashboard'
 import Sidebar from './components/Sidebar'
 
 //Pages
