@@ -5,6 +5,7 @@ import './scss/agency.scss'
 import how1 from '../static/images/how1.png'
 import how2 from '../static/images/how2.png'
 import how3 from '../static/images/how3.png'
+import Footer from './Footer'
 
 
 const { Step } = Steps;

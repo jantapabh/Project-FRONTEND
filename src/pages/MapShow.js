@@ -15,7 +15,6 @@ import { Button, Level, Heading, } from 'react-bulma-components/dist'
 
 //Components Based
 import MapTwo from '../components/Map/MapTwo';
-import SidebarMap from '../components/Map/SidebarMap'
 import ListShow from '../components/ListShow'
 
 

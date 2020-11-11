@@ -14,16 +14,16 @@ const Footer = () => {
                     <MDBCol md="4" center>
                         <img src={footer1} style={{ width: 400, height: 150 }} />
                     </MDBCol>
-                    <MDBCol md="5" center>
+                    <MDBCol md="4" center>
                         <img src={footer2} style={{ width: 400, height: 150 }} />
                     </MDBCol>
-                    <MDBCol md="0" center>
+                    <MDBCol md="1" center>
                         <Button variant="primary" href="https://www.facebook.com/Joajannnnnn" style={{ margin: 5, borderRadius: 50 }}><MDBIcon fab icon="facebook" size="3x"></MDBIcon></Button>
                     </MDBCol>
-                    <MDBCol md="0" center>
+                    <MDBCol md="1" center>
                         <Button variant="primary" href="https://github.com/jantapabh" style={{ margin: 5, borderRadius: 50 }}><MDBIcon fab icon="github" size="3x" /></Button>
                     </MDBCol>
-                    <MDBCol md="0" center>
+                    <MDBCol md="1" center>
                         <Button variant="primary" href="https://mail.google.com/mail/u/1/#inbox" style={{ margin: 5, borderRadius: 50 }}> <MDBIcon icon="envelope" size="3x" /></Button>
                     </MDBCol>
                 </MDBRow>

@@ -6,7 +6,6 @@ import { BrowserRouter, Route, Link, Router, Redirect } from 'react-router-dom';
 
 //import Components and Pages
 
-import Chart from './components/Chart'
 import Dashboard from './components/Dashboard'
 import Sidebar from './components/Sidebar'
 
@@ -20,7 +19,7 @@ import Main from './pages/Main'
 import Customer from './pages/Customer';
 import Detail from './pages/Detail';
 import About from './pages/About';
-import Problem from './pages/Problem';
+
 
 
 //หน้าแอปส่วนหลักในการทำการ Route และdesof render หน้า
@@ -41,7 +40,6 @@ const App = () => {
           <Route path="/customers" component={Customer} />
           <Route path="/moreDetails" component={Detail} />
           <Route path="/about" component={About} />
-           <Route path="/problem" component={Problem} />
         </BrowserRouter>
       </div>
     )

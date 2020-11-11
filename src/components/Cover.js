@@ -2,7 +2,6 @@ import React from 'react'
 import { useMediaQuery } from 'react-responsive'
 import './scss/cover.scss'
 import { Link } from 'react-router-dom';
-import content from '../static/images/content.png'
 import content2 from '../static/images/content2.png'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button, Nav, Navbar,  Form } from 'react-bootstrap';

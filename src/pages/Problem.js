@@ -6,19 +6,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Card, } from 'react-bootstrap'
 
 //MDB
-
 import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
 
-//Bulma
-
-import { Button, Level, Heading, } from 'react-bulma-components/dist'
-
-//Components Based
-
-import SidebarProblem from '../components/SidebarProblem'
-import ListShow from '../components/ListShow'
-import Form from '../components/FormProblem/Form'
-import problem from '../static/images/problem.png'
 
 const Problem = () => {
 
