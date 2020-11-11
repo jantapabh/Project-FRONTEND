@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button, Nav, Navbar,  Form } from 'react-bootstrap';
 
 
-const Cover = prop => {
+const MainHome = prop => {
     const isSmallScreen = useMediaQuery({ maxDeviceWidth: 768.99 })
 
     return (
@@ -70,4 +70,4 @@ const Cover = prop => {
     )
 
 }
-export default Cover
+export default MainHome
