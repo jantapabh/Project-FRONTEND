@@ -20,12 +20,9 @@ import Customer from './pages/Customer';
 import Detail from './pages/Detail';
 import About from './pages/About';
 import SignUp from './pages/SignUp'
-import service from './components/service'
 
 
 //หน้าแอปส่วนหลักในการทำการ Route และdesof render หน้า
-
-
 
 class App extends Component {
 
