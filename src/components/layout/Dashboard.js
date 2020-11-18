@@ -8,7 +8,7 @@ const Dashboard = () => {
  
     return (
     <div>
-      Dashboard
+     fdfd
       </div>
     );
   };

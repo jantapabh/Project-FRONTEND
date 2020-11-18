@@ -29,67 +29,75 @@ const Login = () => {
     const [password, sertPassword] = useState('')
 
 
-    const fetchSignin = async ()=>{
+    const fetchSignin = async () => {
         let res = await service({
             url: '/auth/login',
             method: 'post',
             data: {
                 accountuser: username,
                 password: password
-            } 
+            }
         })
-        if(res.status === 200)
-        {
-            console.log(res.data)  
+        if (res.status === 200) {
+            console.log(res.data)
         }
+
+        alert('Login Success')
     }
     //Check User Login
-
-            return (
+    if (username == null && password == null) {
+        return (
+            <div>
+                <LoginBar />
                 <div>
-               <LoginBar />
-                    <div>
-                        <Container component="main" maxWidth="xs">
-                            <div className="paper">
-                                {/* <h2>LOG IN</h2> */}
-                                <Typography component="h1" variant="h5">
-                                    <img src={logo2} style={{ borderRadius: 3000, height: 200, width: 200 , margin: 20, padding: 10}} /></Typography>
-                                <form className="form" noValidate>
-                                    <TextField
-                                        variant="outlined"
-                                        margin="normal"
-                                        fullWidth
-                                        label="Username"
-                                        name="username"
-                                        autoComplete="username"
-                                        autoFocus
-                                        onChange={(e)=> setUsername(e.target.value)}
-                                    />
-                                    <TextField
-                                        variant="outlined"
-                                        margin="normal"
-                                        fullWidth
-                                        name="password"
-                                        label="Password"
-                                        type="password"
-                                        autoComplete="current-password"
-                                        onChange={(e)=> sertPassword(e.target.value)}
-                                    />
-                                    <Button
-                                        type="submit"
-                                        fullWidth
-                                        variant="contained"
-                                        color="primary"
-                                        className="submit"
-                                        style={{ height: 60, borderRadius: 90 }}
-                                        onClick={fetchSignin}
-                                    > เข้าสู่ระบบ</Button>
-                                </form>
-                            </div>
-                        </Container>
-                    </div>
+                    <Container component="main" maxWidth="xs">
+                        <div className="paper">
+                            {/* <h2>LOG IN</h2> */}
+                            <Typography component="h1" variant="h5">
+                                <img src={logo2} style={{ borderRadius: 3000, height: 200, width: 200, margin: 20, padding: 10 }} /></Typography>
+                            <form className="form" noValidate>
+                                <TextField
+                                    variant="outlined"
+                                    margin="normal"
+                                    fullWidth
+                                    label="Username"
+                                    name="username"
+                                    autoComplete="username"
+                                    autoFocus
+                                    onChange={(e) => setUsername(e.target.value)}
+                                />
+                                <TextField
+                                    variant="outlined"
+                                    margin="normal"
+                                    fullWidth
+                                    name="password"
+                                    label="Password"
+                                    type="password"
+                                    autoComplete="current-password"
+                                    onChange={(e) => sertPassword(e.target.value)}
+                                />
+                                <Button
+                                    type="submit"
+                                    fullWidth
+                                    variant="contained"
+                                    color="primary"
+                                    className="submit"
+                                    style={{ height: 60, borderRadius: 90 }}
+                                    onClick={fetchSignin}
+                                > เข้าสู่ระบบ</Button>
+                            </form>
+                        </div>
+                    </Container>
                 </div>
-            )
+            </div>
+
+        );
+    }
+    return (
+        <div>
+            <Dashboard />
+        </div>
+    )
 }
 
 export default Login

@@ -27,25 +27,27 @@ import service from './components/service'
 
 
 
-const App = () => {
+class App extends Component {
 
-  return (
-    <div>
-      <BrowserRouter>
-        <Route exact path="/" component={Pricing} />
-        <Route path="/dashboard" component={Dashboard} />
-        <Route path="/map" component={MapShow} />
-        <Route path="/login" component={Login} />
-        <Route path="/main" component={Main} />
-        <Route path="/contact" component={Contact} />
-        <Route path="/chat" component={Chat} />
-        <Route path="/customers" component={Customer} />
-        <Route path="/moreDetails" component={Detail} />
-        <Route path="/about" component={About} />
-        <Route path="/signup" component={SignUp} />
-      </BrowserRouter>
-    </div>
-  )
+  render() {
+    return (
+      <div>
+        <BrowserRouter>
+          <Route exact path="/" component={Pricing} />
+          <Route path="/dashboard" component={Dashboard} />
+          <Route path="/map" component={MapShow} />
+          <Route path="/login" component={Login} />
+          <Route path="/main" component={Main} />
+          <Route path="/contact" component={Contact} />
+          <Route path="/chat" component={Chat} />
+          <Route path="/customers" component={Customer} />
+          <Route path="/moreDetails" component={Detail} />
+          <Route path="/about" component={About} />
+          <Route path="/signup" component={SignUp} />
+        </BrowserRouter>
+      </div>
+    )
+  }
 }
 
 
