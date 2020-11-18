@@ -51,6 +51,7 @@
     "reactstrap": "^8.4.1",
     "recharts": "^1.8.5",
     "redux": "^4.0.5",
+    "styled-components": "^5.2.1",
     "topojson-client": "^3.1.0",
     "video-react": "^0.14.1"
   },
