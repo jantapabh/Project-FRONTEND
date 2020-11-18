@@ -31,17 +31,16 @@ const Login = () => {
 
     const fetchSignin = async ()=>{
         let res = await service({
-            url: '/auth/signin',
+            url: '/auth/login',
             method: 'post',
             data: {
                 accountuser: username,
                 password: password
-            }
+            } 
         })
         if(res.status === 200)
         {
-            console.log(res.data)
-            
+            console.log(res.data)  
         }
     }
     //Check User Login
@@ -64,10 +63,7 @@ const Login = () => {
                                         name="username"
                                         autoComplete="username"
                                         autoFocus
-                                        
                                         onChange={(e)=> setUsername(e.target.value)}
-                                       
-
                                     />
                                     <TextField
                                         variant="outlined"
@@ -76,10 +72,8 @@ const Login = () => {
                                         name="password"
                                         label="Password"
                                         type="password"
-                                      
                                         autoComplete="current-password"
                                         onChange={(e)=> sertPassword(e.target.value)}
-                                       
                                     />
                                     <Button
                                         type="submit"
@@ -96,11 +90,6 @@ const Login = () => {
                     </div>
                 </div>
             )
-       
-
-
 }
-
-
 
 export default Login

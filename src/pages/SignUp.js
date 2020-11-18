@@ -36,7 +36,7 @@ const SignUp = () => {
 
     const fetchSignin = async ()=>{
         let res = await service({
-            url: '/auth/signin',
+            url: '/auth/login',
             method: 'post',
             data: {
                 accountuser: username,

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 import './App.css';
 
 // Router
@@ -20,7 +20,7 @@ import Customer from './pages/Customer';
 import Detail from './pages/Detail';
 import About from './pages/About';
 import SignUp from './pages/SignUp'
-
+import service from './components/service'
 
 
 //หน้าแอปส่วนหลักในการทำการ Route และdesof render หน้า
@@ -28,24 +28,25 @@ import SignUp from './pages/SignUp'
 
 
 const App = () => {
-    return (
-      <div>
-        <BrowserRouter>
-          <Route exact path="/" component={Pricing}/>
-          <Route path="/dashboard" component={Dashboard} />
-          <Route path="/map" component={MapShow} />
-          <Route path="/login" component={Login} />
-          <Route path="/main" component={Main} />
-          <Route path="/contact" component={Contact} />
-          <Route path="/chat" component={Chat} />
-          <Route path="/customers" component={Customer} />
-          <Route path="/moreDetails" component={Detail} />
-          <Route path="/about" component={About} />
-          <Route path="/signup" component={SignUp} />
-        </BrowserRouter>
-      </div>
-    )
-  }
+
+  return (
+    <div>
+      <BrowserRouter>
+        <Route exact path="/" component={Pricing} />
+        <Route path="/dashboard" component={Dashboard} />
+        <Route path="/map" component={MapShow} />
+        <Route path="/login" component={Login} />
+        <Route path="/main" component={Main} />
+        <Route path="/contact" component={Contact} />
+        <Route path="/chat" component={Chat} />
+        <Route path="/customers" component={Customer} />
+        <Route path="/moreDetails" component={Detail} />
+        <Route path="/about" component={About} />
+        <Route path="/signup" component={SignUp} />
+      </BrowserRouter>
+    </div>
+  )
+}
 
 
 export default App

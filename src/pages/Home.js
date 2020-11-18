@@ -13,7 +13,9 @@ const useStyles = makeStyles((theme) => ({
     }
 }));
 
+//หน้าหลักที่แสดงส่วนของการ login
 //เรียก cover ที่นี้
+
 export default function Pricing() {
 
     const classes = useStyles();
@@ -21,7 +23,7 @@ export default function Pricing() {
         <div>
             <Sidebar />
             <div>
-               <MainHome />
+                <MainHome />
             </div>
             <Main />
         </div>
