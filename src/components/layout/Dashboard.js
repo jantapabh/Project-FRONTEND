@@ -7,6 +7,8 @@ import LoginBar from '../LoginBar'
 import styled from 'styled-components';
 import NavigationBar from '../NavigationBar'
 import NavBar from '../NavBar'
+import ShowMap from './ShowMap';
+import './map.css'
 
 const GridWrapper = styled.div`
   display: grid;
@@ -29,7 +31,9 @@ const Dashboard = () => {
       <div>
         <NavigationBar />
         <NavBar />
-       
+        <div className="item8">
+        <ShowMap />
+        </div>
       </div>
     </div>
   )
