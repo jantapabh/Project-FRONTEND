@@ -26,7 +26,7 @@ const Login = () => {
 
     const [email, setEmail] = useState('')
     const [username, setUsername] = useState('')
-    const [password, sertPassword] = useState('')
+    const [password, setPassword] = useState('')
 
 
     const fetchSignin = async () => {
@@ -74,7 +74,7 @@ const Login = () => {
                                     label="Password"
                                     type="password"
                                     autoComplete="current-password"
-                                    onChange={(e) => sertPassword(e.target.value)}
+                                    onChange={(e) => setPassword(e.target.value)}
                                 />
                                 <Button
                                     type="submit"

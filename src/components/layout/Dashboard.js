@@ -29,6 +29,7 @@ const Dashboard = () => {
       <div>
         <NavigationBar />
         <NavBar />
+       
       </div>
     </div>
   )

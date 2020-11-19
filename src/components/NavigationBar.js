@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Nav, Navbar, Form, FormControl } from 'react-bootstrap';
 import styled from 'styled-components';
+import service from '../components/service'
+import Button from '@material-ui/core/Button';
 
 const Styles = styled.div`
   .navbar { background-color: #222; }
@@ -20,27 +22,42 @@ const Styles = styled.div`
   }
 `;
 
-const NavigationBar = () => {
-    return (
-        <div>
-            <Styles>
-                <Navbar expand="lg">
-                    <Navbar.Brand href="/">AI ELDERY</Navbar.Brand>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                    <Form className="form-center">
-                        <FormControl type="text" placeholder="Search" className="" />
-                    </Form>
-                    <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="ml-auto">
-                            <Nav.Item><Nav.Link href="/">Home</Nav.Link></Nav.Item>
-                            <Nav.Item><Nav.Link href="/">ออกจากระบบ</Nav.Link></Nav.Item>
-                        </Nav>
-                    </Navbar.Collapse>
-                </Navbar>
-            </Styles>
-        </div>
-    )
 
+const NavigationBar = () => {
+
+  const [email, setEmail] = useState('')
+  const [username, setUsername] = useState('')
+  const [password, setPassword] = useState('')
+
+  const Logout = async () => {
+
+  }
+
+
+  return (
+    <div>
+      <Styles>
+        <Navbar expand="lg">
+          <Navbar.Brand href="/">AI ELDERY</Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="ml-auto">
+              <Nav.Item><Nav.Link href="/">
+                <Button
+                  type="submit"
+                  fullWidth
+                  variant="contained"
+                  className="submit"
+                  style={{ height: 40, borderRadius: 90 }}
+                  onClick={Logout}
+                > LOGOUT</Button>
+              </Nav.Link></Nav.Item>
+            </Nav>
+          </Navbar.Collapse>
+        </Navbar>
+      </Styles>
+    </div>
+  )
 }
 
 export default NavigationBar
