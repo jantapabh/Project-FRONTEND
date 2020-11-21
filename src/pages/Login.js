@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect, Component } from 'react'
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
@@ -14,6 +15,8 @@ import { MDBContainer, MDBBtn, MDBModal, MDBModalBody, MDBModalHeader, MDBModalF
 import SignUp from './SignUp'
 import service from '../components/service'
 import { useSpring, animated } from "react-spring";
+import styled from 'styled-components';
+
 //Use Firebase Login
 
 import fire from '../config/fire'
@@ -22,16 +25,12 @@ import fire from '../config/fire'
 // User ไม่สามารถเข้าใช้ระบบได้หากไม่ Login หรือเป็นสมาชิกของระบบ
 
 
-
 const Login = () => {
 
-
+    const [user, setUser] = useState([])
     const [email, setEmail] = useState('')
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
-    const [isSignedIn, setIsSignedIn] = useState(false)
-
-
 
 
     // const fetchSignin = async () => {
@@ -80,9 +79,12 @@ const Login = () => {
         e.preventDefault();
         fire.auth().signInWithEmailAndPassword(email, password).then((u) => {
             console.log(u)
+            setUser(u)
         }).catch((err) => {
             console.log(err)
         })
+
+
     }
 
 
@@ -122,13 +124,10 @@ const Login = () => {
         setRegistartionFormStatus(false);
     }
 
-
-
-
     //Check User Login
 
     return (
-        <div>
+        <div style={{ backgroundImage: `url("https://github.com/jantapabh/Project-FRONTEND/blob/master/src/static/images/pic.png?raw=true")`, backgroundPosition: 'center', backgroundSize: 'cover' }}>
             <LoginBar />
             <div>
                 <div className="login-register-wrapper">
@@ -139,19 +138,19 @@ const Login = () => {
                             style={loginBtnProps}
                         >
                             Login
-        </animated.button>
+            </animated.button>
                         <animated.button
                             onClick={registerClicked}
                             id="registerBtn"
                             style={registerBtnProps}
                         >
                             Register
-        </animated.button>
+            </animated.button>
                     </div>
                     <div className="form-group">
                         <animated.form action="" id="loginform" style={loginProps}>
 
-                            <label for="username">USERNAME</label>
+                            <label for="username">EMAIL</label>
                             <input type="text" id="email" id="email"
                                 label="Email Address"
                                 name="email"
@@ -191,8 +190,12 @@ const Login = () => {
         </div>
 
     );
+
+    // return (
+    //     <div>
+    //         <Dashboard />
+    //     </div>
+    // )
 }
-
-
 
 export default Login

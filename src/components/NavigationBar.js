@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import { Nav, Navbar, Form, FormControl } from 'react-bootstrap';
+import { Button, Form, Nav, NavDropdown, Navbar, FormControl } from 'react-bootstrap';
 import styled from 'styled-components';
 import service from '../components/service'
-import Button from '@material-ui/core/Button';
+import fire from '../config/fire'
+
 
 const Styles = styled.div`
   .navbar { background-color: #222; }
@@ -29,10 +30,10 @@ const NavigationBar = () => {
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
 
-  const Logout = async () => {
+  const logout = e => {
 
+    fire.auth().signOut();
   }
-
 
   return (
     <div>
@@ -42,6 +43,7 @@ const NavigationBar = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
           </Navbar.Collapse>
+          <Navbar.Brand href="/" onClick={logout}> LOGOUT</Navbar.Brand>
         </Navbar>
       </Styles>
     </div>

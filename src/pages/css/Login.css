@@ -9,12 +9,6 @@ html,body, body * {
     /* border:2px solid orange; */
  }
 
- body {
-    background-image: url(pic.png);
-    background-size:  cover;
-    background-position:center center;
-    
-  }
   .container {
       width: 100%;
       padding-top: 60px;
