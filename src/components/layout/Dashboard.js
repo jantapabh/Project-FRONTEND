@@ -31,8 +31,8 @@ const Dashboard = () => {
       <div>
         <NavigationBar />
         <NavBar />
-        <div className="item8">
-        <ShowMap />
+        <div>
+ 
         </div>
       </div>
     </div>

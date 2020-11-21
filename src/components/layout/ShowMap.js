@@ -9,7 +9,7 @@ const ShowMap = () => {
 
     return (
         <div>
-            <div className="item8">
+            <div>
                 <MapTwo />
             </div>
         </div>
