@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import '../App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import SidebarMap from '../components/Map/SidebarMap'
+
 
 //Bootstrap react
 import { Card } from 'react-bootstrap'
@@ -22,7 +24,7 @@ const MapShow = () => {
 
     return (
         <div>
-        
+        <SidebarMap />
             <div>
                 <MDBRow>
                     <MDBCol md="3">

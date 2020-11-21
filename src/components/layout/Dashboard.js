@@ -9,7 +9,9 @@ import NavigationBar from '../NavigationBar'
 import NavBar from '../NavBar'
 import ShowMap from './ShowMap';
 import './map.css'
-
+import MapTwo from '../Map/MapTwo';
+import MapShow from 'src/pages/MapShow';
+import 'bootstrap/dist/css/bootstrap.min.css';
 const GridWrapper = styled.div`
   display: grid;
   grid-gap: 10px;
@@ -28,13 +30,11 @@ const Dashboard = () => {
 
   return (
     <div>
+      <div><NavigationBar /></div>
+      <div><NavBar /></div>
       <div>
-        <NavigationBar />
-        <NavBar />
-        <div>
- 
+        
         </div>
-      </div>
     </div>
   )
 }

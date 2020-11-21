@@ -41,18 +41,6 @@ const NavigationBar = () => {
           <Navbar.Brand href="/">AI ELDERY</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="ml-auto">
-              <Nav.Item><Nav.Link href="/">
-                <Button
-                  type="submit"
-                  fullWidth
-                  variant="contained"
-                  className="submit"
-                  style={{ height: 40, borderRadius: 90 }}
-                  onClick={Logout}
-                > LOGOUT</Button>
-              </Nav.Link></Nav.Item>
-            </Nav>
           </Navbar.Collapse>
         </Navbar>
       </Styles>

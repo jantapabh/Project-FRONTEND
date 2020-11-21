@@ -37,6 +37,12 @@ class SideNav extends React.Component {
                   css: 'fas fa-hashtag',
                   key: 3
                 },
+                  {
+                    path: '/NoMatch',
+                    name: 'NoMatch',
+                    css: 'fas fa-car',
+                    key: 4
+                  },
               ]
         }
     }
