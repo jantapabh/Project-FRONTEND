@@ -34,13 +34,13 @@ class SideNav extends React.Component {
                 {
                   path: '/NoMatch',
                   name: 'NoMatch',
-                  css: 'fas fa-hashtag',
+                  css: 'fas fa-file',
                   key: 3
                 },
                   {
-                    path: '/NoMatch',
+                    path: '/map',
                     name: 'NoMatch',
-                    css: 'fas fa-car',
+                    css: 'fas fa-heart',
                     key: 4
                   },
               ]

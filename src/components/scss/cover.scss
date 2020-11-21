@@ -97,6 +97,16 @@ $border-bg-color: 1px solid #83d2ae;
           width: auto;
           height: 25rem;
         }
+
+        .img-baby-g-about {
+          width: 100%;
+          height: 327px;
+          animation: animateCloud 10s linear infinite;
+          background-image: url(https://i.postimg.cc/T1nt9ZLk/Lv8L0.png);
+          background-repeat: repeat-x;
+          background-position: 0 0;
+        }
+        
       }
     }
   }

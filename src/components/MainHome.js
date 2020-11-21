@@ -4,7 +4,9 @@ import './scss/cover.scss'
 import { Link } from 'react-router-dom';
 import content2 from '../static/images/content2.png'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button, Nav, Navbar,  Form } from 'react-bootstrap';
+import { Button, Nav, Navbar, Form } from 'react-bootstrap';
+import './scss/image.css'
+
 
 //หน้าหลักแสดงบนเว็บส่วนบนสุด
 
@@ -28,7 +30,7 @@ const MainHome = prop => {
                                         <h6>และติดตามการเคลื่อนไหว</h6>
                                     </div>
                                 </div>
-                            
+
                             </div>
                         </div>
                         :
@@ -46,22 +48,17 @@ const MainHome = prop => {
                                     </div>
                                 </div>
                                 <Navbar expand="lg">
-                <Navbar.Collapse id="basic-navbar-nav">
-                    <Form inline>
-                            <Button variant="info" href="/login" style={{width: 150, height: 50, borderRadius: 50,margin: 5}}>
-                            <h4>เข้าสู่ระบบ</h4>
-                            </Button>
-                    </Form>
-                    <Form inline>
-                            <Button variant="info" href="https://elderly.netlify.app/?fbclid=IwAR2QyhQEVLPnqXY4sUHSOkstBnrHI5PX1rYeqmorbQBXg0ZGqBindCl6-aI" style={{width: 240, height: 50, borderRadius: 50,margin: 5}}>
-                            <h4>ฐานข้อมูลผู้สูงอายุ</h4>
-                            </Button>
-                    </Form>
-                </Navbar.Collapse>
-            </Navbar> 
+                                    <Navbar.Collapse id="basic-navbar-nav">
+                                        <Form inline>
+                                            <Button variant="info" href="/login" style={{ width: 150, height: 50, borderRadius: 50, margin: 5 }}>
+                                                <h4>เข้าสู่ระบบ</h4>
+                                            </Button>
+                                        </Form>
+                                    </Navbar.Collapse>
+                                </Navbar>
                             </div>
-                            <div className="cover">
-                            <img src={content2} alt="cover" />
+                            <div className="img-baby-g-about for-desktop">
+                                <img src={content2} alt="cover" />
                             </div>
                         </div>
                 }

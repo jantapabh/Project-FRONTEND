@@ -17,16 +17,6 @@ const LoginBar = () => {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
                     </Nav>
-                    <Form inline>
-                            <Button variant="outline-warning" href="/signup" style={{width: 150, height: 50, borderRadius: 50,margin: 5}}>
-                            <h4>ลงทะเบียน</h4>
-                            </Button>
-                    </Form>
-                    <Form inline>
-                            <Button variant="warning" href="/contact" style={{width: 150, height: 50, borderRadius: 50,margin: 5}}>
-                            <h4>ติดต่อเรา</h4>
-                            </Button>
-                    </Form>
                 </Navbar.Collapse>
             </Navbar> 
         </div>
